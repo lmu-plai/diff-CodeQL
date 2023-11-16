@@ -1,0 +1,2419 @@
+Comparing axios-0.1.0 to axios-0.2.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'options'.
+		File(s):
+			package/lib/adapters/http.js
+				Location(s):
+					34:13
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.2.0 to axios-0.2.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.2.1 to axios-0.2.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.2.2 to axios-0.3.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.3.0 to axios-0.3.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.3.1 to axios-0.4.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([axios.amd.standalone.min.js](1)) is minified
+		File(s):
+			package/dist/axios.amd.standalone.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([axios.standalone.min.js](1)) is minified
+		File(s):
+			package/dist/axios.standalone.min.js
+				Location(s):
+					N/A
+
+js/client-request (severity: 2.0):
+	4 new occurence(s) of finding: Detected a client request to URL/IP address 'Microsoft.XMLHTTP'.
+		File(s):
+			package/dist/axios.amd.standalone.min.js
+				Location(s):
+					2:3726
+			package/dist/axios.standalone.min.js
+				Location(s):
+					2:3689
+			package/dist/axios.amd.standalone.js
+				Location(s):
+					453:18
+			package/dist/axios.standalone.js
+				Location(s):
+					454:18
+
+
+Severity sum:
+=> All queries: 18.0
+=> Distinct queries: 7.0
+
+
+Comparing axios-0.4.0 to axios-0.4.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.4.1 to axios-0.4.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-ts-1.12.1
+		File(s):
+			package/package.json
+				Location(s):
+					37:17
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.4.2 to axios-0.5.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: es6-promise-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					28:20
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.5.0 to axios-0.5.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: karma-0.12.31
+		File(s):
+			package/package.json
+				Location(s):
+					40:14
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					41:22
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-ajax-0.1.11
+		File(s):
+			package/package.json
+				Location(s):
+					42:27
+
+js/client-request (severity: 2.0):
+	2 new occurence(s) of finding: Detected a client request to URL/IP address 'https://api.github.com/users/mzabriskie'.
+		File(s):
+			package/examples/all/index.html
+				Location(s):
+					26:9
+			package/examples/transform-response/index.html
+				Location(s):
+					26:7
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'https://api.github.com/users/mzabriskie/orgs'.
+		File(s):
+			package/examples/all/index.html
+				Location(s):
+					27:9
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'people.json'.
+		File(s):
+			package/examples/get/index.html
+				Location(s):
+					13:7
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'url'.
+		File(s):
+			package/examples/post/index.html
+				Location(s):
+					32:11
+
+
+Severity sum:
+=> All queries: 10.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.5.1 to axios-0.5.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-banner-0.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					32:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-0.10.1
+		File(s):
+			package/package.json
+				Location(s):
+					36:20
+	1 new occurence(s) of finding: Found dependency: grunt-ts-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:17
+	1 new occurence(s) of finding: Found dependency: grunt-update-json-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					38:26
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-ajax-0.1.12
+		File(s):
+			package/package.json
+				Location(s):
+					42:27
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:25
+	1 new occurence(s) of finding: Found dependency: webpack-1.7.2
+		File(s):
+			package/package.json
+				Location(s):
+					45:16
+	1 new occurence(s) of finding: Found dependency: webpack-dev-server-1.7.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:27
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.5.2 to axios-0.5.3:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([prettify.js](1)) is minified
+		File(s):
+			package/coverage/lcov-report/prettify.js
+				Location(s):
+					N/A
+
+js/hex-encoded-string (severity: 0.0):
+	1 new occurence(s) of finding: Found string with hexadecimal characters (" \r\n\t\xA0") that decodes to string value ( 
+	 )
+		File(s):
+			package/coverage/lcov-report/prettify.js
+				Location(s):
+					1:8927
+	1 new occurence(s) of finding: Found string with hexadecimal characters ("\xA0") that decodes to string value ( )
+		File(s):
+			package/coverage/lcov-report/prettify.js
+				Location(s):
+					1:10924
+
+js/prop-access-hex-encoded-string (severity: 10.0):
+	2 new occurence(s) of finding: Found property access using hex encoded string "/(?=\[^/*\])(?:\[^/\\x5B\\x5C\]|\\x5C\[\\s\\S\]|\\x5B(?:\[^\\x5C\\x5D\]|\\x5C\[\\s\\S\])*(?:\\x5D|$))+/" that decodes to '/(?=\[^/*\])(?:\[^/\x5B\x5C\]|\x5C\[\s\S\]|\x5B(?:\[^\x5C\x5D\]|\x5C\[\s\S\])*(?:\x5D|$))+/'.
+Found property access using hex encoded string " \r\n\t\xA0" that decodes to ' 
+	 '.
+		File(s):
+			package/coverage/lcov-report/prettify.js
+				Location(s):
+					1:6656
+					1:12176
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.2
+		File(s):
+			package/package.json
+				Location(s):
+					32:18
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-9.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:21
+	1 new occurence(s) of finding: Found dependency: karma-coverage-0.2.7
+		File(s):
+			package/package.json
+				Location(s):
+					44:23
+	1 new occurence(s) of finding: Found dependency: karma-webpack-1.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:22
+
+
+Severity sum:
+=> All queries: 25.0
+=> Distinct queries: 15.0
+Flagged as potential malicious.
+
+
+Comparing axios-0.5.3 to axios-0.5.4:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address '/upload/server'.
+		File(s):
+			package/examples/upload/index.html
+				Location(s):
+					29:11
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.5.4 to axios-0.6.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.3
+		File(s):
+			package/package.json
+				Location(s):
+					30:18
+	1 new occurence(s) of finding: Found dependency: es6-promise-3.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					31:20
+	1 new occurence(s) of finding: Found dependency: grunt-banner-0.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:21
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-17.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-0.12.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:20
+	1 new occurence(s) of finding: Found dependency: grunt-ts-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					39:17
+	1 new occurence(s) of finding: Found dependency: grunt-webpack-1.0.11
+		File(s):
+			package/package.json
+				Location(s):
+					41:22
+	1 new occurence(s) of finding: Found dependency: jasmine-core-2.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					42:21
+	1 new occurence(s) of finding: Found dependency: karma-0.13.8
+		File(s):
+			package/package.json
+				Location(s):
+					43:14
+	1 new occurence(s) of finding: Found dependency: karma-coverage-0.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:23
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-0.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					45:22
+	1 new occurence(s) of finding: Found dependency: karma-phantomjs-launcher-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					47:33
+	1 new occurence(s) of finding: Found dependency: karma-sourcemap-loader-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					48:31
+	1 new occurence(s) of finding: Found dependency: karma-webpack-1.7.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:22
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:25
+	1 new occurence(s) of finding: Found dependency: minimist-1.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					51:17
+	1 new occurence(s) of finding: Found dependency: webpack-1.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					52:16
+	1 new occurence(s) of finding: Found dependency: webpack-dev-server-1.10.1
+		File(s):
+			package/package.json
+				Location(s):
+					53:27
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address '/get/server'.
+		File(s):
+			package/examples/get/index.html
+				Location(s):
+					13:7
+	1 new occurence(s) of finding: Detected a client request to URL/IP address '/post/server'.
+		File(s):
+			package/examples/post/index.html
+				Location(s):
+					27:11
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.6.0 to axios-0.7.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.4
+		File(s):
+			package/package.json
+				Location(s):
+					30:18
+	1 new occurence(s) of finding: Found dependency: grunt-cli-0.1.13
+		File(s):
+			package/package.json
+				Location(s):
+					34:18
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-17.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-0.12.1
+		File(s):
+			package/package.json
+				Location(s):
+					39:20
+	1 new occurence(s) of finding: Found dependency: karma-0.13.10
+		File(s):
+			package/package.json
+				Location(s):
+					44:14
+	1 new occurence(s) of finding: Found dependency: karma-coverage-0.5.2
+		File(s):
+			package/package.json
+				Location(s):
+					45:23
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-ajax-0.1.13
+		File(s):
+			package/package.json
+				Location(s):
+					47:27
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:25
+	1 new occurence(s) of finding: Found dependency: minimist-1.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					52:17
+	1 new occurence(s) of finding: Found dependency: phantomjs-1.9.18
+		File(s):
+			package/package.json
+				Location(s):
+					53:18
+	1 new occurence(s) of finding: Found dependency: webpack-1.12.2
+		File(s):
+			package/package.json
+				Location(s):
+					54:16
+	1 new occurence(s) of finding: Found dependency: webpack-dev-server-1.12.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:27
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.7.0 to axios-0.8.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: istanbul-instrumenter-loader-0.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					44:37
+	1 new occurence(s) of finding: Found dependency: karma-sinon-1.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					51:20
+	1 new occurence(s) of finding: Found dependency: follow-redirects-0.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					67:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.8.0 to axios-0.8.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.8.1 to axios-0.9.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.6
+		File(s):
+			package/package.json
+				Location(s):
+					31:18
+	1 new occurence(s) of finding: Found dependency: grunt-banner-0.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:21
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-clean-0.7.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:28
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-17.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					39:21
+	1 new occurence(s) of finding: Found dependency: grunt-ts-5.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:17
+	1 new occurence(s) of finding: Found dependency: grunt-update-json-0.2.2
+		File(s):
+			package/package.json
+				Location(s):
+					42:26
+	1 new occurence(s) of finding: Found dependency: jasmine-core-2.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					45:21
+	1 new occurence(s) of finding: Found dependency: karma-0.13.19
+		File(s):
+			package/package.json
+				Location(s):
+					46:14
+	1 new occurence(s) of finding: Found dependency: karma-coverage-0.5.3
+		File(s):
+			package/package.json
+				Location(s):
+					47:23
+	1 new occurence(s) of finding: Found dependency: karma-phantomjs-launcher-0.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					50:33
+	1 new occurence(s) of finding: Found dependency: karma-sourcemap-loader-0.3.7
+		File(s):
+			package/package.json
+				Location(s):
+					52:31
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:25
+	1 new occurence(s) of finding: Found dependency: phantomjs-1.9.19
+		File(s):
+			package/package.json
+				Location(s):
+					56:18
+	1 new occurence(s) of finding: Found dependency: webpack-1.12.11
+		File(s):
+			package/package.json
+				Location(s):
+					57:16
+	1 new occurence(s) of finding: Found dependency: webpack-dev-server-1.14.1
+		File(s):
+			package/package.json
+				Location(s):
+					58:27
+
+js/client-request (severity: 2.0):
+	2 new occurence(s) of finding: Detected a client request to URL/IP address 'buildUR ... alizer)'.
+		File(s):
+			package/lib/adapters/xhr.js
+				Location(s):
+					18:17
+			package/dist/axios.js
+				Location(s):
+					566:18
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'o(c.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:4542
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.9.0 to axios-0.9.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.9.1 to axios-0.10.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.8
+		File(s):
+			package/package.json
+				Location(s):
+					34:18
+	1 new occurence(s) of finding: Found dependency: es6-promise-3.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-clean-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:28
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-nodeunit-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:31
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-18.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:21
+	1 new occurence(s) of finding: Found dependency: istanbul-instrumenter-loader-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:37
+	1 new occurence(s) of finding: Found dependency: karma-0.13.21
+		File(s):
+			package/package.json
+				Location(s):
+					48:14
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-0.2.2
+		File(s):
+			package/package.json
+				Location(s):
+					49:30
+	1 new occurence(s) of finding: Found dependency: karma-coverage-0.5.4
+		File(s):
+			package/package.json
+				Location(s):
+					50:23
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-0.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					51:31
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-0.3.7
+		File(s):
+			package/package.json
+				Location(s):
+					52:22
+	1 new occurence(s) of finding: Found dependency: karma-opera-launcher-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:29
+	1 new occurence(s) of finding: Found dependency: karma-phantomjs-launcher-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:33
+	1 new occurence(s) of finding: Found dependency: karma-safari-launcher-0.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					56:30
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-0.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					57:29
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					61:25
+	1 new occurence(s) of finding: Found dependency: phantomjs-prebuilt-2.1.6
+		File(s):
+			package/package.json
+				Location(s):
+					63:27
+	1 new occurence(s) of finding: Found dependency: sinon-1.17.3
+		File(s):
+			package/package.json
+				Location(s):
+					64:14
+	1 new occurence(s) of finding: Found dependency: webpack-1.12.14
+		File(s):
+			package/package.json
+				Location(s):
+					65:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.10.0 to axios-0.11.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'o(f.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:4774
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.11.0 to axios-0.11.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.11.1 to axios-0.12.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: url-search-params-0.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					67:26
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'options'.
+		File(s):
+			package/lib/adapters/http.js
+				Location(s):
+					86:13
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.12.0 to axios-0.13.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.9
+		File(s):
+			package/package.json
+				Location(s):
+					34:18
+	1 new occurence(s) of finding: Found dependency: es6-promise-3.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: karma-0.13.22
+		File(s):
+			package/package.json
+				Location(s):
+					48:14
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-1.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					49:30
+	1 new occurence(s) of finding: Found dependency: karma-coverage-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:23
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:31
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-1.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					52:22
+	1 new occurence(s) of finding: Found dependency: karma-opera-launcher-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:29
+	1 new occurence(s) of finding: Found dependency: karma-safari-launcher-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					56:30
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					57:29
+	1 new occurence(s) of finding: Found dependency: karma-sinon-1.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					58:20
+	1 new occurence(s) of finding: Found dependency: phantomjs-prebuilt-2.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					63:27
+	1 new occurence(s) of finding: Found dependency: sinon-1.17.4
+		File(s):
+			package/package.json
+				Location(s):
+					64:14
+	1 new occurence(s) of finding: Found dependency: webpack-1.13.1
+		File(s):
+			package/package.json
+				Location(s):
+					65:16
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:5905
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.13.0 to axios-0.13.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:6034
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.13.1 to axios-0.14.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-typings-0.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					45:22
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.14.0 to axios-0.15.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:5173
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.15.0 to axios-0.15.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:5109
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.15.1 to axios-0.15.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.15.2 to axios-0.15.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: es6-promise-4.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: grunt-1.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					36:14
+	1 new occurence(s) of finding: Found dependency: grunt-cli-1.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:18
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-watch-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:28
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-19.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:20
+	1 new occurence(s) of finding: Found dependency: grunt-ts-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					44:17
+	1 new occurence(s) of finding: Found dependency: grunt-webpack-1.0.18
+		File(s):
+			package/package.json
+				Location(s):
+					46:22
+	1 new occurence(s) of finding: Found dependency: istanbul-instrumenter-loader-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:37
+	1 new occurence(s) of finding: Found dependency: karma-1.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:14
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:30
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					58:29
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.5.2
+		File(s):
+			package/package.json
+				Location(s):
+					62:25
+	1 new occurence(s) of finding: Found dependency: url-search-params-0.6.1
+		File(s):
+			package/package.json
+				Location(s):
+					68:26
+	1 new occurence(s) of finding: Found dependency: typescript-2.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					69:19
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					76:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.15.3 to axios-0.16.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:5233
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.16.0 to axios-0.16.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					75:25
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(t.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					8:24874
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.16.1 to axios-0.16.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: is-buffer-1.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					76:18
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					8:2548
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.16.2 to axios-0.17.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: bundlesize-0.5.7
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.17.0 to axios-0.17.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					76:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.17.1 to axios-0.18.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					74:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.18.0 to axios-0.18.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.5.10
+		File(s):
+			package/package.json
+				Location(s):
+					74:25
+	1 new occurence(s) of finding: Found dependency: is-buffer-2.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					75:18
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(e.url ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					8:2470
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.18.1 to axios-0.19.0-beta.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: bundlesize-0.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+	1 new occurence(s) of finding: Found dependency: coveralls-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:18
+	1 new occurence(s) of finding: Found dependency: es6-promise-4.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					37:20
+	1 new occurence(s) of finding: Found dependency: grunt-1.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					38:14
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-clean-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:28
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-20.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:21
+	1 new occurence(s) of finding: Found dependency: grunt-mocha-test-0.13.3
+		File(s):
+			package/package.json
+				Location(s):
+					45:25
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-2.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:30
+	1 new occurence(s) of finding: Found dependency: karma-coverage-1.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					52:23
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:31
+	1 new occurence(s) of finding: Found dependency: karma-jasmine-1.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					54:22
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-1.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					58:29
+	1 new occurence(s) of finding: Found dependency: mocha-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					64:14
+	1 new occurence(s) of finding: Found dependency: sinon-4.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					65:14
+	1 new occurence(s) of finding: Found dependency: typescript-2.8.1
+		File(s):
+			package/package.json
+				Location(s):
+					66:19
+	1 new occurence(s) of finding: Found dependency: url-search-params-0.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					67:26
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					76:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.19.0-beta.1 to axios-0.19.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.5.10
+		File(s):
+			package/package.json
+				Location(s):
+					76:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.19.0 to axios-0.19.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(y,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:7709
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.19.1 to axios-0.19.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.19.2 to axios-0.20.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					78:25
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(y,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:7779
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.20.0-0 to axios-0.20.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.20.0 to axios-0.21.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(y,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:7736
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.21.0 to axios-0.21.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.21.1 to axios-0.21.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-1.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:14
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-23.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:20
+	1 new occurence(s) of finding: Found dependency: grunt-webpack-4.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					46:22
+	1 new occurence(s) of finding: Found dependency: karma-6.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					49:14
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:30
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-2.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:31
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-4.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					55:29
+	1 new occurence(s) of finding: Found dependency: karma-sourcemap-loader-0.3.8
+		File(s):
+			package/package.json
+				Location(s):
+					57:31
+	1 new occurence(s) of finding: Found dependency: karma-webpack-4.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					58:22
+	1 new occurence(s) of finding: Found dependency: mocha-8.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					61:14
+	1 new occurence(s) of finding: Found dependency: terser-webpack-plugin-4.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					63:30
+	1 new occurence(s) of finding: Found dependency: typescript-4.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					64:19
+	1 new occurence(s) of finding: Found dependency: webpack-4.44.2
+		File(s):
+			package/package.json
+				Location(s):
+					66:16
+	1 new occurence(s) of finding: Found dependency: webpack-dev-server-3.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					67:27
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.14.0
+		File(s):
+			package/package.json
+				Location(s):
+					76:25
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(v,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:6223
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.21.2 to axios-0.21.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.21.3 to axios-0.21.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.21.4 to axios-0.22.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: abortcontroller-polyfill-1.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:33
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.14.4
+		File(s):
+			package/package.json
+				Location(s):
+					78:25
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(w,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:6740
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.22.0 to axios-0.23.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: dtslint-4.1.6
+		File(s):
+			package/package.json
+				Location(s):
+					38:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.23.0 to axios-0.24.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.24.0 to axios-0.25.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.14.7
+		File(s):
+			package/package.json
+				Location(s):
+					78:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.25.0 to axios-0.26.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.14.8
+		File(s):
+			package/package.json
+				Location(s):
+					78:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-0.26.0 to axios-0.26.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-0.26.1 to axios-0.27.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	1 new occurence(s) of finding: Found string with hexadecimal characters ('\x2E') that decodes to string value (.)
+		File(s):
+			package/dist/axios.js
+				Location(s):
+					2515:44
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: abortcontroller-polyfill-1.7.3
+		File(s):
+			package/package.json
+				Location(s):
+					36:33
+	1 new occurence(s) of finding: Found dependency: coveralls-3.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					37:18
+	1 new occurence(s) of finding: Found dependency: cross-env-7.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					38:18
+	1 new occurence(s) of finding: Found dependency: dtslint-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					39:16
+	1 new occurence(s) of finding: Found dependency: es6-promise-4.2.8
+		File(s):
+			package/package.json
+				Location(s):
+					40:20
+	1 new occurence(s) of finding: Found dependency: formidable-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:19
+	1 new occurence(s) of finding: Found dependency: grunt-1.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:14
+	1 new occurence(s) of finding: Found dependency: grunt-cli-1.4.3
+		File(s):
+			package/package.json
+				Location(s):
+					44:18
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-clean-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:28
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-watch-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:28
+	1 new occurence(s) of finding: Found dependency: grunt-eslint-24.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:21
+	1 new occurence(s) of finding: Found dependency: grunt-karma-4.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					48:20
+	1 new occurence(s) of finding: Found dependency: grunt-webpack-5.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:22
+	1 new occurence(s) of finding: Found dependency: istanbul-instrumenter-loader-3.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					51:37
+	1 new occurence(s) of finding: Found dependency: karma-6.3.17
+		File(s):
+			package/package.json
+				Location(s):
+					53:14
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-3.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					54:30
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-2.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					55:31
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-5.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					63:25
+	1 new occurence(s) of finding: Found dependency: minimist-1.2.6
+		File(s):
+			package/package.json
+				Location(s):
+					64:17
+	1 new occurence(s) of finding: Found dependency: typescript-4.6.3
+		File(s):
+			package/package.json
+				Location(s):
+					68:19
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.14.9
+		File(s):
+			package/package.json
+				Location(s):
+					81:25
+	1 new occurence(s) of finding: Found dependency: form-data-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					82:18
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'i(x,t.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					3:7781
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.27.0 to axios-0.27.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(b,t.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:9112
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.27.1 to axios-0.27.2:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 's(x,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					2:9154
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-0.27.2 to axios-1.0.0-alpha.1:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([axios.min.js](1)) is minified
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					N/A
+
+js/hex-encoded-string (severity: 0.0):
+	3 new occurence(s) of finding: Found string with hexadecimal characters ('\x00') that decodes to string value ( )
+		File(s):
+			package/lib/helpers/AxiosURLSearchParams.js
+				Location(s):
+					13:12
+			package/dist/axios.js
+				Location(s):
+					804:14
+			package/dist/esm/axios.js
+				Location(s):
+					798:12
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-babel-5.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:29
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-commonjs-15.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:32
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-json-4.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:28
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-multi-entry-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:35
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-node-resolve-9.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: body-parser-1.20.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:20
+	1 new occurence(s) of finding: Found dependency: cross-env-7.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:18
+	1 new occurence(s) of finding: Found dependency: express-4.18.1
+		File(s):
+			package/package.json
+				Location(s):
+					45:16
+	1 new occurence(s) of finding: Found dependency: grunt-shell-3.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					55:20
+	1 new occurence(s) of finding: Found dependency: multer-1.4.4
+		File(s):
+			package/package.json
+				Location(s):
+					72:15
+	1 new occurence(s) of finding: Found dependency: rollup-2.67.0
+		File(s):
+			package/package.json
+				Location(s):
+					73:15
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-terser-7.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					74:29
+	1 new occurence(s) of finding: Found dependency: follow-redirects-1.15.0
+		File(s):
+			package/package.json
+				Location(s):
+					90:25
+	1 new occurence(s) of finding: Found dependency: proxy-from-env-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					92:23
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "ssl_hotfix.js"
+		File(s):
+			package/bin/ssl_hotfix.js
+				Location(s):
+					1:17
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(' ... '\n  }}\n))
+		File(s):
+			package/bin/ssl_hotfix.js
+				Location(s):
+					13:14
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'buildUR ... alizer)'.
+		File(s):
+			package/dist/esm/axios.js
+				Location(s):
+					1318:19
+	2 new occurence(s) of finding: Detected a client request to URL/IP address 'q(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:10806
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:10576
+
+
+Severity sum:
+=> All queries: 16.0
+=> Distinct queries: 12.0
+Flagged as potential malicious.
+
+
+Comparing axios-1.0.0-alpha.1 to axios-1.0.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	1 new occurence(s) of finding: Found string with hexadecimal characters ('\x00') that decodes to string value ( )
+		File(s):
+			package/dist/node/axios.cjs
+				Location(s):
+					974:12
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.18.2
+		File(s):
+			package/package.json
+				Location(s):
+					55:26
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-babel-5.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					56:29
+	1 new occurence(s) of finding: Found dependency: dev-null-0.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					65:17
+	1 new occurence(s) of finding: Found dependency: eslint-8.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					68:15
+	1 new occurence(s) of finding: Found dependency: fs-extra-10.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					71:17
+	1 new occurence(s) of finding: Found dependency: get-stream-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					72:19
+	1 new occurence(s) of finding: Found dependency: gulp-4.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					73:13
+	1 new occurence(s) of finding: Found dependency: karma-rollup-preprocessor-7.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					81:34
+	1 new occurence(s) of finding: Found dependency: mocha-10.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					87:14
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-auto-external-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					90:36
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-bundle-size-1.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					91:34
+	1 new occurence(s) of finding: Found dependency: stream-throttle-0.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					94:24
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'buildUR ... alizer)'.
+		File(s):
+			package/dist/node/axios.cjs
+				Location(s):
+					2694:19
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'I(u,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:12047
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'V(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:13357
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.0.0 to axios-1.1.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'W(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:13447
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.1.0 to axios-1.1.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.1.1 to axios-1.1.2:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'V(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:13439
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.1.2 to axios-1.1.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.18.2
+		File(s):
+			package/package.json
+				Location(s):
+					55:20
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-1.1.3 to axios-1.2.0-alpha.1:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	1 new occurence(s) of finding: Found string with hexadecimal characters ('\x00') that decodes to string value ( )
+		File(s):
+			package/dist/browser/axios.cjs
+				Location(s):
+					986:12
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: typescript-4.8.4
+		File(s):
+			package/package.json
+				Location(s):
+					103:19
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'buildUR ... alizer)'.
+		File(s):
+			package/dist/browser/axios.cjs
+				Location(s):
+					1928:19
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'H(u,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:15139
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'Q(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:17990
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.2.0-alpha.1 to axios-1.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.2.0 to axios-1.2.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'G(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:20675
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.2.1 to axios-1.2.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-17.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					73:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-17.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					74:40
+	1 new occurence(s) of finding: Found dependency: @release-it/conventional-changelog-5.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					75:43
+	1 new occurence(s) of finding: Found dependency: auto-changelog-2.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					82:23
+	1 new occurence(s) of finding: Found dependency: handlebars-4.7.7
+		File(s):
+			package/package.json
+				Location(s):
+					95:19
+	1 new occurence(s) of finding: Found dependency: husky-8.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					96:14
+	1 new occurence(s) of finding: Found dependency: minimist-1.2.7
+		File(s):
+			package/package.json
+				Location(s):
+					109:17
+	1 new occurence(s) of finding: Found dependency: release-it-15.5.1
+		File(s):
+			package/package.json
+				Location(s):
+					112:19
+	1 new occurence(s) of finding: Found dependency: string-replace-async-3.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					119:29
+
+js/install-script (severity: 7.0):
+	1 new occurence(s) of finding: Detected "prepare" script with code "husky install && npm run prepare:hooks"
+		File(s):
+			package/package.json
+				Location(s):
+					25:14
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'X(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:20717
+
+
+Severity sum:
+=> All queries: 9.0
+=> Distinct queries: 9.0
+
+
+Comparing axios-1.2.2 to axios-1.2.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: chalk-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					84:14
+	1 new occurence(s) of finding: Found dependency: gzip-size-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					96:18
+	1 new occurence(s) of finding: Found dependency: pretty-bytes-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					114:21
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing axios-1.2.3 to axios-1.2.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.2.4 to axios-1.2.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.2.5 to axios-1.2.6:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.2.6 to axios-1.3.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: formdata-node-5.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					92:22
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'V(u,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:18170
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'Z(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:21080
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.3.0 to axios-1.3.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.1 to axios-1.3.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.2 to axios-1.3.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.3 to axios-1.3.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.4 to axios-1.3.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.5 to axios-1.3.6:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.3.6 to axios-1.4.0:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'W(u,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:18424
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'Y(l,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:21358
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.4.0 to axios-1.5.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.5.0 to axios-1.5.1:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'W(l,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:18602
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'Y(d,e.p ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:21577
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.5.1 to axios-1.6.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing axios-1.6.0 to axios-1.6.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: memoizee-0.4.15
+		File(s):
+			package/package.json
+				Location(s):
+					124:17
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'se(E,e. ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:22793
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing axios-1.6.1 to axios-1.6.2:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'W(f,e.p ... alizer)'.
+		File(s):
+			package/dist/esm/axios.min.js
+				Location(s):
+					1:18621
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'se(S,e. ... alizer)'.
+		File(s):
+			package/dist/axios.min.js
+				Location(s):
+					1:22802
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+axios-0.5.3 with score: 15.0
+axios-1.0.0-alpha.1 with score: 12.0

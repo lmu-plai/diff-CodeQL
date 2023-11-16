@@ -1,0 +1,80 @@
+Comparing flatmap-stream-0.0.1-security to flatmap-stream-0.1.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([index.min.js](1)) is minified
+		File(s):
+			flatmap-stream-0.1.0/index.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing flatmap-stream-0.1.0 to flatmap-stream-0.1.1:
+---------------------------------------------------------
+
+js/crypto-usage (severity: 2.0):
+	1 new occurence(s) of finding: Found usage of crypto function "update" with first argument "n\[0\]"
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1216
+	1 new occurence(s) of finding: Found usage of crypto function "final" with first argument "e(n\[9\])"
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1250
+
+js/encoded-string-require (severity: 10.0):
+	1 new occurence(s) of finding: Flow from encoded string ([2e2f746573742f64617461](1)) to decode and then to require as argument ([e("2e2f ... 17461")](2))
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1113
+
+js/hardcoded-data-interpreted-as-code (severity: 9.0):
+	1 new occurence(s) of finding: Hard-coded data ([2e2f746573742f64617461](1)) is interpreted as code in require argument ([e("2e2f ... 17461")](2))
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1113
+
+js/obfuscated-process-declaration (severity: 10.0):
+	1 new occurence(s) of finding: "process" object is assigned to a variable (t), which could indicate obfuscation.
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1042
+
+js/obfuscated-require-declaration (severity: 8.0):
+	1 new occurence(s) of finding: "Require" is assigned to a variable (r), which could indicate obfuscation.
+		File(s):
+			package/index.min.js
+				Location(s):
+					1:1032
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: event-stream-3.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					20:21
+
+
+Severity sum:
+=> All queries: 41.0
+=> Distinct queries: 39.0
+Flagged as potential malicious.
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+flatmap-stream-0.1.1 with score: 39.0

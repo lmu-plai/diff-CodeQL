@@ -1,0 +1,5704 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.0",
+        "rules" : [ {
+          "id" : "js/array-to-crypto",
+          "name" : "js/array-to-crypto",
+          "shortDescription" : {
+            "text" : "Flow from array to crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from Array to createDeciper, update of final method of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "crypto", "createDeciper", "update", "final" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects flow from Array to createDeciper, update of final method of crypto module",
+            "id" : "js/array-to-crypto",
+            "kind" : "path-problem",
+            "name" : "Flow from array to crypto",
+            "package-examples" : "flatmap-stream (flatmap-stream_deobfuscated)",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/crypto-usage",
+          "name" : "js/crypto-usage",
+          "shortDescription" : {
+            "text" : "Usage of crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects usage of functions \"createDecipher\", \"update\", \"final\" of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "crypto", "createDeciper", "update", "final" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects usage of functions \"createDecipher\", \"update\", \"final\" of crypto module",
+            "id" : "js/crypto-usage",
+            "kind" : "problem",
+            "name" : "Usage of crypto",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/request-to-crypto",
+          "name" : "js/request-to-crypto",
+          "shortDescription" : {
+            "text" : "Flow from request to crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from request to createDeciper, update of final method of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "crypto", "createDeciper", "update", "final", "request" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects flow from request to createDeciper, update of final method of crypto module",
+            "id" : "js/request-to-crypto",
+            "kind" : "path-problem",
+            "name" : "Flow from request to crypto",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/file-access-to-http",
+          "name" : "js/file-access-to-http",
+          "shortDescription" : {
+            "text" : "File data in outbound network request"
+          },
+          "fullDescription" : {
+            "text" : "Directly sending file data in an outbound network request can indicate unauthorized information disclosure."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-200" ],
+            "Author" : "CodeQL Community",
+            "description" : "Directly sending file data in an outbound network request can indicate unauthorized information disclosure.",
+            "id" : "js/file-access-to-http",
+            "kind" : "path-problem",
+            "name" : "File data in outbound network request",
+            "package-examples" : "eslint-scope (with payload)",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-file-access-to-http/"
+          }
+        }, {
+          "id" : "js/file-to-request",
+          "name" : "js/file-to-request",
+          "shortDescription" : {
+            "text" : "Flow from file to request"
+          },
+          "fullDescription" : {
+            "text" : "Data flow from a file source (FileSystemAccess) to a network sink (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "network", "request" ],
+            "Author" : "Fabian Froh",
+            "description" : "Data flow from a file source (FileSystemAccess) to a network sink (ClientRequest)",
+            "id" : "js/file-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow from file to request",
+            "package-examples" : "eslint-scope (with payload.js)"
+          }
+        }, {
+          "id" : "js/sensitive-file-name-access",
+          "name" : "js/sensitive-file-name-access",
+          "shortDescription" : {
+            "text" : "Accessed file with sensitive name"
+          },
+          "fullDescription" : {
+            "text" : "Detect access (FileSystemAccess) to a file with a sensitive name (e.g. ssh)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "ssh", "sensitive", "name", "passwd" ],
+            "Author" : "Fabian Froh based on work from Matías Gobbi",
+            "description" : "Detect access (FileSystemAccess) to a file with a sensitive name (e.g. ssh)",
+            "id" : "js/sensitive-file-name-access",
+            "kind" : "path-problem",
+            "name" : "Accessed file with sensitive name",
+            "package-examples" : "font-scrubber"
+          }
+        }, {
+          "id" : "js/sensitive-file-path-to-request",
+          "name" : "js/sensitive-file-path-to-request",
+          "shortDescription" : {
+            "text" : "Flow of sensitive file path to request"
+          },
+          "fullDescription" : {
+            "text" : "Detect data flow from sensitive file with path that includes process.env, os.homedir or os.userInfo to request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "request", "sensitive", "file", "process.env", "os.homedir" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detect data flow from sensitive file with path that includes process.env, os.homedir or os.userInfo to request (ClientRequest)",
+            "id" : "js/sensitive-file-path-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow of sensitive file path to request",
+            "package-examples" : "eslint-scope (with payload.js)",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/sensitive-node-file-access",
+          "name" : "js/sensitive-node-file-access",
+          "shortDescription" : {
+            "text" : "Flow from SensitiveNode to FileAccess"
+          },
+          "fullDescription" : {
+            "text" : "Detect flow from a sensitive node to file access (FileSystemAccess)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "sensitive", "node" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect flow from a sensitive node to file access (FileSystemAccess)",
+            "id" : "js/sensitive-node-file-access",
+            "kind" : "path-problem",
+            "name" : "Flow from SensitiveNode to FileAccess",
+            "package-examples" : "font-scrubber",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/sensitive-user-path-file-access",
+          "name" : "js/sensitive-user-path-file-access",
+          "shortDescription" : {
+            "text" : "Access to sensitive user path files"
+          },
+          "fullDescription" : {
+            "text" : "Detect access (FileSystemAccess) to sensitive user path files that use process.env or os.homedir (e.g. to get user path)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "process.env", "os.homedir", "user", "path" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detect access (FileSystemAccess) to sensitive user path files that use process.env or os.homedir (e.g. to get user path)",
+            "id" : "js/sensitive-user-path-file-access",
+            "kind" : "path-problem",
+            "name" : "Access to sensitive user path files",
+            "package-examples" : "eslint-scope (with payload.js)",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/usage-of-eval",
+          "name" : "js/usage-of-eval",
+          "shortDescription" : {
+            "text" : "Detects any eval function call"
+          },
+          "fullDescription" : {
+            "text" : "The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "eval", "arbitrary_code_execution" ],
+            "author" : "Fabian Froh",
+            "description" : "The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script.",
+            "id" : "js/usage-of-eval",
+            "kind" : "problem",
+            "name" : "Detects any eval function call",
+            "package-examples" : "eslint-scope eslint-config-eslint",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/encoded-string-command",
+          "name" : "js/encoded-string-command",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and command"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a command (SystemCommandExecution)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "dropper" ],
+            "author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a command (SystemCommandExecution)",
+            "id" : "js/encoded-string-command",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and command",
+            "package-examples" : "jquerry",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/encoded-string-request",
+          "name" : "js/encoded-string-request",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and request"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "test" ],
+            "Author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a request (ClientRequest)",
+            "id" : "js/encoded-string-request",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and request",
+            "package-examples" : "electorn"
+          }
+        }, {
+          "id" : "js/encoded-string-require",
+          "name" : "js/encoded-string-require",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and require"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a require (call)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "financial-gain" ],
+            "author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a require (call)",
+            "id" : "js/encoded-string-require",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and require",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/hardcoded-data-in-request",
+          "name" : "js/hardcoded-data-in-request",
+          "shortDescription" : {
+            "text" : "Hard-coded data flowing to / in a request"
+          },
+          "fullDescription" : {
+            "text" : "Detect hard-coded data (such as hexadecimal constants) that is flowing to or used in a request"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "hard-coded", "data", "request", "obfuscation" ],
+            "Author" : "Fabian Froh based on CodeQL Community (https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/)",
+            "description" : "Detect hard-coded data (such as hexadecimal constants) that is flowing to or used in a request",
+            "id" : "js/hardcoded-data-in-request",
+            "kind" : "path-problem",
+            "name" : "Hard-coded data flowing to / in a request",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/hardcoded-data-interpreted-as-code",
+          "name" : "js/hardcoded-data-interpreted-as-code",
+          "shortDescription" : {
+            "text" : "Hard-coded data interpreted as code"
+          },
+          "fullDescription" : {
+            "text" : "Transforming hard-coded data (such as hexadecimal constants) into code to be executed is a technique often associated with backdoors and should be avoided."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-506" ],
+            "author" : "Fabian Froh based on CodeQL Community (https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/)",
+            "description" : "Transforming hard-coded data (such as hexadecimal constants) into code\n              to be executed is a technique often associated with backdoors and should\n              be avoided.",
+            "id" : "js/hardcoded-data-interpreted-as-code",
+            "kind" : "path-problem",
+            "name" : "Hard-coded data interpreted as code",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "9.0",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/"
+          }
+        }, {
+          "id" : "js/has-minified-statement-container-code",
+          "name" : "js/has-minified-statement-container-code",
+          "shortDescription" : {
+            "text" : "Detect minified code lines"
+          },
+          "fullDescription" : {
+            "text" : "Detects lines (StmtContainter) that seem to be minified for obfuscation using a heuristic"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscator", "minificator" ],
+            "author" : "Fabian Froh based on work from Matías Gobbi",
+            "description" : "Detects lines (StmtContainter) that seem to be minified for obfuscation using a heuristic",
+            "id" : "js/has-minified-statement-container-code",
+            "kind" : "problem",
+            "name" : "Detect minified code lines",
+            "package-examples" : "pm-controls",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/has-minified-top-level-code",
+          "name" : "js/has-minified-top-level-code",
+          "shortDescription" : {
+            "text" : "Detect minified top level code"
+          },
+          "fullDescription" : {
+            "text" : "Detects top level code of files that is minified"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscator", "minificator" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects top level code of files that is minified",
+            "id" : "js/has-minified-top-level-code",
+            "kind" : "problem",
+            "name" : "Detect minified top level code",
+            "package-examples" : "vue-backbone",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/hex-encoded-string",
+          "name" : "js/hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Hexadecimal encoded string"
+          },
+          "fullDescription" : {
+            "text" : "Detects hexadecimal encoded string with \\x prefix that can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects hexadecimal encoded string with \\x prefix that can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/hex-encoded-string",
+            "kind" : "problem",
+            "name" : "Hexadecimal encoded string",
+            "security-severity" : "0.0"
+          }
+        }, {
+          "id" : "js/jsf-obfuscation",
+          "name" : "js/jsf-obfuscation",
+          "shortDescription" : {
+            "text" : "JSF obfuscated code"
+          },
+          "fullDescription" : {
+            "text" : "Detects JSF obfuscated code / esoteric programming style"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscation", "esoteric", "programming", "style", "6chars" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects JSF obfuscated code / esoteric programming style",
+            "example-packages" : "jsf-obfuscation (custom)",
+            "id" : "js/jsf-obfuscation",
+            "kind" : "problem",
+            "name" : "JSF obfuscated code",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/obfuscated-process-declaration",
+          "name" : "js/obfuscated-process-declaration",
+          "shortDescription" : {
+            "text" : "Detects obfuscated process statement"
+          },
+          "fullDescription" : {
+            "text" : "Detect obfuscation attempt when process is assigned to a variable"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "process", "obfuscation" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect obfuscation attempt when process is assigned to a variable",
+            "id" : "js/obfuscated-process-declaration",
+            "kind" : "problem",
+            "name" : "Detects obfuscated process statement",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/obfuscated-require-declaration",
+          "name" : "js/obfuscated-require-declaration",
+          "shortDescription" : {
+            "text" : "Detects obfuscated require statement"
+          },
+          "fullDescription" : {
+            "text" : "Detect obfuscation attempt when require is assigned to a variable"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "require", "obfuscation" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect obfuscation attempt when require is assigned to a variable",
+            "id" : "js/obfuscated-require-declaration",
+            "kind" : "problem",
+            "name" : "Detects obfuscated require statement",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/prop-access-hex-encoded-string",
+          "name" : "js/prop-access-hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Property access using hexadecimal encoded string"
+          },
+          "fullDescription" : {
+            "text" : "Detects data flow from a hexadecimal encoded string with \\x prefix to a property access that can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "property", "access", "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects data flow from a hexadecimal encoded string with \\x prefix to a property access that can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/prop-access-hex-encoded-string",
+            "kind" : "path-problem",
+            "name" : "Property access using hexadecimal encoded string",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/require-hex-encoded-string",
+          "name" : "js/require-hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Require with hexadecimal encoded string agrgument"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from hexadecimal encoded string with \\x prefix to require statement which can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "require", "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects flow from hexadecimal encoded string with \\x prefix to require statement which can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/require-hex-encoded-string",
+            "kind" : "path-problem",
+            "name" : "Require with hexadecimal encoded string agrgument",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/var-access-by-index-expression",
+          "name" : "js/var-access-by-index-expression",
+          "shortDescription" : {
+            "text" : "Variable access by index expression with parent binary expression"
+          },
+          "fullDescription" : {
+            "text" : "Detects a large number of index expressions with parent binary expression that access the same variable/array indicating obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscation", "obfuscator", "tool", "variable", "reference", "array", "indexing" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects a large number of index expressions with parent binary expression that access the same variable/array indicating obfuscation",
+            "id" : "js/var-access-by-index-expression",
+            "kind" : "problem",
+            "name" : "Variable access by index expression with parent binary expression",
+            "package-examples" : "vue-backbone pm-controls",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/dependencies",
+          "name" : "js/dependencies",
+          "shortDescription" : {
+            "text" : "Dependencies of package"
+          },
+          "fullDescription" : {
+            "text" : "Detects all dependencies of a npm packages"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "dependency", "package.json" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects all dependencies of a npm packages",
+            "id" : "js/dependencies",
+            "kind" : "problem",
+            "name" : "Dependencies of package",
+            "package-examples" : "*any*",
+            "security-severity" : "0.0"
+          }
+        }, {
+          "id" : "js/install-script",
+          "name" : "js/install-script",
+          "shortDescription" : {
+            "text" : "Detects install script"
+          },
+          "fullDescription" : {
+            "text" : "Detects all install scripts in package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "script", "install" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects all install scripts in package.json",
+            "id" : "js/install-script",
+            "kind" : "problem",
+            "name" : "Detects install script",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "7.0"
+          }
+        }, {
+          "id" : "js/install-script-domain-name",
+          "name" : "js/install-script-domain-name",
+          "shortDescription" : {
+            "text" : "Domain in install script line"
+          },
+          "fullDescription" : {
+            "text" : "Detects if there is a domain name in install script line of package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "ip_address", "install", "script", "preinstall", "postinstall" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects if there is a domain name in install script line of package.json",
+            "id" : "js/install-script-domain-name",
+            "kind" : "problem",
+            "name" : "Domain in install script line",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/install-script-ip-address",
+          "name" : "js/install-script-ip-address",
+          "shortDescription" : {
+            "text" : "IP address in install script line"
+          },
+          "fullDescription" : {
+            "text" : "Detects if there is a ip address in install script line of package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "ip_address", "install", "script", "preinstall", "postinstall" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects if there is a ip address in install script line of package.json",
+            "id" : "js/install-script-ip-address",
+            "kind" : "problem",
+            "name" : "IP address in install script line",
+            "package-examples" : "slack-reacjilator"
+          }
+        }, {
+          "id" : "js/data-flow-to-process",
+          "name" : "js/data-flow-to-process",
+          "shortDescription" : {
+            "text" : "Data flow string to process"
+          },
+          "fullDescription" : {
+            "text" : "Detects any string data flow to a process"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "process", "data", "flow", "string" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any string data flow to a process",
+            "id" : "js/data-flow-to-process",
+            "kind" : "path-problem",
+            "name" : "Data flow string to process",
+            "package-examples" : "benign-to-malicous-process-exec",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/process-in-request",
+          "name" : "js/process-in-request",
+          "shortDescription" : {
+            "text" : "Process in client request"
+          },
+          "fullDescription" : {
+            "text" : "Detect process (SystemCommandExecution) in a request (ClientRequest) that can indicate a backdoor."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "process", "backdoor" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect process (SystemCommandExecution) in a request (ClientRequest) that can indicate a backdoor.",
+            "id" : "js/process-in-request",
+            "kind" : "problem",
+            "name" : "Process in client request",
+            "package-examples" : "kraken-api",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/process-with-shell",
+          "name" : "js/process-with-shell",
+          "shortDescription" : {
+            "text" : "System command to open shell"
+          },
+          "fullDescription" : {
+            "text" : "Detect process (SystemCommandExecution) that opens a Windows or Linux shell."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "shell", "process", "backdoor" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect process (SystemCommandExecution) that opens a Windows or Linux shell.",
+            "id" : "js/process-with-shell",
+            "kind" : "problem",
+            "name" : "System command to open shell",
+            "package-examples" : "kraken-api",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/require-child-process",
+          "name" : "js/require-child-process",
+          "shortDescription" : {
+            "text" : "Require of child process"
+          },
+          "fullDescription" : {
+            "text" : "Detects if any child process is required as module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "child_process", "process", "spwan", "exec" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects if any child process is required as module",
+            "example-packages" : "kraken-api",
+            "id" : "js/require-child-process",
+            "kind" : "problem",
+            "name" : "Require of child process",
+            "security-severity" : "3.0"
+          }
+        }, {
+          "id" : "js/system-command-execution",
+          "name" : "js/system-command-execution",
+          "shortDescription" : {
+            "text" : "Detects system command executions"
+          },
+          "fullDescription" : {
+            "text" : "Detects any SystemCommandExecution"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "SystemCommandExecution", "process", "spwan", "exec" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any SystemCommandExecution",
+            "example-packages" : "kraken-api",
+            "id" : "js/system-command-execution",
+            "kind" : "problem",
+            "name" : "Detects system command executions",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/client-request",
+          "name" : "js/client-request",
+          "shortDescription" : {
+            "text" : "Detects any client request"
+          },
+          "fullDescription" : {
+            "text" : "Detects any client request"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "http" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any client request",
+            "id" : "js/client-request",
+            "kind" : "problem",
+            "name" : "Detects any client request",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/domain-name",
+          "name" : "js/domain-name",
+          "shortDescription" : {
+            "text" : "Detects domain names"
+          },
+          "fullDescription" : {
+            "text" : "Detects domain names as StringLiteral using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "domain", "name" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects domain names as StringLiteral using a regular expression",
+            "example-packages" : "eslint-scope",
+            "id" : "js/domain-name",
+            "kind" : "problem",
+            "name" : "Detects domain names",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/domain-name-concat",
+          "name" : "js/domain-name-concat",
+          "shortDescription" : {
+            "text" : "Detects domain names"
+          },
+          "fullDescription" : {
+            "text" : "Detects domain names as String concatenations using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "domain", "name", "string", "concatenation" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects domain names as String concatenations using a regular expression",
+            "example-packages" : "benign-to-malicious-request (custom)",
+            "id" : "js/domain-name-concat",
+            "kind" : "problem",
+            "name" : "Detects domain names",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/http-to-file-access",
+          "name" : "js/http-to-file-access",
+          "shortDescription" : {
+            "text" : "Network data written to file"
+          },
+          "fullDescription" : {
+            "text" : "Writing network data directly to the file system allows arbitrary file upload and might indicate a backdoor."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-912", "external/cwe/cwe-434" ],
+            "Author" : "CodeQL Community",
+            "description" : "Writing network data directly to the file system allows arbitrary file upload and might indicate a backdoor.",
+            "example-packages" : "TODO",
+            "id" : "js/http-to-file-access",
+            "kind" : "path-problem",
+            "name" : "Network data written to file",
+            "security-severity" : "5.0",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-http-to-file-access/"
+          }
+        }, {
+          "id" : "js/ip-address",
+          "name" : "js/ip-address",
+          "shortDescription" : {
+            "text" : "Detects IP addresses"
+          },
+          "fullDescription" : {
+            "text" : "Detects IP addresses as StringLiteral using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "ip", "address" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects IP addresses as StringLiteral using a regular expression",
+            "example-packages" : "kraken-api",
+            "id" : "js/ip-address",
+            "kind" : "problem",
+            "name" : "Detects IP addresses",
+            "security-severity" : "7.0"
+          }
+        }, {
+          "id" : "js/request-to-command",
+          "name" : "js/request-to-command",
+          "shortDescription" : {
+            "text" : "Flow from request to command"
+          },
+          "fullDescription" : {
+            "text" : "Request from http.createServer or response form ClientRequest is used in command (SystemCommandExecution)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "command", "request", "reponse", "createServer", "http" ],
+            "Author" : "Fabian Froh based on Matías Gobbi",
+            "description" : "Request from http.createServer or response form ClientRequest is used in command (SystemCommandExecution)",
+            "id" : "js/request-to-command",
+            "kind" : "path-problem",
+            "name" : "Flow from request to command",
+            "package-examples" : "fc-gotcha (security example package)"
+          }
+        }, {
+          "id" : "js/request-to-eval",
+          "name" : "js/request-to-eval",
+          "shortDescription" : {
+            "text" : "Flow from request to eval"
+          },
+          "fullDescription" : {
+            "text" : "Response of a request (ClientRequest) is used in direct eval function"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "eval", "request", "reponse" ],
+            "author" : "Fabian Froh",
+            "description" : "Response of a request (ClientRequest) is used in direct eval function",
+            "id" : "js/request-to-eval",
+            "kind" : "path-problem",
+            "name" : "Flow from request to eval",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/sensitive-node-to-request",
+          "name" : "js/sensitive-node-to-request",
+          "shortDescription" : {
+            "text" : "Flow from SensitiveNode to a request"
+          },
+          "fullDescription" : {
+            "text" : "Detect flow from a sensitive node to a request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "sensitive", "node" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect flow from a sensitive node to a request (ClientRequest)",
+            "id" : "js/sensitive-node-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow from SensitiveNode to a request",
+            "package-examples" : "???",
+            "security-severity" : "9.0"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///C:/Program%20Files/CodeQL/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///C:/Program%20Files/CodeQL/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "thesis-cvc-npm-malware-queries",
+        "semanticVersion" : "1.1.0",
+        "locations" : [ {
+          "uri" : "file:///C:/Users/Fabian/Documents/Master%20Studium/Masterarbeit/tools/CodeQL/queries/thesis-cvc-npm-malware-queries/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///C:/Users/Fabian/Documents/Master%20Studium/Masterarbeit/tools/CodeQL/queries/thesis-cvc-npm-malware-queries/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "package/lib/AsyncDependenciesBlock.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/AmdMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/ChunkTemplate.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/DependenciesBlockVariable.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/Dependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/DllModule.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/Chunk.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/EvalDevToolModuleTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/HotUpdateChunkTemplate.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/HashedModuleIdsPlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/FunctionModuleTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 10
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/EvalSourceMapDevToolModuleTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 11
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/JsonpChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/JsonpExportMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/JsonpHotUpdateChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 14
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/ModuleTemplate.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 15
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/MultiModule.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 16
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/Module.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 17
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/ModuleFilenameHelpers.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 18
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/HotModuleReplacementPlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 19
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 20
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/RawModule.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 21
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/MainTemplate.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 22
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/SetVarMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 23
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/TemplatedPathPlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 24
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/UmdMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 25
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/dependencies/ConstDependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 26
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/NormalModule.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 27
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/dependencies/HarmonyImportDependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 28
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 29
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/dependencies/HarmonyExportImportedSpecifierDependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 30
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/Compilation.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 31
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/dependencies/TemplateArgumentDependency.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 32
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/node/NodeChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 33
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/node/NodeHotUpdateChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 34
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/webworker/WebWorkerChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 35
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 36
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 37
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/node/NodeMainTemplatePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 38
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/optimize/DedupePlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 39
+      }
+    }, {
+      "location" : {
+        "uri" : "package/package.json",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 40
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/JsonpMainTemplate.runtime.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 41
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/webworker/WebWorkerMainTemplate.runtime.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 42
+      }
+    }, {
+      "location" : {
+        "uri" : "package/lib/NodeStuffPlugin.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 43
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.chunkName || \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/AsyncDependenciesBlock.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 2,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "40f56dd70f861eca:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ch ... ) || \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/AsyncDependenciesBlock.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 31,
+            "startColumn" : 2,
+            "endLine" : 33,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "41d79d6a5af4416c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"exports amd\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/AmdMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 40,
+            "startColumn" : 3,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b87a0009e4bc02fb:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/AmdMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 41,
+            "startColumn" : 3,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "21d82bc43dad9b9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"ChunkTemplate\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/ChunkTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 2,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bebfcbc53903871e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"2\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/ChunkTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 2,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ecfccb109cc5714d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/DependenciesBlockVariable.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 2,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "79779cf1565a9aa2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.expression\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/DependenciesBlockVariable.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 2,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e218cfa141911073:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(this.m ... d) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Dependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 2,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c4e6a17d499f6a1c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"dll module\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/DllModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 2,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1214c631919bc8db:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name || \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/DllModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 54,
+            "startColumn" : 2,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7779c7f9da39057a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.id + \" \"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Chunk.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 179,
+            "startColumn" : 2,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3a51df2c6665925e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.id ... \") : \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Chunk.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 180,
+            "startColumn" : 2,
+            "endColumn" : 49
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6beeb68ea1570515:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Chunk.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 181,
+            "startColumn" : 2,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8b50e5a2261b5d3d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"EvalDe ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/EvalDevToolModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 3,
+            "endColumn" : 49
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ea4a76beb3ec34de:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"2\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/EvalDevToolModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a1c3a2560248ef71:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"HotUpd ... mplate\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/HotUpdateChunkTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 2,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6c6f5c1d23863933:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"1\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/HotUpdateChunkTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 2,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "22bfe8563883090d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"id\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/HashedModuleIdsPlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 6,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "85d6bb912a698e77:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"Functi ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/FunctionModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 37,
+            "startColumn" : 3,
+            "endColumn" : 46
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e4c933645185fed3:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"2\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/FunctionModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 38,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a1c3a2560248ef71:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"eval-source-map\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/EvalSourceMapDevToolModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 66,
+            "startColumn" : 3,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d0b07545e12344e4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"1\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/EvalSourceMapDevToolModuleTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 67,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "382c36e0430e47e8:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"JsonpC ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 3,
+            "endColumn" : 42
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cc342fe7778b294b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"jsonp export\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpExportMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 3,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f83e5acfa819c5f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpExportMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 3,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "21d82bc43dad9b9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "560e8a95647f22df:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 31,
+            "startColumn" : 3,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9609ed4acd9dc736:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"JsonpH ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 3,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ceadec54023216fb:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2aa0ea4ed6fa41c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cbba8ad320ed7831:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"1\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/ModuleTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 2,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "22bfe8563883090d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"multi module\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/MultiModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 69,
+            "startColumn" : 2,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "39a5221fe8d352e7:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name || \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/MultiModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 70,
+            "startColumn" : 2,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7779c7f9da39057a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.id ... is.used\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Module.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 17
+          },
+          "region" : {
+            "startLine" : 129,
+            "startColumn" : 2,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "de6bf9000c86cf8a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"JSON.st ... xports)\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Module.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 17
+          },
+          "region" : {
+            "startLine" : 130,
+            "startColumn" : 2,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c590e1b65bd14c28:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"str\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/ModuleFilenameHelpers.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 40,
+            "startColumn" : 2,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fc03987572deebf6:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"HotMai ... orator\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/HotModuleReplacementPlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 19
+          },
+          "region" : {
+            "startLine" : 141,
+            "startColumn" : 4,
+            "endColumn" : 43
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8063a89e841777ea:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"jsonp\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 194,
+            "startColumn" : 3,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "aa45d64a134d21c2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"4\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 195,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ce35a99e30f3d24c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 196,
+            "startColumn" : 3,
+            "endColumn" : 48
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8d86f44959624dd3:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 197,
+            "startColumn" : 3,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f2a66d4411fb668c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 198,
+            "startColumn" : 3,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2688389b165fac92:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 20
+          },
+          "region" : {
+            "startLine" : 199,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "17ea5b5483e83873:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.sourceStr\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/RawModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 21
+          },
+          "region" : {
+            "startLine" : 52,
+            "startColumn" : 2,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "388b760b8f66e533:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"maintemplate\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/MainTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 165,
+            "startColumn" : 2,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bbde53070ac3e990:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/MainTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 166,
+            "startColumn" : 2,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "817fa3b5947dc12f:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... th + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/MainTemplate.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 167,
+            "startColumn" : 2,
+            "endColumn" : 49
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4bd5daee217ba527:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"set var\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/SetVarMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 23
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 3,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "300b5e7ae3bc69ab:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.va ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/SetVarMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 23
+          },
+          "region" : {
+            "startLine" : 33,
+            "startColumn" : 3,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f78bc19b6c9e0aab:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.copyObject + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/SetVarMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 23
+          },
+          "region" : {
+            "startLine" : 34,
+            "startColumn" : 3,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bcea7d232942fca6:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"JSON.st ... ).hash)\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/TemplatedPathPlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 24
+          },
+          "region" : {
+            "startLine" : 106,
+            "startColumn" : 5,
+            "endColumn" : 69
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b99b10709f026b1b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"JSON.st ... ).name)\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/TemplatedPathPlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 24
+          },
+          "region" : {
+            "startLine" : 108,
+            "startColumn" : 5,
+            "endColumn" : 69
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8b33fd8a11afe063:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"umd\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/UmdMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 25
+          },
+          "region" : {
+            "startLine" : 145,
+            "startColumn" : 3,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "eb6b2876336d90a2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/UmdMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 25
+          },
+          "region" : {
+            "startLine" : 146,
+            "startColumn" : 3,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "21d82bc43dad9b9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.range + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/ConstDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 26
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 2,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "82f48b8abed7c772:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.expression + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/ConstDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 26
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 2,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b2280a38369fd82d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"source\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NormalModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 303,
+            "startColumn" : 3,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "14604a21be9f7b10:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"null\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NormalModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 306,
+            "startColumn" : 3,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b55ff0b2fbe26815:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"meta\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NormalModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 307,
+            "startColumn" : 2,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3da73b5493f20dbf:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"JSON.st ... s.meta)\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NormalModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 308,
+            "startColumn" : 2,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e36ddfec13e71f11:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this._s ... ource()\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NormalModule.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 315,
+            "startColumn" : 2,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ae2ffa1cb411052d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(this.m ... e) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 28
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 2,
+            "endColumn" : 87
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a609f38ffc634e39:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... d) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 2,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "eb3fb5274bc5894a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... d) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 33,
+            "startColumn" : 2,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "80c6649012117102:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... r) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 34,
+            "startColumn" : 2,
+            "endColumn" : 56
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a2d1250dc735ff76:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... )) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 35,
+            "startColumn" : 2,
+            "endColumn" : 81
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "272eefa7f87b2533:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... e) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 2,
+            "endColumn" : 96
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "657b180ed7b0c305:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... )) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyExportImportedSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 44,
+            "startColumn" : 2,
+            "endColumn" : 106
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fb10a44f0b0d2ee0:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"(import ... )) + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/HarmonyImportSpecifierDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 37,
+            "startColumn" : 2,
+            "endColumn" : 106
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fb10a44f0b0d2ee0:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"outputO ... ashSalt\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Compilation.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 773,
+            "startColumn" : 3,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bc42fa99ee324bc9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"outputO ... ashSalt\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Compilation.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 788,
+            "startColumn" : 4,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c024e787530ec580:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"chunk.hash\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Compilation.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 797,
+            "startColumn" : 3,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "927d67893e357090:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.name\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/dependencies/TemplateArgumentDependency.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 32
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 2,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c12e244328aaba08:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.fullHash\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Compilation.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 810,
+            "startColumn" : 2,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "daea111661a46f37:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"update\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/Compilation.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 811,
+            "startColumn" : 2,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "24cbd72cc1778919:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"node\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 3,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e50e101f67b1e697:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b5b0dcbc18396fa:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"NodeHo ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 3,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5f8c0ae3c26bc9b2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2aa0ea4ed6fa41c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cbba8ad320ed7831:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"webworker\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 3,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "747db8bc87945414:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2817f05db957d977:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "38ab1428dbb56114:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"WebWor ... Plugin\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 36
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 3,
+            "endColumn" : 55
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "daaa4e994def03b2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 36
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2aa0ea4ed6fa41c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... on + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 36
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cbba8ad320ed7831:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 36
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"webworker\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 100,
+            "startColumn" : 3,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d33f7263f5af9d20:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"node\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 187,
+            "startColumn" : 3,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b0e024fb8dbd6cd4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 101,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d75117dedba11327:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... th + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 102,
+            "startColumn" : 3,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "611321d71ec9a9be:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 103,
+            "startColumn" : 3,
+            "endColumn" : 48
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8d86f44959624dd3:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"3\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 188,
+            "startColumn" : 3,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "649e3e2871b92ac3:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 189,
+            "startColumn" : 3,
+            "endColumn" : 48
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8d86f4495b8e5881:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/node/NodeMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 190,
+            "startColumn" : 3,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c5a6cbe10cfb5e81:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 104,
+            "startColumn" : 3,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "107a05018d48e4b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... me + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 105,
+            "startColumn" : 3,
+            "endColumn" : 57
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "38ab1428dbb56114:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"this.ou ... ry + \"\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplatePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 106,
+            "startColumn" : 3,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5208a32e2f41c1f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/crypto-usage",
+      "ruleIndex" : 1,
+      "rule" : {
+        "id" : "js/crypto-usage",
+        "index" : 1
+      },
+      "message" : {
+        "text" : "Found usage of crypto function \"update\" with first argument \"\"Dedupe ...  code)\"\""
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/optimize/DedupePlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 39
+          },
+          "region" : {
+            "startLine" : 138,
+            "startColumn" : 5,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d18526c486ebbbed:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: acorn-3.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 14,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1b2ce62893a41521:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: async-1.3.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 14,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "207416d27287c5cd:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: clone-1.0.2"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 14,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a0b6f4589bac5610:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: enhanced-resolve-2.2.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 25,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1967735ad37a7a3b:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: interpret-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 18,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f49f644670de8758:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: loader-runner-2.1.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "22977eb03c5ec0ad:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: loader-utils-0.2.11"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 21,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "98f6cc51dbbe831d:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: memory-fs-0.3.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 18,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8578e73b411fc07b:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: mkdirp-0.5.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 15,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b5d22b01c145ae86:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: node-libs-browser-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 26,
+            "endColumn" : 34
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "90e18ee517b36e8a:1",
+        "primaryLocationStartColumnFingerprint" : "21"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: object-assign-4.0.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cc36384c5519b06e:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: source-map-0.5.3"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e3fb651657503076:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: supports-color-3.1.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 23,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "91f8f93ecee1aa47:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: tapable-0.2.3"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 16,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9ca44f862b28456a:1",
+        "primaryLocationStartColumnFingerprint" : "11"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: uglify-js-2.6.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 18,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "72b4238c63eae786:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: watchpack-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 18,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "790c7a6c871a1d79:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: webpack-sources-0.1.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 24,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b59c17264533083f:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: yargs-4.7.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 14,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5feea29c28903320:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: beautify-lint-1.0.3"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e754dfdb96c064e8:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: benchmark-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 18,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "236a9848b052e0c3:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: bundle-loader-0.5.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "785469c72fdf75f1:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: codecov.io-0.1.2"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 31,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8c100e6e0a93fdb:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: coffee-loader-0.7.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2371a11045205df8:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: coffee-script-1.10.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 33,
+            "startColumn" : 22,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "93ed39c826ed8260:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: coveralls-2.11.2"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 34,
+            "startColumn" : 18,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "113fc8d23b4f42b4:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: css-loader-0.23.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 35,
+            "startColumn" : 19,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ad28d99fce505ccf:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: diff-2.0.2"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 13,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e56ad1891ae6cba3:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: es6-promise-polyfill-1.1.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 37,
+            "startColumn" : 29,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "963033bd9fea009d:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: eslint-1.1.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 38,
+            "startColumn" : 15,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e4026ed595e2854b:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: eslint-plugin-nodeca-1.0.3"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 39,
+            "startColumn" : 29,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "88dd9f6b5bf93722:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: express-4.13.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 40,
+            "startColumn" : 16,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a64637f694ac89e2:1",
+        "primaryLocationStartColumnFingerprint" : "11"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: extract-text-webpack-plugin-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 41,
+            "startColumn" : 36,
+            "endColumn" : 44
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4ff700ff11cea460:1",
+        "primaryLocationStartColumnFingerprint" : "31"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: file-loader-0.8.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 42,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "74e74ddd8405ece0:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: i18n-webpack-plugin-0.2.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 43,
+            "startColumn" : 28,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1da74a5b97d064e8:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: istanbul-0.4.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 44,
+            "startColumn" : 17,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b61cf19d11e3c158:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: jade-1.11.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 45,
+            "startColumn" : 13,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "313d1cc96873b0a:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: jade-loader-0.8.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 46,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8dbc1656734ee5e3:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: js-beautify-1.5.10"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 47,
+            "startColumn" : 20,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fbdd7d52c90623c8:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: json-loader-0.5.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 48,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e90df5e5e117d781:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: less-2.5.1"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 49,
+            "startColumn" : 13,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e878d2d1fdf35204:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: less-loader-2.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 50,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2ae19ba28b304f4f:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: mocha-2.3.4"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 51,
+            "startColumn" : 14,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cfb526edd77f4ef3:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: mocha-lcov-reporter-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 52,
+            "startColumn" : 28,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1aeb3c4a877f8dd9:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: raw-loader-0.5.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "58a6a4ecfe58bbf2:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: script-loader-0.6.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 54,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bdbbc4a4ff315837:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: should-8.0.2"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 55,
+            "startColumn" : 15,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4eea6fc86975c9a1:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: style-loader-0.13.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 56,
+            "startColumn" : 21,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6813e58a113ef282:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: url-loader-0.5.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 57,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4be956d287c20af1:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: val-loader-0.5.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 58,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "53c13d940ef443cf:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: vm-browserify-0.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 59,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "70632de8f6b9838d:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: webpack-dev-middleware-1.0.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 60,
+            "startColumn" : 31,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "61fa95aae0916941:1",
+        "primaryLocationStartColumnFingerprint" : "26"
+      }
+    }, {
+      "ruleId" : "js/dependencies",
+      "ruleIndex" : 24,
+      "rule" : {
+        "id" : "js/dependencies",
+        "index" : 24
+      },
+      "message" : {
+        "text" : "Found dependency: worker-loader-0.7.0"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/package.json",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 61,
+            "startColumn" : 22,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fac5299658201667:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      }
+    }, {
+      "ruleId" : "js/client-request",
+      "ruleIndex" : 33,
+      "rule" : {
+        "id" : "js/client-request",
+        "index" : 33
+      },
+      "message" : {
+        "text" : "Detected a client request to URL/IP address 'requestPath'."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/JsonpMainTemplate.runtime.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 41
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 19,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "65ac50428890ca26:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/client-request",
+      "ruleIndex" : 33,
+      "rule" : {
+        "id" : "js/client-request",
+        "index" : 33
+      },
+      "message" : {
+        "text" : "Detected a client request to URL/IP address 'requestPath'."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/webworker/WebWorkerMainTemplate.runtime.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 42
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 18,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "65ac50428890ca26:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "js/domain-name",
+      "ruleIndex" : 34,
+      "rule" : {
+        "id" : "js/domain-name",
+        "index" : 34
+      },
+      "message" : {
+        "text" : "Detected the following domain name: expression module.id"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/lib/NodeStuffPlugin.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 43
+          },
+          "region" : {
+            "startLine" : 91,
+            "startColumn" : 25,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c6b9e2b1cfd5d5d0:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      }
+    } ],
+    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

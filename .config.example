@@ -1,0 +1,11 @@
+[Main]
+npm_package_names = express,pm-controls,lodash,conventional-changelog,async,axios,moment,debug,rpc-websocket,kraken-api,ua-parser-js,eslint-scope,vue-backbone,getcookies,flatmap-stream,fs-extra,prop-types,bluebird,underscore,mkdirp,glob,yargs,colors,inquirer,uuid,classnames,tslib,commander,chalk,request,vue,webpack,react,react-dom
+local_package_names =
+path_to_queries = codeql_queries
+list_of_additional_local_package_paths = malicious_packages,benign_packages
+result_format = sarif
+rescan = False
+severity_sum_threshold = 10.0
+custom_severity_policy = policy.json
+package_versions_to_skip = webpack-1.8.3
+packages_to_sort_by_date = react,react-dom

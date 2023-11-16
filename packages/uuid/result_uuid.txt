@@ -1,0 +1,1277 @@
+Comparing uuid-0.0.1 to uuid-0.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-0.0.2 to uuid-1.4.0:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([uuid -1](1)) to system command execution / process ([uuidCmd](2)).
+Data flow from string ([uuidgen -t](3)) to system command execution / process ([uuidCmd](2)).
+		File(s):
+			package/test/compare_v1.js
+				Location(s):
+					61:8
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "compare_v1.js"
+		File(s):
+			package/test/compare_v1.js
+				Location(s):
+					6:12
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (exec(uuidCmd, cb))
+		File(s):
+			package/test/compare_v1.js
+				Location(s):
+					61:3
+
+
+Severity sum:
+=> All queries: 9.0
+=> Distinct queries: 9.0
+
+
+Comparing uuid-1.4.0 to uuid-1.4.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: mocha-1.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					15:14
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "compare.js"
+		File(s):
+			package/misc/compare.js
+				Location(s):
+					5:12
+
+
+Severity sum:
+=> All queries: 3.0
+=> Distinct queries: 3.0
+
+
+Comparing uuid-1.4.1 to uuid-1.4.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: uuid-1.4.1
+		File(s):
+			package/benchmark/package.json
+				Location(s):
+					6:13
+	1 new occurence(s) of finding: Found dependency: uuid-js-0.7.4
+		File(s):
+			package/benchmark/package.json
+				Location(s):
+					7:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-1.4.2 to uuid-2.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-2.0.0 to uuid-2.0.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-2.0.1 to uuid-2.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-2.0.2 to uuid-2.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-2.0.3 to uuid-3.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: mocha-3.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					16:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-3.0.0 to uuid-3.0.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-3.0.1 to uuid-3.1.0:
+---------------------------------------------------------
+
+js/crypto-usage (severity: 2.0):
+	1 new occurence(s) of finding: Found usage of crypto function "update" with first argument "bytes"
+		File(s):
+			package/lib/sha1.js
+				Location(s):
+					18:9
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing uuid-3.1.0 to uuid-3.2.0:
+---------------------------------------------------------
+
+js/crypto-usage (severity: 2.0):
+	1 new occurence(s) of finding: Found usage of crypto function "update" with first argument "bytes"
+		File(s):
+			package/lib/md5.js
+				Location(s):
+					22:10
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-4.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					15:15
+	1 new occurence(s) of finding: Found dependency: runmd-1.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					17:14
+	1 new occurence(s) of finding: Found dependency: standard-version-4.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					18:25
+
+js/install-script (severity: 7.0):
+	1 new occurence(s) of finding: Detected "prepare" script with code "runmd --output=README.md README_js.md"
+		File(s):
+			package/package.json
+				Location(s):
+					20:14
+
+
+Severity sum:
+=> All queries: 9.0
+=> Distinct queries: 9.0
+
+
+Comparing uuid-3.2.0 to uuid-3.2.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-3.2.1 to uuid-3.3.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					20:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-7.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					21:40
+	1 new occurence(s) of finding: Found dependency: eslint-4.19.1
+		File(s):
+			package/package.json
+				Location(s):
+					22:15
+	1 new occurence(s) of finding: Found dependency: husky-0.14.3
+		File(s):
+			package/package.json
+				Location(s):
+					23:14
+	1 new occurence(s) of finding: Found dependency: mocha-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					24:14
+	1 new occurence(s) of finding: Found dependency: standard-version-4.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					26:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-3.3.0 to uuid-3.3.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-3.3.2 to uuid-3.3.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-8.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					20:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-8.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					21:40
+	1 new occurence(s) of finding: Found dependency: eslint-6.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					22:15
+	1 new occurence(s) of finding: Found dependency: husky-3.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					23:14
+	1 new occurence(s) of finding: Found dependency: mocha-6.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					24:14
+	1 new occurence(s) of finding: Found dependency: runmd-1.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					25:14
+	1 new occurence(s) of finding: Found dependency: standard-version-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					26:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-3.3.3 to uuid-3.4.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-8.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					20:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-8.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					21:40
+	1 new occurence(s) of finding: Found dependency: eslint-6.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					22:15
+	1 new occurence(s) of finding: Found dependency: husky-3.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					23:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-3.4.0 to uuid-7.0.0-beta.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([uuid.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuid.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidv1.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidv1.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidv3.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidv3.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidv4.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidv4.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidv5.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidv5.min.js
+				Location(s):
+					N/A
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/cli-7.8.3
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.8.3
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.8.3
+		File(s):
+			package/package.json
+				Location(s):
+					36:26
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-8.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					37:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-8.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					38:40
+	1 new occurence(s) of finding: Found dependency: babel-eslint-10.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					39:21
+	1 new occurence(s) of finding: Found dependency: babel-plugin-add-module-exports-1.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					40:40
+	1 new occurence(s) of finding: Found dependency: browserstack-local-1.4.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:27
+	1 new occurence(s) of finding: Found dependency: bundlewatch-0.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					42:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-6.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-prettier-3.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					45:31
+	1 new occurence(s) of finding: Found dependency: esm-3.2.25
+		File(s):
+			package/package.json
+				Location(s):
+					46:12
+	1 new occurence(s) of finding: Found dependency: http-server-0.12.1
+		File(s):
+			package/package.json
+				Location(s):
+					47:20
+	1 new occurence(s) of finding: Found dependency: husky-3.0.9
+		File(s):
+			package/package.json
+				Location(s):
+					48:14
+	1 new occurence(s) of finding: Found dependency: jest-24.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:13
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					50:20
+	1 new occurence(s) of finding: Found dependency: npm-run-all-4.1.5
+		File(s):
+			package/package.json
+				Location(s):
+					51:20
+	1 new occurence(s) of finding: Found dependency: prettier-1.19.1
+		File(s):
+			package/package.json
+				Location(s):
+					52:17
+	1 new occurence(s) of finding: Found dependency: rollup-1.30.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:15
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-terser-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:29
+	1 new occurence(s) of finding: Found dependency: runmd-1.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					55:14
+	1 new occurence(s) of finding: Found dependency: selenium-webdriver-3.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					56:27
+	1 new occurence(s) of finding: Found dependency: standard-version-7.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					57:25
+
+
+Severity sum:
+=> All queries: 25.0
+=> Distinct queries: 5.0
+
+
+Comparing uuid-7.0.0-beta.0 to uuid-7.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/cli-7.8.4
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.8.4
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.8.4
+		File(s):
+			package/package.json
+				Location(s):
+					36:26
+	1 new occurence(s) of finding: Found dependency: browserstack-local-1.4.5
+		File(s):
+			package/package.json
+				Location(s):
+					41:27
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-6.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:31
+	1 new occurence(s) of finding: Found dependency: jest-25.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:13
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.0.7
+		File(s):
+			package/package.json
+				Location(s):
+					50:20
+	1 new occurence(s) of finding: Found dependency: rollup-1.31.1
+		File(s):
+			package/package.json
+				Location(s):
+					53:15
+	1 new occurence(s) of finding: Found dependency: standard-version-7.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					57:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-7.0.0 to uuid-7.0.1:
+---------------------------------------------------------
+
+js/crypto-usage (severity: 2.0):
+	2 new occurence(s) of finding: Found usage of crypto function "update" with first argument "bytes"
+		File(s):
+			package/dist/esm-node/md5.js
+				Location(s):
+					10:10
+			package/dist/esm-node/sha1.js
+				Location(s):
+					10:10
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-node-resolve-7.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					45:36
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing uuid-7.0.1 to uuid-7.0.2-beta.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-7.0.2-beta.0 to uuid-7.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-7.0.2 to uuid-7.0.3:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.8.7
+		File(s):
+			package/package.json
+				Location(s):
+					42:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.8.7
+		File(s):
+			package/package.json
+				Location(s):
+					43:26
+	1 new occurence(s) of finding: Found dependency: @wdio/browserstack-service-5.18.7
+		File(s):
+			package/package.json
+				Location(s):
+					47:35
+	1 new occurence(s) of finding: Found dependency: @wdio/cli-5.18.7
+		File(s):
+			package/package.json
+				Location(s):
+					48:18
+	1 new occurence(s) of finding: Found dependency: @wdio/jasmine-framework-5.18.6
+		File(s):
+			package/package.json
+				Location(s):
+					49:32
+	1 new occurence(s) of finding: Found dependency: @wdio/local-runner-5.18.7
+		File(s):
+			package/package.json
+				Location(s):
+					50:27
+	1 new occurence(s) of finding: Found dependency: @wdio/spec-reporter-5.18.7
+		File(s):
+			package/package.json
+				Location(s):
+					51:28
+	1 new occurence(s) of finding: Found dependency: @wdio/static-server-service-5.16.10
+		File(s):
+			package/package.json
+				Location(s):
+					52:36
+	1 new occurence(s) of finding: Found dependency: @wdio/sync-5.18.7
+		File(s):
+			package/package.json
+				Location(s):
+					53:19
+	1 new occurence(s) of finding: Found dependency: babel-eslint-10.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:21
+	1 new occurence(s) of finding: Found dependency: bundlewatch-0.2.6
+		File(s):
+			package/package.json
+				Location(s):
+					56:20
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					62:20
+	1 new occurence(s) of finding: Found dependency: rollup-1.32.0
+		File(s):
+			package/package.json
+				Location(s):
+					65:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-7.0.3 to uuid-8.0.0-beta.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.9.5
+		File(s):
+			package/package.json
+				Location(s):
+					43:26
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-node-resolve-7.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					46:36
+	1 new occurence(s) of finding: Found dependency: @wdio/browserstack-service-6.0.12
+		File(s):
+			package/package.json
+				Location(s):
+					47:35
+	1 new occurence(s) of finding: Found dependency: @wdio/cli-6.0.15
+		File(s):
+			package/package.json
+				Location(s):
+					48:18
+	1 new occurence(s) of finding: Found dependency: @wdio/jasmine-framework-6.0.15
+		File(s):
+			package/package.json
+				Location(s):
+					49:32
+	1 new occurence(s) of finding: Found dependency: @wdio/local-runner-6.0.15
+		File(s):
+			package/package.json
+				Location(s):
+					50:27
+	1 new occurence(s) of finding: Found dependency: @wdio/spec-reporter-6.0.14
+		File(s):
+			package/package.json
+				Location(s):
+					51:28
+	1 new occurence(s) of finding: Found dependency: @wdio/static-server-service-6.0.13
+		File(s):
+			package/package.json
+				Location(s):
+					52:36
+	1 new occurence(s) of finding: Found dependency: @wdio/sync-6.0.15
+		File(s):
+			package/package.json
+				Location(s):
+					53:19
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-6.10.1
+		File(s):
+			package/package.json
+				Location(s):
+					57:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-prettier-3.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					58:31
+	1 new occurence(s) of finding: Found dependency: husky-4.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					59:14
+	1 new occurence(s) of finding: Found dependency: jest-25.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					60:13
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					61:20
+	1 new occurence(s) of finding: Found dependency: prettier-2.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					63:17
+	1 new occurence(s) of finding: Found dependency: rollup-2.6.1
+		File(s):
+			package/package.json
+				Location(s):
+					64:15
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-terser-5.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					65:29
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-8.0.0-beta.0 to uuid-8.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-8.0.0 to uuid-8.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-14.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					61:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.20.2
+		File(s):
+			package/package.json
+				Location(s):
+					62:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-node-11.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					63:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					65:30
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-standard-4.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					66:31
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-8.1.0 to uuid-8.2.0-beta.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/cli-7.10.3
+		File(s):
+			package/package.json
+				Location(s):
+					48:19
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.10.3
+		File(s):
+			package/package.json
+				Location(s):
+					49:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.10.3
+		File(s):
+			package/package.json
+				Location(s):
+					50:26
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-9.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					51:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-9.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					52:40
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-node-resolve-8.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					53:36
+	1 new occurence(s) of finding: Found dependency: @wdio/browserstack-service-6.1.15
+		File(s):
+			package/package.json
+				Location(s):
+					54:35
+	1 new occurence(s) of finding: Found dependency: @wdio/cli-6.1.20
+		File(s):
+			package/package.json
+				Location(s):
+					55:18
+	1 new occurence(s) of finding: Found dependency: @wdio/jasmine-framework-6.1.17
+		File(s):
+			package/package.json
+				Location(s):
+					56:32
+	1 new occurence(s) of finding: Found dependency: @wdio/local-runner-6.1.20
+		File(s):
+			package/package.json
+				Location(s):
+					57:27
+	1 new occurence(s) of finding: Found dependency: @wdio/spec-reporter-6.1.14
+		File(s):
+			package/package.json
+				Location(s):
+					58:28
+	1 new occurence(s) of finding: Found dependency: @wdio/static-server-service-6.1.14
+		File(s):
+			package/package.json
+				Location(s):
+					59:36
+	1 new occurence(s) of finding: Found dependency: @wdio/sync-6.1.14
+		File(s):
+			package/package.json
+				Location(s):
+					60:19
+	1 new occurence(s) of finding: Found dependency: bundlewatch-0.2.7
+		File(s):
+			package/package.json
+				Location(s):
+					62:20
+	1 new occurence(s) of finding: Found dependency: eslint-7.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					63:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-6.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					64:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.21.2
+		File(s):
+			package/package.json
+				Location(s):
+					66:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-prettier-3.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					68:31
+	1 new occurence(s) of finding: Found dependency: jest-25.5.4
+		File(s):
+			package/package.json
+				Location(s):
+					72:13
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.2.11
+		File(s):
+			package/package.json
+				Location(s):
+					73:20
+	1 new occurence(s) of finding: Found dependency: prettier-2.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					75:17
+	1 new occurence(s) of finding: Found dependency: rollup-2.18.0
+		File(s):
+			package/package.json
+				Location(s):
+					76:15
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-terser-6.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					77:29
+	1 new occurence(s) of finding: Found dependency: standard-version-8.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					79:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-8.2.0-beta.0 to uuid-8.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-8.2.0 to uuid-8.3.0-beta.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([uuidNIL.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidNIL.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidParse.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidParse.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidStringify.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidStringify.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidValidate.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidValidate.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uuidVersion.min.js](1)) is minified
+		File(s):
+			package/dist/umd/uuidVersion.min.js
+				Location(s):
+					N/A
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-9.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					51:24
+	1 new occurence(s) of finding: Found dependency: random-seed-0.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					76:20
+	1 new occurence(s) of finding: Found dependency: standard-version-8.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					80:25
+
+
+Severity sum:
+=> All queries: 25.0
+=> Distinct queries: 5.0
+
+
+Comparing uuid-8.3.0-beta.0 to uuid-8.3.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-8.3.0 to uuid-8.3.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/cli-7.11.6
+		File(s):
+			package/package.json
+				Location(s):
+					48:19
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.11.6
+		File(s):
+			package/package.json
+				Location(s):
+					49:20
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.11.5
+		File(s):
+			package/package.json
+				Location(s):
+					50:26
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-11.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-11.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					52:40
+	1 new occurence(s) of finding: Found dependency: @rollup/plugin-node-resolve-9.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:36
+	1 new occurence(s) of finding: Found dependency: bundlewatch-0.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					55:20
+	1 new occurence(s) of finding: Found dependency: eslint-7.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					56:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-6.12.0
+		File(s):
+			package/package.json
+				Location(s):
+					57:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.22.1
+		File(s):
+			package/package.json
+				Location(s):
+					59:29
+	1 new occurence(s) of finding: Found dependency: husky-4.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					64:14
+	1 new occurence(s) of finding: Found dependency: lint-staged-10.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					66:20
+	1 new occurence(s) of finding: Found dependency: optional-dev-dependency-2.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					68:32
+	1 new occurence(s) of finding: Found dependency: prettier-2.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					69:17
+	1 new occurence(s) of finding: Found dependency: rollup-2.28.2
+		File(s):
+			package/package.json
+				Location(s):
+					71:15
+	1 new occurence(s) of finding: Found dependency: rollup-plugin-terser-7.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					72:29
+	1 new occurence(s) of finding: Found dependency: standard-version-9.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					74:25
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing uuid-8.3.1 to uuid-8.3.2-beta.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-8.3.2-beta.0 to uuid-8.3.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-8.3.2 to uuid-9.0.0-beta.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @babel/cli-7.18.10
+		File(s):
+			package/package.json
+				Location(s):
+					53:19
+	1 new occurence(s) of finding: Found dependency: @babel/core-7.18.10
+		File(s):
+			package/package.json
+				Location(s):
+					54:20
+	1 new occurence(s) of finding: Found dependency: @babel/eslint-parser-7.18.9
+		File(s):
+			package/package.json
+				Location(s):
+					55:29
+	1 new occurence(s) of finding: Found dependency: @babel/preset-env-7.18.10
+		File(s):
+			package/package.json
+				Location(s):
+					56:26
+	1 new occurence(s) of finding: Found dependency: @commitlint/cli-17.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					57:24
+	1 new occurence(s) of finding: Found dependency: @commitlint/config-conventional-17.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					58:40
+	1 new occurence(s) of finding: Found dependency: bundlewatch-0.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					59:20
+	1 new occurence(s) of finding: Found dependency: eslint-8.21.0
+		File(s):
+			package/package.json
+				Location(s):
+					60:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-prettier-8.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					61:31
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-17.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					62:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.26.0
+		File(s):
+			package/package.json
+				Location(s):
+					63:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-prettier-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					65:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					66:30
+	1 new occurence(s) of finding: Found dependency: husky-8.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					67:14
+	1 new occurence(s) of finding: Found dependency: jest-28.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					68:13
+	1 new occurence(s) of finding: Found dependency: lint-staged-13.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					69:20
+	1 new occurence(s) of finding: Found dependency: prettier-2.7.1
+		File(s):
+			package/package.json
+				Location(s):
+					72:17
+	1 new occurence(s) of finding: Found dependency: runmd-1.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					74:14
+	1 new occurence(s) of finding: Found dependency: standard-version-9.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					75:25
+
+js/install-script (severity: 7.0):
+	1 new occurence(s) of finding: Detected "prepare" script with code "cd $( git rev-parse --show-toplevel ) && husky install"
+		File(s):
+			package/package.json
+				Location(s):
+					85:14
+
+
+Severity sum:
+=> All queries: 7.0
+=> Distinct queries: 7.0
+
+
+Comparing uuid-9.0.0-beta.0 to uuid-9.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing uuid-9.0.0 to uuid-9.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: runmd-1.3.9
+		File(s):
+			package/package.json
+				Location(s):
+					78:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+

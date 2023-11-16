@@ -1,0 +1,2146 @@
+Comparing commander-0.0.1 to commander-0.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.0.3 to commander-0.0.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.0.4 to commander-0.0.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.0.5 to commander-0.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.1.0 to commander-0.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.2.0 to commander-0.2.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.2.1 to commander-0.5.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.5.2 to commander-0.6.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.6.0 to commander-0.6.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-0.6.1 to commander-1.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.0.0 to commander-1.0.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.0.1 to commander-1.0.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: keypress-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					8:35
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-1.0.2 to commander-1.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.0.3 to commander-1.0.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.0.4 to commander-1.0.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.0.5 to commander-1.1.0:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([--help](1)) to system command execution / process ([bin](2)).
+Data flow from string ([-](3)) to system command execution / process ([bin](2)).
+Data flow from string ([-](4)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					412:20
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "index.js"
+		File(s):
+			package/index.js
+				Location(s):
+					12:13
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(b ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					412:14
+
+
+Severity sum:
+=> All queries: 9.0
+=> Distinct queries: 9.0
+
+
+Comparing commander-1.1.0 to commander-1.1.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.1.1 to commander-1.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.2.0 to commander-1.3.0:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([--help](1)) to system command execution / process ([local](2)).
+Data flow from string ([-](3)) to system command execution / process ([local](2)).
+Data flow from string ([-](4)) to system command execution / process ([local](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					413:20
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(l ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					413:14
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 6.0
+
+
+Comparing commander-1.3.0 to commander-1.3.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.3.1 to commander-1.3.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-1.3.2 to commander-2.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.0.0 to commander-2.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.1.0 to commander-2.2.0:
+---------------------------------------------------------
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(' ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					410:14
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing commander-2.2.0 to commander-2.3.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.3.0 to commander-2.4.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.4.0 to commander-2.5.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.5.0 to commander-2.5.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.5.1 to commander-2.6.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.6.0 to commander-2.7.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: graceful-readlink-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					30:26
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([--help](1)) to system command execution / process ([bin](2)).
+Data flow from string ([-](3)) to system command execution / process ([bin](2)).
+Data flow from string ([-](4)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					493:18
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(b ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					493:12
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(p ... erit'}}))
+		File(s):
+			package/index.js
+				Location(s):
+					496:12
+
+
+Severity sum:
+=> All queries: 8.0
+=> Distinct queries: 6.0
+
+
+Comparing commander-2.7.0 to commander-2.7.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.7.1 to commander-2.8.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: sinon-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					18:14
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([--help](1)) to system command execution / process ([bin](2)).
+Data flow from string ([--help](3)) to system command execution / process ([bin](2)).
+Data flow from string ([-](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.js](5)) to system command execution / process ([bin](2)).
+Data flow from string ([-](6)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					530:20
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(' ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					528:14
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 6.0
+
+
+Comparing commander-2.8.0 to commander-2.8.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.8.1 to commander-2.9.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: sinon-1.17.1
+		File(s):
+			package/package.json
+				Location(s):
+					18:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.9.0 to commander-2.10.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.10.0 to commander-2.11.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: should-11.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					18:15
+	1 new occurence(s) of finding: Found dependency: sinon-2.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					19:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.11.0 to commander-2.12.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-7.0.48
+		File(s):
+			package/package.json
+				Location(s):
+					26:20
+	1 new occurence(s) of finding: Found dependency: typescript-2.6.1
+		File(s):
+			package/package.json
+				Location(s):
+					31:19
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(p ... , 2\] }}))
+		File(s):
+			package/index.js
+				Location(s):
+					562:14
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing commander-2.12.0 to commander-2.12.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: sinon-2.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					29:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.12.1 to commander-2.12.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: typescript-2.6.2
+		File(s):
+			package/package.json
+				Location(s):
+					31:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.12.2 to commander-2.13.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.13.0 to commander-2.14.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-7.0.52
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-3.19.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: standard-10.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+	1 new occurence(s) of finding: Found dependency: typescript-2.7.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(p ... rit' }}))
+		File(s):
+			package/index.js
+				Location(s):
+					566:12
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing commander-2.14.0 to commander-2.14.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.14.1 to commander-2.15.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-7.0.55
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: typescript-2.7.2
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.15.0 to commander-2.15.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.15.1 to commander-2.16.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-7.0.66
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-4.19.1
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: typescript-2.9.2
+		File(s):
+			package/package.json
+				Location(s):
+					34:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.16.0 to commander-2.17.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-10.5.5
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: should-13.2.3
+		File(s):
+			package/package.json
+				Location(s):
+					31:15
+	1 new occurence(s) of finding: Found dependency: sinon-6.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: standard-11.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.17.0 to commander-2.17.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-10.5.7
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-5.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.17.1 to commander-2.18.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-10.9.4
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-5.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-6.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: standard-12.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+	1 new occurence(s) of finding: Found dependency: ts-node-7.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:16
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([--help](1)) to system command execution / process ([bin](2)).
+Data flow from string ([--help](3)) to system command execution / process ([bin](2)).
+Data flow from string ([-](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.js](5)) to system command execution / process ([bin](2)).
+Data flow from string ([.ts](6)) to system command execution / process ([bin](2)).
+Data flow from string ([-](7)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					565:20
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-2.18.0 to commander-2.19.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-10.11.3
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-5.6.1
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-6.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.19.0 to commander-2.20.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.20.0 to commander-2.20.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-12.7.8
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-7.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: standard-14.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+	1 new occurence(s) of finding: Found dependency: ts-node-8.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:16
+	1 new occurence(s) of finding: Found dependency: typescript-3.6.3
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-2.20.1 to commander-2.20.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-2.20.3 to commander-3.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-12.6.2
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-7.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: standard-13.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+	1 new occurence(s) of finding: Found dependency: ts-node-8.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:16
+	1 new occurence(s) of finding: Found dependency: typescript-3.5.3
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([-](1)) to system command execution / process ([bin](2)).
+Data flow from string ([.js](3)) to system command execution / process ([bin](2)).
+Data flow from string ([.ts](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.mjs](5)) to system command execution / process ([bin](2)).
+Data flow from string ([-](6)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					571:20
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-3.0.0-0 to commander-3.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-3.0.0 to commander-3.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-12.7.2
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-7.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: standard-13.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:17
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-3.0.1 to commander-3.0.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-12.7.8
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:15
+	1 new occurence(s) of finding: Found dependency: sinon-7.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:14
+	1 new occurence(s) of finding: Found dependency: ts-node-8.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:16
+	1 new occurence(s) of finding: Found dependency: typescript-3.6.3
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-3.0.2 to commander-4.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-24.0.18
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: @types/node-12.7.5
+		File(s):
+			package/package.json
+				Location(s):
+					30:20
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-22.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:27
+	1 new occurence(s) of finding: Found dependency: jest-24.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:13
+	1 new occurence(s) of finding: Found dependency: standard-14.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:17
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(p ... rit' }}))
+		File(s):
+			package/index.js
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn(b ... rit' }}))
+		File(s):
+			package/index.js
+				Location(s):
+					639:14
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing commander-4.0.0-0 to commander-4.0.0-1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-4.0.0-1 to commander-4.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-4.0.0 to commander-4.0.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-4.0.1 to commander-4.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-24.0.23
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: @types/node-12.12.11
+		File(s):
+			package/package.json
+				Location(s):
+					30:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.7.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:15
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-22.21.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:27
+	1 new occurence(s) of finding: Found dependency: typescript-3.7.2
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-4.1.0 to commander-4.1.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-4.1.1 to commander-5.0.0-0:
+---------------------------------------------------------
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([.js](1)) to system command execution / process ([bin](2)).
+Data flow from string ([.ts](3)) to system command execution / process ([bin](2)).
+Data flow from string ([.mjs](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.](5)) to system command execution / process ([bin](2)).
+Data flow from string ([-](6)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					709:22
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-5.0.0-0 to commander-5.0.0-1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-25.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					29:20
+	1 new occurence(s) of finding: Found dependency: @types/node-12.12.26
+		File(s):
+			package/package.json
+				Location(s):
+					30:20
+	1 new occurence(s) of finding: Found dependency: eslint-6.8.0
+		File(s):
+			package/package.json
+				Location(s):
+					31:15
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-23.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					32:27
+	1 new occurence(s) of finding: Found dependency: jest-25.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					33:13
+	1 new occurence(s) of finding: Found dependency: typescript-3.7.5
+		File(s):
+			package/package.json
+				Location(s):
+					35:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-5.0.0-1 to commander-5.0.0-2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-5.0.0-2 to commander-5.0.0-3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-5.0.0-3 to commander-5.0.0-4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-5.0.0-4 to commander-5.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-25.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					34:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-2.23.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:41
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-14.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-23.8.2
+		File(s):
+			package/package.json
+				Location(s):
+					39:27
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-5.0.0 to commander-5.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-25.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					34:20
+	1 new occurence(s) of finding: Found dependency: @types/node-12.12.36
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-2.29.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:41
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-15.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					38:47
+	1 new occurence(s) of finding: Found dependency: jest-25.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:13
+	1 new occurence(s) of finding: Found dependency: standard-14.3.3
+		File(s):
+			package/package.json
+				Location(s):
+					41:17
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-5.1.0 to commander-6.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-12.12.38
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-2.31.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:41
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-16.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-23.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:27
+	1 new occurence(s) of finding: Found dependency: jest-26.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					40:13
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-6.0.0-0 to commander-6.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-26.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					34:20
+	1 new occurence(s) of finding: Found dependency: @types/node-14.0.23
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-2.34.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:41
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-23.18.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:27
+	1 new occurence(s) of finding: Found dependency: jest-26.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:13
+	1 new occurence(s) of finding: Found dependency: standard-14.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:17
+	1 new occurence(s) of finding: Found dependency: typescript-3.9.7
+		File(s):
+			package/package.json
+				Location(s):
+					42:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-6.0.0 to commander-6.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-6.1.0 to commander-6.2.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-26.0.15
+		File(s):
+			package/package.json
+				Location(s):
+					34:20
+	1 new occurence(s) of finding: Found dependency: @types/node-14.14.2
+		File(s):
+			package/package.json
+				Location(s):
+					35:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.5.0
+		File(s):
+			package/package.json
+				Location(s):
+					36:41
+	1 new occurence(s) of finding: Found dependency: eslint-7.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-19.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					38:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-24.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:27
+	1 new occurence(s) of finding: Found dependency: jest-26.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:13
+	1 new occurence(s) of finding: Found dependency: standard-15.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:17
+	1 new occurence(s) of finding: Found dependency: typescript-4.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:19
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([.js](1)) to system command execution / process ([bin](2)).
+Data flow from string ([.ts](3)) to system command execution / process ([bin](2)).
+Data flow from string ([.tsx](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.mjs](5)) to system command execution / process ([bin](2)).
+Data flow from string ([.](6)) to system command execution / process ([bin](2)).
+Data flow from string ([-](7)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					890:22
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-6.2.0 to commander-6.2.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-6.2.1 to commander-7.0.0-0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-7.0.0-0 to commander-7.0.0-1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-7.0.0-1 to commander-7.0.0-2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-26.0.16
+		File(s):
+			package/package.json
+				Location(s):
+					36:20
+	1 new occurence(s) of finding: Found dependency: @types/node-14.14.10
+		File(s):
+			package/package.json
+				Location(s):
+					37:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:41
+	1 new occurence(s) of finding: Found dependency: eslint-7.15.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-16.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					40:31
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.22.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-24.1.3
+		File(s):
+			package/package.json
+				Location(s):
+					43:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-node-11.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-4.2.1
+		File(s):
+			package/package.json
+				Location(s):
+					45:30
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-standard-4.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					46:31
+	1 new occurence(s) of finding: Found dependency: jest-26.6.3
+		File(s):
+			package/package.json
+				Location(s):
+					47:13
+	1 new occurence(s) of finding: Found dependency: standard-16.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					48:17
+	1 new occurence(s) of finding: Found dependency: typescript-4.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					49:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-7.0.0-2 to commander-7.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-26.0.20
+		File(s):
+			package/package.json
+				Location(s):
+					36:20
+	1 new occurence(s) of finding: Found dependency: @types/node-14.14.20
+		File(s):
+			package/package.json
+				Location(s):
+					37:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.12.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-4.12.0
+		File(s):
+			package/package.json
+				Location(s):
+					39:34
+	1 new occurence(s) of finding: Found dependency: eslint-7.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:15
+
+js/system-command-execution (severity: 2.0):
+	3 new occurence(s) of finding: Detected SystemCommandExecution (childPr ... rit' }}))
+		File(s):
+			package/index.js
+				Location(s):
+					1371:16
+					1373:16
+					1379:14
+
+
+Severity sum:
+=> All queries: 6.0
+=> Distinct queries: 2.0
+
+
+Comparing commander-7.0.0 to commander-7.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: tsd-0.14.0
+		File(s):
+			package/package.json
+				Location(s):
+					48:12
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([.js](1)) to system command execution / process ([bin](2)).
+Data flow from string ([.ts](3)) to system command execution / process ([bin](2)).
+Data flow from string ([.tsx](4)) to system command execution / process ([bin](2)).
+Data flow from string ([.mjs](5)) to system command execution / process ([bin](2)).
+Data flow from string ([.cjs](6)) to system command execution / process ([bin](2)).
+Data flow from string ([.](7)) to system command execution / process ([bin](2)).
+Data flow from string ([-](8)) to system command execution / process ([bin](2)).
+		File(s):
+			package/index.js
+				Location(s):
+					1380:35
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-7.1.0 to commander-7.2.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: ts-jest-26.5.1
+		File(s):
+			package/package.json
+				Location(s):
+					49:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-7.2.0 to commander-8.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-26.0.23
+		File(s):
+			package/package.json
+				Location(s):
+					40:20
+	1 new occurence(s) of finding: Found dependency: @types/node-14.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.24.0
+		File(s):
+			package/package.json
+				Location(s):
+					42:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-4.24.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:34
+	1 new occurence(s) of finding: Found dependency: eslint-7.26.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:15
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-24.3.6
+		File(s):
+			package/package.json
+				Location(s):
+					46:27
+	1 new occurence(s) of finding: Found dependency: ts-jest-26.5.6
+		File(s):
+			package/package.json
+				Location(s):
+					49:16
+	1 new occurence(s) of finding: Found dependency: tsd-0.15.1
+		File(s):
+			package/package.json
+				Location(s):
+					50:12
+	1 new occurence(s) of finding: Found dependency: typescript-4.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					51:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-8.0.0-0 to commander-8.0.0-1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-14.17.1
+		File(s):
+			package/package.json
+				Location(s):
+					42:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.25.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-4.25.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:34
+	1 new occurence(s) of finding: Found dependency: eslint-7.27.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-16.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					46:31
+	1 new occurence(s) of finding: Found dependency: jest-27.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					48:13
+	1 new occurence(s) of finding: Found dependency: ts-jest-27.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					50:16
+	1 new occurence(s) of finding: Found dependency: tsd-0.16.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:12
+	1 new occurence(s) of finding: Found dependency: typescript-4.3.2
+		File(s):
+			package/package.json
+				Location(s):
+					52:19
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "command.js"
+		File(s):
+			package/lib/command.js
+				Location(s):
+					2:22
+
+
+Severity sum:
+=> All queries: 3.0
+=> Distinct queries: 3.0
+
+
+Comparing commander-8.0.0-1 to commander-8.0.0-2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-8.0.0-2 to commander-8.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-14.17.3
+		File(s):
+			package/package.json
+				Location(s):
+					42:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.27.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-4.27.0
+		File(s):
+			package/package.json
+				Location(s):
+					44:34
+	1 new occurence(s) of finding: Found dependency: eslint-7.29.0
+		File(s):
+			package/package.json
+				Location(s):
+					45:15
+	1 new occurence(s) of finding: Found dependency: jest-27.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					48:13
+	1 new occurence(s) of finding: Found dependency: ts-jest-27.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					50:16
+	1 new occurence(s) of finding: Found dependency: tsd-0.17.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:12
+	1 new occurence(s) of finding: Found dependency: typescript-4.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					52:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-8.0.0 to commander-8.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-8.1.0 to commander-8.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-8.2.0 to commander-8.3.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-8.3.0 to commander-9.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-27.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					47:20
+	1 new occurence(s) of finding: Found dependency: @types/node-16.11.15
+		File(s):
+			package/package.json
+				Location(s):
+					48:20
+
+js/data-flow-to-process (severity: 4.0):
+	1 new occurence(s) of finding: Data flow from string ([.js](1)) to system command execution / process ([executableFile](2)).
+Data flow from string ([.ts](3)) to system command execution / process ([executableFile](2)).
+Data flow from string ([.tsx](4)) to system command execution / process ([executableFile](2)).
+Data flow from string ([.mjs](5)) to system command execution / process ([executableFile](2)).
+Data flow from string ([.cjs](6)) to system command execution / process ([executableFile](2)).
+Data flow from string ([](7)) to system command execution / process ([executableFile](2)).
+		File(s):
+			package/lib/command.js
+				Location(s):
+					987:35
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing commander-9.0.0-0 to commander-9.0.0-1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-4.33.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:41
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-21.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					54:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.25.3
+		File(s):
+			package/package.json
+				Location(s):
+					55:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-node-11.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					57:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					58:30
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-9.0.0-1 to commander-9.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.0.0 to commander-9.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.1.0 to commander-9.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.2.0 to commander-9.3.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.3.0 to commander-9.4.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-28.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					49:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-5.30.6
+		File(s):
+			package/package.json
+				Location(s):
+					51:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-5.30.6
+		File(s):
+			package/package.json
+				Location(s):
+					52:34
+	1 new occurence(s) of finding: Found dependency: eslint-8.19.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-17.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:31
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-22.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-26.5.3
+		File(s):
+			package/package.json
+				Location(s):
+					57:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-n-15.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					58:24
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					59:30
+	1 new occurence(s) of finding: Found dependency: jest-28.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					60:13
+	1 new occurence(s) of finding: Found dependency: ts-jest-28.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					61:16
+	1 new occurence(s) of finding: Found dependency: tsd-0.22.0
+		File(s):
+			package/package.json
+				Location(s):
+					62:12
+	1 new occurence(s) of finding: Found dependency: typescript-4.7.4
+		File(s):
+			package/package.json
+				Location(s):
+					63:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-9.4.0 to commander-9.4.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.4.1 to commander-9.5.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-9.5.0 to commander-10.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/jest-29.2.4
+		File(s):
+			package/package.json
+				Location(s):
+					49:20
+	1 new occurence(s) of finding: Found dependency: @types/node-18.11.18
+		File(s):
+			package/package.json
+				Location(s):
+					50:20
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-5.47.1
+		File(s):
+			package/package.json
+				Location(s):
+					51:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-5.47.1
+		File(s):
+			package/package.json
+				Location(s):
+					52:34
+	1 new occurence(s) of finding: Found dependency: eslint-8.30.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-24.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-import-2.26.0
+		File(s):
+			package/package.json
+				Location(s):
+					56:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jest-27.1.7
+		File(s):
+			package/package.json
+				Location(s):
+					57:27
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-n-15.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					58:24
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-promise-6.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					59:30
+	1 new occurence(s) of finding: Found dependency: jest-29.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					60:13
+	1 new occurence(s) of finding: Found dependency: ts-jest-29.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					61:16
+	1 new occurence(s) of finding: Found dependency: tsd-0.25.0
+		File(s):
+			package/package.json
+				Location(s):
+					62:12
+	1 new occurence(s) of finding: Found dependency: typescript-4.9.4
+		File(s):
+			package/package.json
+				Location(s):
+					63:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-10.0.0 to commander-10.0.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-10.0.1 to commander-11.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @types/node-20.2.5
+		File(s):
+			package/package.json
+				Location(s):
+					60:20
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-33.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					65:47
+	1 new occurence(s) of finding: Found dependency: tsd-0.28.1
+		File(s):
+			package/package.json
+				Location(s):
+					72:12
+	1 new occurence(s) of finding: Found dependency: typescript-5.0.4
+		File(s):
+			package/package.json
+				Location(s):
+					73:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing commander-11.0.0 to commander-11.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing commander-11.1.0 to commander-12.0.0-0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/eslint-plugin-6.7.5
+		File(s):
+			package/package.json
+				Location(s):
+					61:41
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-6.7.5
+		File(s):
+			package/package.json
+				Location(s):
+					62:34
+	1 new occurence(s) of finding: Found dependency: eslint-config-standard-with-typescript-39.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					65:47
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-n-16.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					68:24
+	1 new occurence(s) of finding: Found dependency: tsd-0.29.0
+		File(s):
+			package/package.json
+				Location(s):
+					72:12
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+

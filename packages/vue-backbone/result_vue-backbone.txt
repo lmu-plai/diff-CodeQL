@@ -1,0 +1,49 @@
+Comparing vue-backbone-0.1.0 to vue-backbone-0.1.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing vue-backbone-0.1.1 to vue-backbone-0.1.2:
+---------------------------------------------------------
+
+js/var-access-by-index-expression (severity: 10.0):
+	1 new occurence(s) of finding: Variable '_Fa3J' is accessed 106 times by index expression with parent binary expressions of deepth > 5.
+		File(s):
+			package/dist/vue-backbone.min.js
+				Location(s):
+					6:6204
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'documen ... on.href'.
+		File(s):
+			package/dist/vue-backbone.min.js
+				Location(s):
+					6:7992
+
+
+Severity sum:
+=> All queries: 12.0
+=> Distinct queries: 12.0
+Flagged as potential malicious.
+
+
+Comparing vue-backbone-0.1.2 to vue-backbone-0.1.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+vue-backbone-0.1.2 with score: 12.0

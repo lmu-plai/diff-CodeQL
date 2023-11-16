@@ -1,0 +1,5602 @@
+Comparing moment-1.0.0 to moment-1.0.1:
+---------------------------------------------------------
+
+js/usage-of-eval (severity: 5.0):
+	2 new occurence(s) of finding: Found use of direct eval with argument ([request.responseText](1)) in code.
+		File(s):
+			package/docs/docs.min.js
+				Location(s):
+					1:4513
+			package/docs/snippet.js
+				Location(s):
+					737:4442
+
+js/has-minified-statement-container-code (severity: 2.0):
+	1 new occurence(s) of finding: Potentially minified code ([functio ... nts))}}}}](1)) with 6 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					15:16
+	1 new occurence(s) of finding: Potentially minified code ([functio ... href=a}}](1)) with 9 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:157
+	1 new occurence(s) of finding: Potentially minified code ([functio ... turn A}}](1)) with 121 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:447
+	1 new occurence(s) of finding: Potentially minified code ([functio ... =p;k=a}}](1)) with 34 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:800
+	1 new occurence(s) of finding: Potentially minified code ([functio ... turn a}}](1)) with 13 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:2013
+	1 new occurence(s) of finding: Potentially minified code ([functio ... n(" ")}}](1)) with 10 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:2173
+	1 new occurence(s) of finding: Potentially minified code ([functio ... reak}}}}}}](1)) with 28 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:2333
+	1 new occurence(s) of finding: Potentially minified code ([functio ... in("")}}](1)) with 7 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:2759
+	1 new occurence(s) of finding: Potentially minified code ([functio ... turn i}}](1)) with 39 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:2890
+	1 new occurence(s) of finding: Potentially minified code ([functio ... turn l}}](1)) with 32 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:3275
+	1 new occurence(s) of finding: Potentially minified code ([functio ... ild(a)}}](1)) with 11 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:3619
+	1 new occurence(s) of finding: Potentially minified code ([functio ... lable"}}](1)) with 9 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:3868
+	1 new occurence(s) of finding: Potentially minified code ([functio ... (null)}}](1)) with 11 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:4078
+	1 new occurence(s) of finding: Potentially minified code ([functio ... null}}}}}}](1)) with 17 statements in 1 line
+		File(s):
+			package/docs/snippet.js
+				Location(s):
+					737:4358
+
+js/has-minified-top-level-code (severity: 5.0):
+	2 new occurence(s) of finding: Top level code of file ([docs.min.js](1)) is minified
+		File(s):
+			package/docs/PaxHeader/docs.min.js
+				Location(s):
+					N/A
+			package/docs/docs.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 48.0
+=> Distinct queries: 12.0
+Flagged as potential malicious.
+
+
+Comparing moment-1.0.1 to moment-1.3.0:
+---------------------------------------------------------
+
+js/usage-of-eval (severity: 5.0):
+	1 new occurence(s) of finding: Found use of direct eval with argument ([request.responseText](1)) in code.
+		File(s):
+			package/site/js/docs.min.js
+				Location(s):
+					1:4513
+			package/site/js/home.min.js
+				Location(s):
+					1:4513
+			package/sitesrc/js/snippet.js
+				Location(s):
+					737:4442
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([de.min.js](1)) is minified
+		File(s):
+			package/lang/min/de.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([en-gb.min.js](1)) is minified
+		File(s):
+			package/lang/min/en-gb.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([es.min.js](1)) is minified
+		File(s):
+			package/lang/min/es.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([eu.min.js](1)) is minified
+		File(s):
+			package/lang/min/eu.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([gl.min.js](1)) is minified
+		File(s):
+			package/lang/min/gl.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([kr.min.js](1)) is minified
+		File(s):
+			package/lang/min/kr.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([nb.min.js](1)) is minified
+		File(s):
+			package/lang/min/nb.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([nl.min.js](1)) is minified
+		File(s):
+			package/lang/min/nl.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([pl.min.js](1)) is minified
+		File(s):
+			package/lang/min/pl.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([ru.min.js](1)) is minified
+		File(s):
+			package/lang/min/ru.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([sv.min.js](1)) is minified
+		File(s):
+			package/lang/min/sv.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([home.min.js](1)) is minified
+		File(s):
+			package/site/js/home.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([lang-all.min.js](1)) is minified
+		File(s):
+			package/site/js/lang-all.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([test.min.js](1)) is minified
+		File(s):
+			package/site/js/test.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 75.0
+=> Distinct queries: 10.0
+Flagged as potential malicious.
+
+
+Comparing moment-1.3.0 to moment-1.4.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([ca.min.js](1)) is minified
+		File(s):
+			package/lang/min/ca.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([tr.min.js](1)) is minified
+		File(s):
+			package/lang/min/tr.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 10.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-1.4.0 to moment-1.5.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([ca.js](1)) is minified
+		File(s):
+			package/min/lang/ca.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([es.js](1)) is minified
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([gl.js](1)) is minified
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([pl.js](1)) is minified
+		File(s):
+			package/min/lang/pl.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([ru.js](1)) is minified
+		File(s):
+			package/min/lang/ru.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([moment.min.pretty.js](1)) is minified
+		File(s):
+			package/min/moment.min.pretty.js
+				Location(s):
+					N/A
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: jshint-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					28:23
+	1 new occurence(s) of finding: Found dependency: uglify-js-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					29:23
+	1 new occurence(s) of finding: Found dependency: nodeunit-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					30:26
+
+
+Severity sum:
+=> All queries: 30.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-1.5.0 to moment-1.5.1:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([fi.js](1)) is minified
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-1.5.1 to moment-1.6.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([is.js](1)) is minified
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					N/A
+
+js/domain-name (severity: 2.0):
+	1 new occurence(s) of finding: Detected the following domain name: raw.github.com
+		File(s):
+			package/test/filesize-history.js
+				Location(s):
+					54:9
+
+
+Severity sum:
+=> All queries: 7.0
+=> Distinct queries: 7.0
+
+
+Comparing moment-1.6.0 to moment-1.6.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-1.6.1 to moment-1.6.2:
+---------------------------------------------------------
+
+js/domain-name (severity: 2.0):
+	1 new occurence(s) of finding: Detected the following domain name: raw.github.com
+		File(s):
+			package/test/filesize-diff.js
+				Location(s):
+					13:9
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing moment-1.6.2 to moment-1.7.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([bg.js](1)) is minified
+		File(s):
+			package/min/lang/bg.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([hu.js](1)) is minified
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					N/A
+
+js/require-child-process (severity: 3.0):
+	3 new occurence(s) of finding: Require of child_process module in file "zone.js"
+		File(s):
+			package/test/zone.js
+				Location(s):
+					1:16
+					16:13
+					28:13
+
+js/system-command-execution (severity: 2.0):
+	3 new occurence(s) of finding: Detected SystemCommandExecution (require ... 'bash'))
+		File(s):
+			package/test/zone.js
+				Location(s):
+					1:16
+					16:13
+					28:13
+
+
+Severity sum:
+=> All queries: 25.0
+=> Distinct queries: 10.0
+Flagged as potential malicious.
+
+
+Comparing moment-1.7.0 to moment-1.7.1:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([et.js](1)) is minified
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-1.7.1 to moment-1.7.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-1.7.2 to moment-2.0.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([cs.js](1)) is minified
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([lv.js](1)) is minified
+		File(s):
+			package/min/lang/lv.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([ne.js](1)) is minified
+		File(s):
+			package/min/lang/ne.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([nl.js](1)) is minified
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([sl.js](1)) is minified
+		File(s):
+			package/min/lang/sl.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([tr.js](1)) is minified
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([uk.js](1)) is minified
+		File(s):
+			package/min/lang/uk.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([langs.min.js](1)) is minified
+		File(s):
+			package/min/langs.min.js
+				Location(s):
+					N/A
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					41:23
+
+
+Severity sum:
+=> All queries: 40.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-2.0.0 to moment-2.1.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([br.js](1)) is minified
+		File(s):
+			package/min/lang/br.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([el.js](1)) is minified
+		File(s):
+			package/min/lang/el.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([fa.js](1)) is minified
+		File(s):
+			package/min/lang/fa.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([hi.js](1)) is minified
+		File(s):
+			package/min/lang/hi.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([ka.js](1)) is minified
+		File(s):
+			package/min/lang/ka.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([sk.js](1)) is minified
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([zh-cn.js](1)) is minified
+		File(s):
+			package/min/lang/zh-cn.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([zh-tw.js](1)) is minified
+		File(s):
+			package/min/lang/zh-tw.js
+				Location(s):
+					N/A
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[dem\xe0 a ") that decodes to string value (\[demà a )
+		File(s):
+			package/min/lang/ca.js
+				Location(s):
+					4:629
+			package/min/langs.min.js
+				Location(s):
+					1:10522
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xf8ndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_L\xf8rdag") that decodes to string value (Søndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_Lørdag)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:226
+			package/min/langs.min.js
+				Location(s):
+					1:16328
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xf8n_Man_Tir_Ons_Tor_Fre_L\xf8r") that decodes to string value (Søn_Man_Tir_Ons_Tor_Fre_Lør)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:310
+			package/min/langs.min.js
+				Location(s):
+					1:16412
+	12 new occurence(s) of finding: Found string with hexadecimal characters ("%d\xba") that decodes to string value (%dº)
+		File(s):
+			package/min/lang/ca.js
+				Location(s):
+					4:1125
+			package/min/lang/es.js
+				Location(s):
+					4:1185
+			package/min/lang/gl.js
+				Location(s):
+					4:1215
+			package/min/lang/it.js
+				Location(s):
+					5:935
+			package/min/lang/pt-br.js
+				Location(s):
+					4:1055
+			package/min/lang/pt.js
+				Location(s):
+					4:1052
+			package/min/langs.min.js
+				Location(s):
+					1:11018
+					1:25991
+					2:3122
+					2:13327
+					2:31084
+					2:32134
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xf8_Ma_Ti_On_To_Fr_L\xf8") that decodes to string value (Sø_Ma_Ti_On_To_Fr_Lø)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:369
+			package/min/langs.min.js
+				Location(s):
+					1:16471
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[I g\xe5r kl.\] LT") that decodes to string value (\[I går kl.\] LT)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:615
+			package/min/langs.min.js
+				Location(s):
+					1:16717
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("f\xe5 sekunder") that decodes to string value (få sekunder)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:729
+			package/min/langs.min.js
+				Location(s):
+					1:16831
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xc7\u0438\u0442\u0435\u0441\] dddd LT \[\u0441\u0435\u0445\u0435\u0442\u0440\u0435\]") that decodes to string value (\[Çитес\] dddd LT \[сехетре\])
+		File(s):
+			package/min/lang/cv.js
+				Location(s):
+					4:1934
+			package/min/langs.min.js
+				Location(s):
+					1:15153
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("en m\xe5ned") that decodes to string value (en måned)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:828
+			package/min/lang/nb.js
+				Location(s):
+					4:853
+			package/min/langs.min.js
+				Location(s):
+					1:16930
+					2:23132
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe5neder") that decodes to string value (%d måneder)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:845
+			package/min/lang/nb.js
+				Location(s):
+					4:870
+			package/min/langs.min.js
+				Location(s):
+					1:16947
+					2:23149
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("et \xe5r") that decodes to string value (et år)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:863
+			package/min/langs.min.js
+				Location(s):
+					1:16965
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("un nebeud segondenno\xf9") that decodes to string value (un nebeud segondennoù)
+		File(s):
+			package/min/lang/br.js
+				Location(s):
+					4:1084
+			package/min/langs.min.js
+				Location(s):
+					1:9702
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("%d \xe5r") that decodes to string value (%d år)
+		File(s):
+			package/min/lang/da.js
+				Location(s):
+					4:877
+			package/min/lang/nb.js
+				Location(s):
+					4:903
+			package/min/lang/nn.js
+				Location(s):
+					4:897
+			package/min/lang/sv.js
+				Location(s):
+					4:878
+			package/min/langs.min.js
+				Location(s):
+					1:16979
+					2:23182
+					2:28328
+					3:10910
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("a\xf1") that decodes to string value (añ)
+		File(s):
+			package/min/lang/br.js
+				Location(s):
+					4:1241
+			package/min/langs.min.js
+				Location(s):
+					1:9859
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r vte\u0159in") that decodes to string value (pár vteřin)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:133
+			package/min/langs.min.js
+				Location(s):
+					1:11168
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r vte\u0159inami") that decodes to string value (pár vteřinami)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:154
+			package/min/langs.min.js
+				Location(s):
+					1:11189
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("dn\xed") that decodes to string value (dní)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:472
+			package/min/lang/sk.js
+				Location(s):
+					5:482
+			package/min/langs.min.js
+				Location(s):
+					1:11507
+					3:5880
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedc") that decodes to string value (měsíc)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:516
+			package/min/langs.min.js
+				Location(s):
+					1:11551
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedcem") that decodes to string value (měsícem)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:532
+			package/min/langs.min.js
+				Location(s):
+					1:11567
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dom._lun._mar._mi\xe9._jue._vie._s\xe1b.") that decodes to string value (dom._lun._mar._mié._jue._vie._sáb.)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:329
+			package/min/langs.min.js
+				Location(s):
+					1:25135
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedce") that decodes to string value (měsíce)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:579
+			package/min/langs.min.js
+				Location(s):
+					1:11614
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Do_Lu_Ma_Mi_Ju_Vi_S\xe1") that decodes to string value (Do_Lu_Ma_Mi_Ju_Vi_Sá)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:395
+			package/min/langs.min.js
+				Location(s):
+					1:25201
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedci") that decodes to string value (měsíci)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:621
+			package/min/langs.min.js
+				Location(s):
+					1:11656
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xfchap\xe4ev_esmasp\xe4ev_teisip\xe4ev_kolmap\xe4ev_neljap\xe4ev_reede_laup\xe4ev") that decodes to string value (pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:314
+			package/min/langs.min.js
+				Location(s):
+					1:26322
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[T\xe4na,\] LT") that decodes to string value (\[Täna,\] LT)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:620
+			package/min/langs.min.js
+				Location(s):
+					1:26628
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[J\xe4rgmine\] dddd LT") that decodes to string value (\[Järgmine\] dddd LT)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:667
+			package/min/langs.min.js
+				Location(s):
+					1:26675
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("janv._f\xe9vr._mars_avr._mai_juin_juil._ao\xfbt_sept._oct._nov._d\xe9c.") that decodes to string value (janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.)
+		File(s):
+			package/min/lang/fr-ca.js
+				Location(s):
+					4:169
+			package/min/lang/fr.js
+				Location(s):
+					4:166
+			package/min/langs.min.js
+				Location(s):
+					2:158
+					2:1106
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[ma\xf1ana a la") that decodes to string value (\[mañana a la)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:676
+			package/min/langs.min.js
+				Location(s):
+					1:25482
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s p\xe4rast") that decodes to string value (%s pärast)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:776
+			package/min/langs.min.js
+				Location(s):
+					1:26784
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4ev") that decodes to string value (päev)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:863
+			package/min/langs.min.js
+				Location(s):
+					1:26871
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d p\xe4eva") that decodes to string value (%d päeva)
+		File(s):
+			package/min/lang/et.js
+				Location(s):
+					4:876
+			package/min/langs.min.js
+				Location(s):
+					1:26884
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[z\xedtra v\] LT") that decodes to string value (\[zítra v\] LT)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:1495
+			package/min/langs.min.js
+				Location(s):
+					1:12530
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Demain \xe0\] LT") that decodes to string value (\[Demain à\] LT)
+		File(s):
+			package/min/lang/fr-ca.js
+				Location(s):
+					4:594
+			package/min/lang/fr.js
+				Location(s):
+					4:591
+			package/min/langs.min.js
+				Location(s):
+					2:583
+					2:1531
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[\xe0\] LT") that decodes to string value (dddd \[à\] LT)
+		File(s):
+			package/min/lang/fr-ca.js
+				Location(s):
+					4:622
+			package/min/lang/fr.js
+				Location(s):
+					4:619
+			package/min/langs.min.js
+				Location(s):
+					2:611
+					2:1559
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Hier \xe0\] LT") that decodes to string value (\[Hier à\] LT)
+		File(s):
+			package/min/lang/fr-ca.js
+				Location(s):
+					4:647
+			package/min/lang/fr.js
+				Location(s):
+					4:644
+			package/min/langs.min.js
+				Location(s):
+					2:636
+					2:1584
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("un d\xeda") that decodes to string value (un día)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:1093
+			package/min/lang/gl.js
+				Location(s):
+					4:1129
+			package/min/langs.min.js
+				Location(s):
+					1:25899
+					2:3036
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d d\xedas") that decodes to string value (%d días)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:1108
+			package/min/lang/gl.js
+				Location(s):
+					4:1144
+			package/min/langs.min.js
+				Location(s):
+					1:25914
+					2:3051
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("un a\xf1o") that decodes to string value (un año)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:1148
+			package/min/langs.min.js
+				Location(s):
+					1:25954
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d a\xf1os") that decodes to string value (%d años)
+		File(s):
+			package/min/lang/es.js
+				Location(s):
+					4:1163
+			package/min/langs.min.js
+				Location(s):
+					1:25969
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[v p\xe1tek v\] LT") that decodes to string value (\[v pátek v\] LT)
+		File(s):
+			package/min/lang/cs.js
+				Location(s):
+					4:1714
+			package/min/langs.min.js
+				Location(s):
+					1:12749
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4n") that decodes to string value (päivän)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:290
+					4:332
+			package/min/langs.min.js
+				Location(s):
+					1:31354
+					1:31396
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4") that decodes to string value (päivä)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:305
+			package/min/langs.min.js
+				Location(s):
+					1:31369
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4\xe4") that decodes to string value (päivää)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:347
+			package/min/langs.min.js
+				Location(s):
+					1:31411
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Dom._Lun._Mar._M\xe9r._Xov._Ven._S\xe1b.") that decodes to string value (Dom._Lun._Mar._Mér._Xov._Ven._Sáb.)
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					4:329
+			package/min/langs.min.js
+				Location(s):
+					2:2236
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Do_Lu_Ma_M\xe9_Xo_Ve_S\xe1") that decodes to string value (Do_Lu_Ma_Mé_Xo_Ve_Sá)
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					4:395
+			package/min/langs.min.js
+				Location(s):
+					2:2302
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nolla yksi kaksi kolme nelj\xe4 viisi kuusi seitsem\xe4n kahdeksan yhdeks\xe4n") that decodes to string value (nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:589
+			package/min/langs.min.js
+				Location(s):
+					1:31653
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nelj\xe4n") that decodes to string value (neljän)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:718
+			package/min/langs.min.js
+				Location(s):
+					1:31782
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1s") that decodes to string value (ás)
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					4:604
+					4:686
+					4:763
+					4:920
+			package/min/langs.min.js
+				Location(s):
+					2:2511
+					2:2593
+					2:2670
+					2:2827
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1") that decodes to string value (á)
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					4:612
+					4:694
+					4:836
+			package/min/langs.min.js
+				Location(s):
+					2:2519
+					2:2601
+					2:2743
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[ma\xf1\xe1 ") that decodes to string value (\[mañá )
+		File(s):
+			package/min/lang/gl.js
+				Location(s):
+					4:653
+			package/min/langs.min.js
+				Location(s):
+					2:2560
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[t\xe4n\xe4\xe4n\] \[klo\] LT") that decodes to string value (\[tänään\] \[klo\] LT)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:1439
+			package/min/langs.min.js
+				Location(s):
+					1:32503
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe9h\xe1ny m\xe1sodperc") that decodes to string value (néhány másodperc)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:85
+			package/min/langs.min.js
+				Location(s):
+					2:8135
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe9h\xe1ny m\xe1sodperce") that decodes to string value (néhány másodperce)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:113
+			package/min/langs.min.js
+				Location(s):
+					2:8163
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xf3ra") that decodes to string value ( óra)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:254
+					4:304
+			package/min/langs.min.js
+				Location(s):
+					2:8304
+					2:8354
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xf3r\xe1ja") that decodes to string value ( órája)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:264
+					4:314
+			package/min/langs.min.js
+				Location(s):
+					2:8314
+					2:8364
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s p\xe4\xe4st\xe4") that decodes to string value (%s päästä)
+		File(s):
+			package/min/lang/fi.js
+				Location(s):
+					4:1622
+			package/min/langs.min.js
+				Location(s):
+					1:32686
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8ndag_mandag_tirsdag_onsdag_torsdag_fredag_l\xf8rdag") that decodes to string value (søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag)
+		File(s):
+			package/min/lang/nb.js
+				Location(s):
+					4:225
+			package/min/langs.min.js
+				Location(s):
+					2:22504
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8n_man_tir_ons_tor_fre_l\xf8r") that decodes to string value (søn_man_tir_ons_tor_fre_lør)
+		File(s):
+			package/min/lang/nb.js
+				Location(s):
+					4:309
+			package/min/langs.min.js
+				Location(s):
+					2:22588
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8_ma_ti_on_to_fr_l\xf8") that decodes to string value (sø_ma_ti_on_to_fr_lø)
+		File(s):
+			package/min/lang/nb.js
+				Location(s):
+					4:368
+			package/min/langs.min.js
+				Location(s):
+					2:22647
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" h\xf3nap") that decodes to string value ( hónap)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:440
+					4:491
+			package/min/langs.min.js
+				Location(s):
+					2:8490
+					2:8541
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" h\xf3napja") that decodes to string value ( hónapja)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:452
+					4:503
+			package/min/langs.min.js
+				Location(s):
+					2:8502
+					2:8553
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xe9v") that decodes to string value ( év)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:544
+					4:588
+			package/min/langs.min.js
+				Location(s):
+					2:8594
+					2:8638
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xe9ve") that decodes to string value ( éve)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:553
+					4:597
+			package/min/langs.min.js
+				Location(s):
+					2:8603
+					2:8647
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfata") that decodes to string value (mínúta)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:200
+					4:296
+			package/min/langs.min.js
+				Location(s):
+					2:10820
+					2:10916
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatu") that decodes to string value (mínútu)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:215
+					4:313
+			package/min/langs.min.js
+				Location(s):
+					2:10835
+					2:10933
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[m\xfalt\] ") that decodes to string value (\[múlt\] )
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:643
+			package/min/langs.min.js
+				Location(s):
+					2:8693
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatur") that decodes to string value (mínútur)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:259
+			package/min/langs.min.js
+				Location(s):
+					2:10879
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatum") that decodes to string value (mínútum)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:275
+			package/min/langs.min.js
+				Location(s):
+					2:10895
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("ett \xe5r") that decodes to string value (ett år)
+		File(s):
+			package/min/lang/nb.js
+				Location(s):
+					4:888
+			package/min/lang/nn.js
+				Location(s):
+					4:882
+			package/min/lang/sv.js
+				Location(s):
+					4:863
+			package/min/langs.min.js
+				Location(s):
+					2:23167
+					2:28313
+					3:10895
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("d\xf6gum") that decodes to string value (dögum)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:491
+			package/min/langs.min.js
+				Location(s):
+					2:11111
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("su_m\xe5_ty_on_to_fr_l\xf8") that decodes to string value (su_må_ty_on_to_fr_lø)
+		File(s):
+			package/min/lang/nn.js
+				Location(s):
+					4:362
+			package/min/langs.min.js
+				Location(s):
+					2:27793
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0ur") that decodes to string value (mánuður)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:551
+					4:680
+			package/min/langs.min.js
+				Location(s):
+					2:11171
+					2:11300
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0") that decodes to string value (mánuð)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:569
+					4:701
+			package/min/langs.min.js
+				Location(s):
+					2:11189
+					2:11321
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0i") that decodes to string value (mánuði)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:583
+					4:644
+					4:715
+			package/min/langs.min.js
+				Location(s):
+					2:11203
+					2:11264
+					2:11335
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0ir") that decodes to string value (mánuðir)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:623
+			package/min/langs.min.js
+				Location(s):
+					2:11243
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0um") that decodes to string value (mánuðum)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:659
+			package/min/langs.min.js
+				Location(s):
+					2:11279
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1r") that decodes to string value (ár)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:751
+					4:797
+					4:824
+			package/min/langs.min.js
+				Location(s):
+					2:11371
+					2:11417
+					2:11444
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1ri") that decodes to string value (ári)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:759
+					4:832
+			package/min/langs.min.js
+				Location(s):
+					2:11379
+					2:11452
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[F\xf8reg\xe5ende\] dddd \[klokka\] LT") that decodes to string value (\[Føregående\] dddd \[klokka\] LT)
+		File(s):
+			package/min/lang/nn.js
+				Location(s):
+					4:647
+			package/min/langs.min.js
+				Location(s):
+					2:28078
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1rum") that decodes to string value (árum)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:805
+			package/min/langs.min.js
+				Location(s):
+					2:11425
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("Dom_Seg_Ter_Qua_Qui_Sex_S\xe1b") that decodes to string value (Dom_Seg_Ter_Qua_Qui_Sex_Sáb)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:349
+			package/min/lang/pt.js
+				Location(s):
+					4:346
+			package/min/langs.min.js
+				Location(s):
+					2:30378
+					2:31428
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("Dom_2\xaa_3\xaa_4\xaa_5\xaa_6\xaa_S\xe1b") that decodes to string value (Dom_2ª_3ª_4ª_5ª_6ª_Sáb)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:405
+			package/min/lang/pt.js
+				Location(s):
+					4:402
+			package/min/langs.min.js
+				Location(s):
+					2:30434
+					2:31484
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s m\xfalva") that decodes to string value (%s múlva)
+		File(s):
+			package/min/lang/hu.js
+				Location(s):
+					4:1516
+			package/min/langs.min.js
+				Location(s):
+					2:9566
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Dum_Lun_Mar_Mie_Joi_Vin_S\xe2m") that decodes to string value (Dum_Lun_Mar_Mie_Joi_Vin_Sâm)
+		File(s):
+			package/min/lang/ro.js
+				Location(s):
+					5:338
+			package/min/langs.min.js
+				Location(s):
+					3:327
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Hoje \xe0s\] LT") that decodes to string value (\[Hoje às\] LT)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:616
+			package/min/lang/pt.js
+				Location(s):
+					4:613
+			package/min/langs.min.js
+				Location(s):
+					2:30645
+					2:31695
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Du_Lu_Ma_Mi_Jo_Vi_S\xe2") that decodes to string value (Du_Lu_Ma_Mi_Jo_Vi_Sâ)
+		File(s):
+			package/min/lang/ro.js
+				Location(s):
+					5:394
+			package/min/langs.min.js
+				Location(s):
+					3:383
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("en m\xe5nad") that decodes to string value (en månad)
+		File(s):
+			package/min/lang/nn.js
+				Location(s):
+					4:847
+			package/min/lang/sv.js
+				Location(s):
+					4:828
+			package/min/langs.min.js
+				Location(s):
+					2:28278
+					3:10860
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n minuut") that decodes to string value (één minuut)
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					4:889
+			package/min/langs.min.js
+				Location(s):
+					2:27194
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe5nader") that decodes to string value (%d månader)
+		File(s):
+			package/min/lang/nn.js
+				Location(s):
+					4:864
+			package/min/lang/sv.js
+				Location(s):
+					4:845
+			package/min/langs.min.js
+				Location(s):
+					2:28295
+					3:10877
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n uur") that decodes to string value (één uur)
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					4:926
+			package/min/langs.min.js
+				Location(s):
+					2:27231
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[\xe0s\] LT") that decodes to string value (dddd \[às\] LT)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:674
+			package/min/lang/pt.js
+				Location(s):
+					4:671
+			package/min/langs.min.js
+				Location(s):
+					2:30703
+					2:31753
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n dag") that decodes to string value (één dag)
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					4:956
+			package/min/langs.min.js
+				Location(s):
+					2:27261
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n maand") that decodes to string value (één maand)
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					4:988
+			package/min/langs.min.js
+				Location(s):
+					2:27293
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Ontem \xe0s\] LT") that decodes to string value (\[Ontem às\] LT)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:700
+			package/min/lang/pt.js
+				Location(s):
+					4:697
+			package/min/langs.min.js
+				Location(s):
+					2:30729
+					2:31779
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[m\xe2ine la\] LT") that decodes to string value (\[mâine la\] LT)
+		File(s):
+			package/min/lang/ro.js
+				Location(s):
+					5:583
+			package/min/langs.min.js
+				Location(s):
+					3:572
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n jaar") that decodes to string value (één jaar)
+		File(s):
+			package/min/lang/nl.js
+				Location(s):
+					4:1024
+			package/min/langs.min.js
+				Location(s):
+					2:27329
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xdaltimo\] dddd \[\xe0s\] LT") that decodes to string value (\[Último\] dddd \[às\] LT)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:777
+			package/min/lang/pt.js
+				Location(s):
+					4:774
+			package/min/langs.min.js
+				Location(s):
+					2:30806
+					2:31856
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xdaltima\] dddd \[\xe0s\] LT") that decodes to string value (\[Última\] dddd \[às\] LT)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:807
+			package/min/lang/pt.js
+				Location(s):
+					4:804
+			package/min/langs.min.js
+				Location(s):
+					2:30836
+					2:31886
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xed dag kl.\] LT") that decodes to string value (\[í dag kl.\] LT)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:1466
+			package/min/langs.min.js
+				Location(s):
+					2:12086
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xeen urm\u0103") that decodes to string value (%s în urmă)
+		File(s):
+			package/min/lang/ro.js
+				Location(s):
+					5:732
+			package/min/langs.min.js
+				Location(s):
+					3:721
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%s atr\xe1s") that decodes to string value (%s atrás)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:886
+			package/min/lang/pt.js
+				Location(s):
+					4:883
+			package/min/langs.min.js
+				Location(s):
+					2:30915
+					2:31965
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xe1 morgun kl.\] LT") that decodes to string value (\[á morgun kl.\] LT)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:1494
+			package/min/langs.min.js
+				Location(s):
+					2:12114
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("c\xe2teva secunde") that decodes to string value (câteva secunde)
+		File(s):
+			package/min/lang/ro.js
+				Location(s):
+					5:755
+			package/min/langs.min.js
+				Location(s):
+					3:744
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("um m\xeas") that decodes to string value (um mês)
+		File(s):
+			package/min/lang/pt-br.js
+				Location(s):
+					4:996
+			package/min/lang/pt.js
+				Location(s):
+					4:993
+			package/min/langs.min.js
+				Location(s):
+					2:31025
+					2:32075
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xed g\xe6r kl.\] LT") that decodes to string value (\[í gær kl.\] LT)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:1550
+			package/min/langs.min.js
+				Location(s):
+					2:12170
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[s\xed\xf0asta\] dddd \[kl.\] LT") that decodes to string value (\[síðasta\] dddd \[kl.\] LT)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:1582
+			package/min/langs.min.js
+				Location(s):
+					2:12202
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("fyrir %s s\xed\xf0an") that decodes to string value (fyrir %s síðan)
+		File(s):
+			package/min/lang/is.js
+				Location(s):
+					4:1665
+			package/min/langs.min.js
+				Location(s):
+					2:12285
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6ndag_m\xe5ndag_tisdag_onsdag_torsdag_fredag_l\xf6rdag") that decodes to string value (söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:228
+			package/min/langs.min.js
+				Location(s):
+					3:10260
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6n_m\xe5n_tis_ons_tor_fre_l\xf6r") that decodes to string value (sön_mån_tis_ons_tor_fre_lör)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:314
+			package/min/langs.min.js
+				Location(s):
+					3:10346
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("E Diel_E H\xebn\xeb_E Marte_E M\xebrkure_E Enjte_E Premte_E Shtun\xeb") that decodes to string value (E Diel_E Hënë_E Marte_E Mërkure_E Enjte_E Premte_E Shtunë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:226
+			package/min/langs.min.js
+				Location(s):
+					3:9319
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6_m\xe5_ti_on_to_fr_l\xf6") that decodes to string value (sö_må_ti_on_to_fr_lö)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:376
+			package/min/langs.min.js
+				Location(s):
+					3:10408
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Ig\xe5r\] LT") that decodes to string value (\[Igår\] LT)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:588
+			package/min/langs.min.js
+				Location(s):
+					3:10620
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Sot n\xeb\] LT") that decodes to string value (\[Sot në\] LT)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:542
+			package/min/langs.min.js
+				Location(s):
+					3:9635
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[F\xf6rra\] dddd\[en\] LT") that decodes to string value (\[Förra\] dddd\[en\] LT)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:631
+			package/min/langs.min.js
+				Location(s):
+					3:10663
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Neser n\xeb\] LT") that decodes to string value (\[Neser në\] LT)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:567
+			package/min/langs.min.js
+				Location(s):
+					3:9660
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[n\xeb\] LT") that decodes to string value (dddd \[në\] LT)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:595
+			package/min/langs.min.js
+				Location(s):
+					3:9688
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Dje n\xeb\] LT") that decodes to string value (\[Dje në\] LT)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:621
+			package/min/langs.min.js
+				Location(s):
+					3:9714
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("f\xf6r %s sedan") that decodes to string value (för %s sedan)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:704
+			package/min/langs.min.js
+				Location(s):
+					3:10736
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe5gra sekunder") that decodes to string value (några sekunder)
+		File(s):
+			package/min/lang/sv.js
+				Location(s):
+					4:724
+			package/min/langs.min.js
+				Location(s):
+					3:10756
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xeb %s") that decodes to string value (në %s)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:709
+			package/min/langs.min.js
+				Location(s):
+					3:9802
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s me par\xeb") that decodes to string value (%s me parë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:725
+			package/min/langs.min.js
+				Location(s):
+					3:9818
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb minut") that decodes to string value (një minut)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:760
+			package/min/langs.min.js
+				Location(s):
+					3:9853
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb or\xeb") that decodes to string value (një orë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:793
+			package/min/langs.min.js
+				Location(s):
+					3:9886
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d or\xeb") that decodes to string value (%d orë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:812
+			package/min/langs.min.js
+				Location(s):
+					3:9905
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb dit\xeb") that decodes to string value (një ditë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:826
+			package/min/langs.min.js
+				Location(s):
+					3:9919
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d dit\xeb") that decodes to string value (%d ditë)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:846
+			package/min/langs.min.js
+				Location(s):
+					3:9939
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb muaj") that decodes to string value (një muaj)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:861
+			package/min/langs.min.js
+				Location(s):
+					3:9954
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb vit") that decodes to string value (një vit)
+		File(s):
+			package/min/lang/sq.js
+				Location(s):
+					5:890
+			package/min/langs.min.js
+				Location(s):
+					3:9983
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("'\xfcnc\xfc") that decodes to string value ('üncü)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:126
+					5:142
+					5:160
+			package/min/langs.min.js
+				Location(s):
+					3:14138
+					3:14154
+					3:14172
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r sek\xfand") that decodes to string value (pár sekúnd)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:119
+			package/min/langs.min.js
+				Location(s):
+					3:5517
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r sekundami") that decodes to string value (pár sekundami)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:138
+			package/min/langs.min.js
+				Location(s):
+					3:5536
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfata") that decodes to string value (minúta)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:174
+			package/min/langs.min.js
+				Location(s):
+					3:5572
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatu") that decodes to string value (minútu)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:188
+			package/min/langs.min.js
+				Location(s):
+					3:5586
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatou") that decodes to string value (minútou)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:200
+			package/min/langs.min.js
+				Location(s):
+					3:5598
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfaty") that decodes to string value (minúty)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:242
+			package/min/langs.min.js
+				Location(s):
+					3:5640
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfat") that decodes to string value (minút)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:254
+			package/min/langs.min.js
+				Location(s):
+					3:5652
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatami") that decodes to string value (minútami)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:268
+			package/min/langs.min.js
+				Location(s):
+					3:5666
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("hod\xedn") that decodes to string value (hodín)
+		File(s):
+			package/min/lang/sk.js
+				Location(s):
+					5:373
+			package/min/langs.min.js
+				Location(s):
+					3:5771
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[bug\xfcn saat\] LT") that decodes to string value (\[bugün saat\] LT)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:810
+			package/min/langs.min.js
+				Location(s):
+					3:14822
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[d\xfcn\] LT") that decodes to string value (\[dün\] LT)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:906
+			package/min/langs.min.js
+				Location(s):
+					3:14918
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xf6nce") that decodes to string value (%s önce)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:1014
+			package/min/langs.min.js
+				Location(s):
+					3:15026
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("birka\xe7 saniye") that decodes to string value (birkaç saniye)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:1029
+			package/min/langs.min.js
+				Location(s):
+					3:15041
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("bir g\xfcn") that decodes to string value (bir gün)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:1106
+			package/min/langs.min.js
+				Location(s):
+					3:15118
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d g\xfcn") that decodes to string value (%d gün)
+		File(s):
+			package/min/lang/tr.js
+				Location(s):
+					5:1122
+			package/min/langs.min.js
+				Location(s):
+					3:15134
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-jshint-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					42:37
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-nodeunit-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					43:37
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-concat-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					44:37
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-uglify-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					45:37
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-watch-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					46:37
+	1 new occurence(s) of finding: Found dependency: grunt-lib-legacyhelpers-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					47:37
+
+
+Severity sum:
+=> All queries: 40.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-2.1.0 to moment-2.2.1:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([moment+langs.min.js](1)) is minified
+		File(s):
+			package/min/moment+langs.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-2.2.1 to moment-2.3.0:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([moment-with-langs.min.js](1)) is minified
+		File(s):
+			package/min/moment-with-langs.min.js
+				Location(s):
+					N/A
+
+
+Severity sum:
+=> All queries: 5.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-2.3.0 to moment-2.3.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.3.1 to moment-2.4.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.4.0 to moment-2.5.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.5.0 to moment-2.5.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-env-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					49:22
+	1 new occurence(s) of finding: Found dependency: grunt-karma-0.7.2
+		File(s):
+			package/package.json
+				Location(s):
+					51:24
+	1 new occurence(s) of finding: Found dependency: karma-0.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					52:18
+	1 new occurence(s) of finding: Found dependency: karma-chrome-launcher-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					53:34
+	1 new occurence(s) of finding: Found dependency: karma-firefox-launcher-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					54:35
+	1 new occurence(s) of finding: Found dependency: karma-nodeunit-0.1.1
+		File(s):
+			package/package.json
+				Location(s):
+					55:27
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-0.1
+		File(s):
+			package/package.json
+				Location(s):
+					56:33
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.5.1 to moment-2.6.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-karma-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					50:24
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					51:29
+	1 new occurence(s) of finding: Found dependency: karma-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					52:18
+	1 new occurence(s) of finding: Found dependency: karma-nodeunit-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					55:27
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					56:33
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.6.0 to moment-2.7.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.7.0 to moment-2.8.1:
+---------------------------------------------------------
+
+js/has-minified-top-level-code (severity: 5.0):
+	1 new occurence(s) of finding: Top level code of file ([locales.min.js](1)) is minified
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					N/A
+	1 new occurence(s) of finding: Top level code of file ([moment-with-locales.min.js](1)) is minified
+		File(s):
+			package/min/moment-with-locales.min.js
+				Location(s):
+					N/A
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: benchmark-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					45:22
+	1 new occurence(s) of finding: Found dependency: grunt-jscs-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					52:23
+	1 new occurence(s) of finding: Found dependency: grunt-benchmark-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					54:28
+	1 new occurence(s) of finding: Found dependency: grunt-string-replace-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					55:33
+
+
+Severity sum:
+=> All queries: 10.0
+=> Distinct queries: 5.0
+
+
+Comparing moment-2.8.1 to moment-2.8.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.8.2 to moment-2.8.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.8.3 to moment-2.8.4:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-jscs-0.7.1
+		File(s):
+			package/package.json
+				Location(s):
+					52:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.8.4 to moment-2.9.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-clean-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					46:32
+	1 new occurence(s) of finding: Found dependency: grunt-jscs-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					53:23
+	1 new occurence(s) of finding: Found dependency: grunt-nuget-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					55:24
+	1 new occurence(s) of finding: Found dependency: grunt-exec-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					58:23
+	1 new occurence(s) of finding: Found dependency: spacejam-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					65:21
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.9.0 to moment-2.10.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: es6-promise-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					43:24
+	1 new occurence(s) of finding: Found dependency: esperanto-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					46:22
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-copy-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					49:31
+	1 new occurence(s) of finding: Found dependency: karma-qunit-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					64:24
+	1 new occurence(s) of finding: Found dependency: qunit-0.7.5
+		File(s):
+			package/package.json
+				Location(s):
+					66:18
+	1 new occurence(s) of finding: Found dependency: qunit-cli-0.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					67:22
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.10.2 to moment-2.10.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.10.3 to moment-2.10.5:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-2.11.2
+		File(s):
+			package/package.json
+				Location(s):
+					65:22
+	1 new occurence(s) of finding: Found dependency: nyc-2.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					66:16
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.10.5 to moment-2.10.6:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.10.6 to moment-2.11.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.11.0 to moment-2.11.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-cli-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					41:22
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.11.1 to moment-2.11.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.11.2 to moment-2.12.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.12.0 to moment-2.13.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: grunt-0.4
+		File(s):
+			package/package.json
+				Location(s):
+					41:18
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.13.0 to moment-2.14.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.14.0 to moment-2.14.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.14.1 to moment-2.15.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: typescript-1.8.10
+		File(s):
+			package/package.json
+				Location(s):
+					68:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.15.0 to moment-2.15.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.15.1 to moment-2.15.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.15.2 to moment-2.16.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: rollup-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					66:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.16.0 to moment-2.17.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: typescript-2.0.8
+		File(s):
+			package/package.json
+				Location(s):
+					68:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.17.0 to moment-2.17.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: typescript-1.8.10
+		File(s):
+			package/package.json
+				Location(s):
+					68:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.17.1 to moment-2.18.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.18.0 to moment-2.18.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.18.1 to moment-2.19.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r sekund") that decodes to string value (pár sekund)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2184
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:24655
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r sekundami") that decodes to string value (pár sekundami)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2200
+					1:10728
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:24671
+					1:33160
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("dn\xed") that decodes to string value (dní)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2513
+					1:11072
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:24987
+					1:33507
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedc") that decodes to string value (měsíc)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2557
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:25031
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedcem") that decodes to string value (měsícem)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2573
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:25047
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedce") that decodes to string value (měsíce)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2620
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:25095
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u011bs\xedci") that decodes to string value (měsíci)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:2662
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:25137
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xf5ne sekundi") that decodes to string value (mõne sekundi)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3769
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26149
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xf5ni sekund") that decodes to string value (mõni sekund)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3787
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26167
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfche minuti") that decodes to string value (ühe minuti)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3824
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26204
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfcks minut") that decodes to string value (üks minut)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3840
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26220
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfche tunni") that decodes to string value (ühe tunni)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3889
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26269
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfcks tund") that decodes to string value (üks tund)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3916
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26296
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfche p\xe4eva") that decodes to string value (ühe päeva)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3961
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26341
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfcks p\xe4ev") that decodes to string value (üks päev)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:3979
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26359
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfcks kuu") that decodes to string value (üks kuu)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4021
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26401
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfche aasta") that decodes to string value (ühe aasta)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4062
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26442
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xfcks aasta") that decodes to string value (üks aasta)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4085
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26465
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4n") that decodes to string value (päivän)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4444
+					1:4486
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26825
+					1:26867
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4") that decodes to string value (päivä)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4459
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26840
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe4iv\xe4\xe4") that decodes to string value (päivää)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:4501
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26882
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe9h\xe1ny m\xe1sodperc") that decodes to string value (néhány másodperc)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:5635
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28021
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe9h\xe1ny m\xe1sodperce") that decodes to string value (néhány másodperce)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:5663
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28049
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xf3ra") that decodes to string value ( óra)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:5804
+					1:5854
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28190
+					1:28240
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xf3r\xe1ja") that decodes to string value ( órája)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:5814
+					1:5864
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28200
+					1:28250
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" h\xf3nap") that decodes to string value ( hónap)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:5990
+					1:6041
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28376
+					1:28427
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" h\xf3napja") that decodes to string value ( hónapja)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6002
+					1:6053
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28388
+					1:28439
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xe9v") that decodes to string value ( év)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6094
+					1:6138
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28480
+					1:28524
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xe9ve") that decodes to string value ( éve)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6103
+					1:6147
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28489
+					1:28533
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[m\xfalt\] ") that decodes to string value (\[múlt\] )
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6193
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28580
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfata") that decodes to string value (mínúta)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6402
+					1:6498
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28791
+					1:28888
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatu") that decodes to string value (mínútu)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6417
+					1:6515
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28806
+					1:28905
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatur") that decodes to string value (mínútur)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6461
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28851
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xedn\xfatum") that decodes to string value (mínútum)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6477
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:28867
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("d\xf6gum") that decodes to string value (dögum)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6693
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29085
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0ur") that decodes to string value (mánuður)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6753
+					1:6882
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29145
+					1:29275
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0") that decodes to string value (mánuð)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6771
+					1:6903
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29163
+					1:29296
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0i") that decodes to string value (mánuði)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6785
+					1:6846
+					1:6917
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29177
+					1:29239
+					1:29310
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0ir") that decodes to string value (mánuðir)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6825
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29218
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xe1nu\xf0um") that decodes to string value (mánuðum)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6861
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29254
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1r") that decodes to string value (ár)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6953
+					1:6999
+					1:7026
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29346
+					1:29393
+					1:29420
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1ri") that decodes to string value (ári)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6961
+					1:7034
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29354
+					1:29428
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1rum") that decodes to string value (árum)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:7007
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:29401
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe1r sek\xfand") that decodes to string value (pár sekúnd)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10709
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33141
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfata") that decodes to string value (minúta)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10764
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33196
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatu") that decodes to string value (minútu)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10778
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33210
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatou") that decodes to string value (minútou)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10790
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33222
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfaty") that decodes to string value (minúty)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10832
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33265
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfat") that decodes to string value (minút)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10844
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33277
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("min\xfatami") that decodes to string value (minútami)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10858
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33291
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("hod\xedn") that decodes to string value (hodín)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:10963
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:33397
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("'n m\xedut") that decodes to string value ('n míut)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12613
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35055
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("'iens m\xedut") that decodes to string value ('iens míut)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12626
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35068
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" m\xeduts") that decodes to string value ( míuts)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12649
+					1:12663
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35091
+					1:35105
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("'n \xfeora") that decodes to string value ('n þora)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12679
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35121
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("'iensa \xfeora") that decodes to string value ('iensa þora)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12692
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35134
+	4 new occurence(s) of finding: Found string with hexadecimal characters (" \xfeoras") that decodes to string value ( þoras)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:12716
+					1:12730
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:35158
+					1:35172
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[M\xf4re om\] LT") that decodes to string value (\[Môre om\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:14810
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:65870
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("-\xfcnc\xfc") that decodes to string value (-üncü)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:37348
+					1:37364
+					1:37382
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:88434
+					1:88450
+					1:88468
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[bug\xfcn saat\] LT") that decodes to string value (\[bugün saat\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:38186
+					1:230747
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:89272
+					1:282030
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[d\xfcn\u0259n\] LT") that decodes to string value (\[dünən\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:38301
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:89387
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("bir g\xfcn") that decodes to string value (bir gün)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:38563
+					1:231037
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:89649
+					1:282320
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d g\xfcn") that decodes to string value (%d gün)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:38579
+					1:231053
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:89665
+					1:282336
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("g\xfcnd\xfcz") that decodes to string value (gündüz)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:38840
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:89926
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("un nebeud segondenno\xf9") that decodes to string value (un nebeud segondennoù)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:56423
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:107516
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("a\xf1") that decodes to string value (añ)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:56732
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:107829
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[dem\xe0 a ") that decodes to string value (\[demà a )
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:58991
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:110095
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("d'aqu\xed %s") that decodes to string value (d'aquí %s)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:59314
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:110418
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe8") that decodes to string value (è)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:59601
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:110705
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[z\xedtra v\] LT") that decodes to string value (\[zítra v\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:60686
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:111790
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[v p\xe1tek v\] LT") that decodes to string value (\[v pátek v\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:60905
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:112009
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s yn \xf4l") that decodes to string value (%s yn ôl)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:65149
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:116264
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8ndag_mandag_tirsdag_onsdag_torsdag_fredag_l\xf8rdag") that decodes to string value (søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:65826
+					1:171432
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:116941
+					1:222671
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8n_man_tir_ons_tor_fre_l\xf8r") that decodes to string value (søn_man_tir_ons_tor_fre_lør)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:65910
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117025
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8_ma_ti_on_to_fr_l\xf8") that decodes to string value (sø_ma_ti_on_to_fr_lø)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:65969
+					1:171575
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117084
+					1:222814
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xe5 dddd \[kl.\] LT") that decodes to string value (på dddd \[kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66224
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117339
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[i g\xe5r kl.\] LT") that decodes to string value (\[i går kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66254
+					1:171877
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117369
+					1:223116
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("f\xe5 sekunder") that decodes to string value (få sekunder)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66365
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117480
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("en m\xe5ned") that decodes to string value (en måned)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66464
+					1:172094
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117579
+					1:223333
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe5neder") that decodes to string value (%d måneder)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66481
+					1:172111
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117596
+					1:223350
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("et \xe5r") that decodes to string value (et år)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66499
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117614
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("%d \xe5r") that decodes to string value (%d år)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66513
+					1:172144
+					1:180338
+					1:214347
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117628
+					1:223383
+					1:231577
+					1:265625
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("J\xe4nner_Februar_M\xe4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember") that decodes to string value (Jänner_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66626
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117741
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("J\xe4n._Feb._M\xe4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.") that decodes to string value (Jän._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:66740
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:117855
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("dom._lun._mar._mi\xe9._jue._vie._s\xe1b.") that decodes to string value (dom._lun._mar._mié._jue._vie._sáb.)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:83528
+					1:84974
+					1:86987
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:134667
+					1:136113
+					1:138126
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("do_lu_ma_mi_ju_vi_s\xe1") that decodes to string value (do_lu_ma_mi_ju_vi_sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:83594
+					1:85040
+					1:87053
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:134733
+					1:136179
+					1:138192
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\[ma\xf1ana a la") that decodes to string value (\[mañana a la)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:83923
+					1:85361
+					1:87374
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135062
+					1:136500
+					1:138513
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("un d\xeda") that decodes to string value (un día)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84340
+					1:85778
+					1:87791
+					1:102748
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135479
+					1:136917
+					1:138930
+					1:153908
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("%d d\xedas") that decodes to string value (%d días)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84355
+					1:85793
+					1:87806
+					1:102763
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135494
+					1:136932
+					1:138945
+					1:153923
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("un a\xf1o") that decodes to string value (un año)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84395
+					1:85833
+					1:87846
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135534
+					1:136972
+					1:138985
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("%d a\xf1os") that decodes to string value (%d años)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84410
+					1:85848
+					1:87861
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135549
+					1:136987
+					1:139000
+	16 new occurence(s) of finding: Found string with hexadecimal characters ("%d\xba") that decodes to string value (%dº)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84469
+					1:85907
+					1:87920
+					1:102871
+					1:123951
+					1:156186
+					1:186559
+					1:187678
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:135608
+					1:137046
+					1:139059
+					1:154031
+					1:175152
+					1:207414
+					1:237804
+					1:238923
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("p\xfchap\xe4ev_esmasp\xe4ev_teisip\xe4ev_kolmap\xe4ev_neljap\xe4ev_reede_laup\xe4ev") that decodes to string value (pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:88181
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:139320
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[T\xe4na,\] LT") that decodes to string value (\[Täna,\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:88505
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:139644
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[J\xe4rgmine\] dddd LT") that decodes to string value (\[Järgmine\] dddd LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:88552
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:139691
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s p\xe4rast") that decodes to string value (%s pärast)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:88661
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:139800
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d p\xe4eva") that decodes to string value (%d päeva)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:88722
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:139867
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nolla yksi kaksi kolme nelj\xe4 viisi kuusi seitsem\xe4n kahdeksan yhdeks\xe4n") that decodes to string value (nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:93302
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:144451
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nelj\xe4n") that decodes to string value (neljän)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:93432
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:144581
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[t\xe4n\xe4\xe4n\] \[klo\] LT") that decodes to string value (\[tänään\] \[klo\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:94191
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:145340
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s p\xe4\xe4st\xe4") that decodes to string value (%s päästä)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:94374
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:145523
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xcd dag kl.\] LT") that decodes to string value (\[Í dag kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95111
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146271
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xcd morgin kl.\] LT") that decodes to string value (\[Í morgin kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95139
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146299
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xcd gj\xe1r kl.\] LT") that decodes to string value (\[Í gjár kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95195
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146355
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[s\xed\xf0stu\] dddd \[kl\] LT") that decodes to string value (\[síðstu\] dddd \[kl\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95228
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146388
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s s\xed\xf0ani") that decodes to string value (%s síðani)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95306
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146466
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("f\xe1 sekund") that decodes to string value (fá sekund)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95326
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146486
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("ein t\xedmi") that decodes to string value (ein tími)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95375
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146535
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d t\xedmar") that decodes to string value (%d tímar)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95392
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146552
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("ein m\xe1na\xf0i") that decodes to string value (ein mánaði)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95436
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146596
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe1na\xf0ir") that decodes to string value (%d mánaðir)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95458
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146618
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("eitt \xe1r") that decodes to string value (eitt ár)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95479
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146639
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d \xe1r") that decodes to string value (%d ár)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95495
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146655
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("janv._f\xe9vr._mars_avr._mai_juin_juil._ao\xfbt_sept._oct._nov._d\xe9c.") that decodes to string value (janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95727
+					1:96885
+					1:98059
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:146887
+					1:148045
+					1:149219
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\[Demain \xe0\] LT") that decodes to string value (\[Demain à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96220
+					1:97378
+					1:98552
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:147380
+					1:148538
+					1:149712
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[\xe0\] LT") that decodes to string value (dddd \[à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96248
+					1:97406
+					1:98580
+					1:232175
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:147408
+					1:148566
+					1:149740
+					1:283458
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\[Hier \xe0\] LT") that decodes to string value (\[Hier à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96273
+					1:97431
+					1:98605
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:147433
+					1:148591
+					1:149765
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xf4fr\xfbne\] dddd \[om\] LT") that decodes to string value (\[ôfrûne\] dddd \[om\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:99936
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151096
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("ien min\xfat") that decodes to string value (ien minút)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100047
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151207
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Am M\xe0rt") that decodes to string value (Am Màrt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100354
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151514
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("An C\xe8itean") that decodes to string value (An Cèitean)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100380
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151540
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("An t-\xd2gmhios") that decodes to string value (An t-Ògmhios)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100396
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151556
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("An L\xf9nastal") that decodes to string value (An Lùnastal)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100428
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151588
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("An D\xe0mhair") that decodes to string value (An Dàmhair)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100460
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151620
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("An D\xf9bhlachd") that decodes to string value (An Dùbhlachd)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100491
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151651
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe0rt") that decodes to string value (Màrt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100528
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151688
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("C\xe8it") that decodes to string value (Cèit)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100545
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151705
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xd2gmh") that decodes to string value (Ògmh)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100555
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151715
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("L\xf9n") that decodes to string value (Lùn)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100572
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151732
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe0mh") that decodes to string value (Dàmh)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100588
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151748
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xf9bh") that decodes to string value (Dùbh)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100605
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151765
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Did\xf2mhnaich") that decodes to string value (Didòmhnaich)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100620
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151780
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Dim\xe0irt") that decodes to string value (Dimàirt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100647
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151807
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xf2") that decodes to string value (Dò)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100761
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151921
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe0") that decodes to string value (Mà)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:100774
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:151934
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[An-d\xe8 aig\] LT") that decodes to string value (\[An-dè aig\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:101147
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:152307
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xecos") that decodes to string value (mìos)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:101373
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:152533
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xecosan") that decodes to string value (%d mìosan)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:101386
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:152546
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dom._lun._mar._m\xe9r._xov._ven._s\xe1b.") that decodes to string value (dom._lun._mar._mér._xov._ven._sáb.)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:101885
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:153045
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("do_lu_ma_m\xe9_xo_ve_s\xe1") that decodes to string value (do_lu_ma_mé_xo_ve_sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:101951
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:153111
+	8 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1s") that decodes to string value (ás)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:102231
+					1:102313
+					1:102390
+					1:102547
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:153391
+					1:153473
+					1:153550
+					1:153707
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1") that decodes to string value (á)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:102239
+					1:102321
+					1:102463
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:153399
+					1:153481
+					1:153623
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[ma\xf1\xe1 ") that decodes to string value (\[mañá )
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:102280
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:153440
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s m\xfalva") that decodes to string value (%s múlva)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:116744
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:167924
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xed dag kl.\] LT") that decodes to string value (\[í dag kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:122523
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:173714
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xe1 morgun kl.\] LT") that decodes to string value (\[á morgun kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:122551
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:173742
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xed g\xe6r kl.\] LT") that decodes to string value (\[í gær kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:122607
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:173798
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[s\xed\xf0asta\] dddd \[kl.\] LT") that decodes to string value (\[síðasta\] dddd \[kl.\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:122639
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:173830
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("fyrir %s s\xed\xf0an") that decodes to string value (fyrir %s síðan)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:122722
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:173913
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[G\xebschter um\] LT") that decodes to string value (\[Gëschter um\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:145890
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:197091
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d M\xe9int") that decodes to string value (%d Méint)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:146286
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:197493
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf8._ma._ti._on._to._fr._l\xf8.") that decodes to string value (sø._ma._ti._on._to._fr._lø.)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:171516
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:222755
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("ett \xe5r") that decodes to string value (ett år)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:172129
+					1:214332
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:223368
+					1:265610
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n minuut") that decodes to string value (één minuut)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:177318
+					1:179134
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:228557
+					1:230373
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n uur") that decodes to string value (één uur)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:177355
+					1:179171
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:228594
+					1:230410
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n dag") that decodes to string value (één dag)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:177385
+					1:179201
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:228624
+					1:230440
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n maand") that decodes to string value (één maand)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:177417
+					1:179233
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:228656
+					1:230472
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n jaar") that decodes to string value (één jaar)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:177453
+					1:179269
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:228692
+					1:230508
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("su_m\xe5_ty_on_to_fr_l\xf8") that decodes to string value (su_må_ty_on_to_fr_lø)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:179768
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:231007
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[F\xf8reg\xe5ande\] dddd \[klokka\] LT") that decodes to string value (\[Føregåande\] dddd \[klokka\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:180088
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:231327
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("ein m\xe5nad") that decodes to string value (ein månad)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:180287
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:231526
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe5nader") that decodes to string value (%d månader)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:180305
+					1:214314
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:231544
+					1:265592
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("eit \xe5r") that decodes to string value (eit år)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:180323
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:231562
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("Dom_Seg_Ter_Qua_Qui_Sex_S\xe1b") that decodes to string value (Dom_Seg_Ter_Qua_Qui_Sex_Sáb)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:185735
+					1:186897
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:236980
+					1:238142
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("Do_2\xaa_3\xaa_4\xaa_5\xaa_6\xaa_S\xe1") that decodes to string value (Do_2ª_3ª_4ª_5ª_6ª_Sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:185791
+					1:186953
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237036
+					1:238198
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Hoje \xe0s\] LT") that decodes to string value (\[Hoje às\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186059
+					1:187205
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237304
+					1:238450
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[\xe0s\] LT") that decodes to string value (dddd \[às\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186117
+					1:187263
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237362
+					1:238508
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[Ontem \xe0s\] LT") that decodes to string value (\[Ontem às\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186143
+					1:187289
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237388
+					1:238534
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xdaltimo\] dddd \[\xe0s\] LT") that decodes to string value (\[Último\] dddd \[às\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186220
+					1:187366
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237465
+					1:238611
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xdaltima\] dddd \[\xe0s\] LT") that decodes to string value (\[Última\] dddd \[às\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186250
+					1:187396
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237495
+					1:238641
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s atr\xe1s") that decodes to string value (%s atrás)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186329
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237574
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("um m\xeas") that decodes to string value (um mês)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:186463
+					1:187582
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:237708
+					1:238827
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("h\xe1 %s") that decodes to string value (há %s)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:187475
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:238720
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Dum_Lun_Mar_Mie_Joi_Vin_S\xe2m") that decodes to string value (Dum_Lun_Mar_Mie_Joi_Vin_Sâm)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:188061
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:239306
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Du_Lu_Ma_Mi_Jo_Vi_S\xe2") that decodes to string value (Du_Lu_Ma_Mi_Jo_Vi_Sâ)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:188117
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:239362
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[m\xe2ine la\] LT") that decodes to string value (\[mâine la\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:188320
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:239565
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xeen urm\u0103") that decodes to string value (%s în urmă)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:188469
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:239714
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("c\xe2teva secunde") that decodes to string value (câteva secunde)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:188492
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:239737
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("sotn_vuos_ma\u014b_gask_duor_bear_l\xe1v") that decodes to string value (sotn_vuos_maŋ_gask_duor_bear_láv)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:198750
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:250006
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("okta m\xe1nnu") that decodes to string value (okta mánnu)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:199336
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:250592
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xe1nut") that decodes to string value (%d mánut)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:199355
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:250611
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("E Diel_E H\xebn\xeb_E Mart\xeb_E M\xebrkur\xeb_E Enjte_E Premte_E Shtun\xeb") that decodes to string value (E Diel_E Hënë_E Martë_E Mërkurë_E Enjte_E Premte_E Shtunë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205195
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:256473
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Sot n\xeb\] LT") that decodes to string value (\[Sot në\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205672
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:256950
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[n\xeb\] LT") that decodes to string value (dddd \[në\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205728
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257006
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Dje n\xeb\] LT") that decodes to string value (\[Dje në\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205754
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257032
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xeb %s") that decodes to string value (në %s)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205842
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257120
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s m\xeb par\xeb") that decodes to string value (%s më parë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205858
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257136
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb minut\xeb") that decodes to string value (një minutë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205896
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257174
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb or\xeb") that decodes to string value (një orë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205932
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257210
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d or\xeb") that decodes to string value (%d orë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205951
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257229
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb dit\xeb") that decodes to string value (një ditë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205965
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257243
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d dit\xeb") that decodes to string value (%d ditë)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:205985
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257263
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb muaj") that decodes to string value (një muaj)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:206000
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257278
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("nj\xeb vit") that decodes to string value (një vit)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:206029
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:257307
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6ndag_m\xe5ndag_tisdag_onsdag_torsdag_fredag_l\xf6rdag") that decodes to string value (söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:213613
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:264891
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6n_m\xe5n_tis_ons_tor_fre_l\xf6r") that decodes to string value (sön_mån_tis_ons_tor_fre_lör)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:213699
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:264977
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\xf6_m\xe5_ti_on_to_fr_l\xf6") that decodes to string value (sö_må_ti_on_to_fr_lö)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:213761
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265039
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Ig\xe5r\] LT") that decodes to string value (\[Igår\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:214057
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265335
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[P\xe5\] dddd LT") that decodes to string value (\[På\] dddd LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:214081
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265359
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("f\xf6r %s sedan") that decodes to string value (för %s sedan)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:214173
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265451
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xe5gra sekunder") that decodes to string value (några sekunder)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:214193
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265471
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("en m\xe5nad") that decodes to string value (en månad)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:214297
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:265575
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("'\xfcnc\xfc") that decodes to string value ('üncü)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:230034
+					1:230050
+					1:230068
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:281317
+					1:281333
+					1:281351
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[d\xfcn\] LT") that decodes to string value (\[dün\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:230843
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:282126
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xf6nce") that decodes to string value (%s önce)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:230945
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:282228
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("birka\xe7 saniye") that decodes to string value (birkaç saniye)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:230960
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:282243
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xfaladi_L\xfane\xe7i_Maitzi_M\xe1rcuri_Xh\xfaadi_Vi\xe9ner\xe7i_S\xe1turi") that decodes to string value (Súladi_Lúneçi_Maitzi_Márcuri_Xhúadi_Viénerçi_Sáturi)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:231577
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:282860
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xfal_L\xfan_Mai_M\xe1r_Xh\xfa_Vi\xe9_S\xe1t") that decodes to string value (Súl_Lún_Mai_Már_Xhú_Vié_Sát)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:231680
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:282963
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S\xfa_L\xfa_Ma_M\xe1_Xh_Vi_S\xe1") that decodes to string value (Sú_Lú_Ma_Má_Xh_Vi_Sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:231751
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:283034
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[oxhi \xe0\] LT") that decodes to string value (\[oxhi à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:232121
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:283404
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[dem\xe0 \xe0\] LT") that decodes to string value (\[demà à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:232146
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:283429
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[ieiri \xe0\] LT") that decodes to string value (\[ieiri à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:232200
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:283483
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[s\xfcr el\] dddd \[lasteu \xe0\] LT") that decodes to string value (\[sür el\] dddd \[lasteu à\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:232227
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:283510
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("th\xe1ng 1_th\xe1ng 2_th\xe1ng 3_th\xe1ng 4_th\xe1ng 5_th\xe1ng 6_th\xe1ng 7_th\xe1ng 8_th\xe1ng 9_th\xe1ng 10_th\xe1ng 11_th\xe1ng 12") that decodes to string value (tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:245887
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:297193
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[H\xf4m nay l\xfac\] LT") that decodes to string value (\[Hôm nay lúc\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:246779
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298085
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[H\xf4m qua l\xfac\] LT") that decodes to string value (\[Hôm qua lúc\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:246893
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298199
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("v\xe0i gi\xe2y") that decodes to string value (vài giây)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247042
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298348
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u1ed9t ph\xfat") that decodes to string value (một phút)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247061
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298367
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d ph\xfat") that decodes to string value (%d phút)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247083
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298389
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u1ed9t ng\xe0y") that decodes to string value (một ngày)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247137
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298443
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d ng\xe0y") that decodes to string value (%d ngày)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247159
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298465
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\u1ed9t th\xe1ng") that decodes to string value (một tháng)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247174
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298480
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d th\xe1ng") that decodes to string value (%d tháng)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247197
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298503
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("J~\xe1\xf1\xfa\xe1~r\xfd_F~\xe9br\xfa~\xe1r\xfd_~M\xe1rc~h_\xc1p~r\xedl_~M\xe1\xfd_~J\xfa\xf1\xe9~_J\xfal~\xfd_\xc1\xfa~g\xfast~_S\xe9p~t\xe9mb~\xe9r_\xd3~ct\xf3b~\xe9r_\xd1~\xf3v\xe9m~b\xe9r_~D\xe9c\xe9~mb\xe9r") that decodes to string value (J~áñúá~rý_F~ébrú~árý_~Márc~h_Áp~ríl_~Máý_~Júñé~_Júl~ý_Áú~gúst~_Sép~témb~ér_Ó~ctób~ér_Ñ~óvém~bér_~Décé~mbér)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247369
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298675
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("J~\xe1\xf1_~F\xe9b_~M\xe1r_~\xc1pr_~M\xe1\xfd_~J\xfa\xf1_~J\xfal_~\xc1\xfag_~S\xe9p_~\xd3ct_~\xd1\xf3v_~D\xe9c") that decodes to string value (J~áñ_~Féb_~Már_~Ápr_~Máý_~Júñ_~Júl_~Áúg_~Sép_~Óct_~Ñóv_~Déc)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247606
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:298912
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S~\xfa\xf1d\xe1~\xfd_M\xf3~\xf1d\xe1\xfd~_T\xfa\xe9~sd\xe1\xfd~_W\xe9d~\xf1\xe9sd~\xe1\xfd_T~h\xfars~d\xe1\xfd_~Fr\xedd~\xe1\xfd_S~\xe1t\xfar~d\xe1\xfd") that decodes to string value (S~úñdá~ý_Mó~ñdáý~_Túé~sdáý~_Wéd~ñésd~áý_T~húrs~dáý_~Fríd~áý_S~átúr~dáý)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247759
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299065
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S~\xfa\xf1_~M\xf3\xf1_~T\xfa\xe9_~W\xe9d_~Th\xfa_~Fr\xed_~S\xe1t") that decodes to string value (S~úñ_~Móñ_~Túé_~Wéd_~Thú_~Frí_~Sát)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:247938
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299244
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("S~\xfa_M\xf3~_T\xfa_~W\xe9_T~h_Fr~_S\xe1") that decodes to string value (S~ú_Mó~_Tú_~Wé_T~h_Fr~_Sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248028
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299334
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dddd \[\xe1t\] LT") that decodes to string value (dddd \[át\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248318
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299624
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[\xdd~\xe9st~\xe9rd\xe1~\xfd \xe1t\] LT") that decodes to string value (\[Ý~ést~érdá~ý át\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248344
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299650
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xed~\xf1 %s") that decodes to string value (í~ñ %s)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248458
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299764
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xe1~g\xf3") that decodes to string value (%s á~gó)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248478
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299784
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1 ~f\xe9w ~s\xe9c\xf3~\xf1ds") that decodes to string value (á ~féw ~sécó~ñds)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248496
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299802
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1 ~m\xed\xf1~\xfat\xe9") that decodes to string value (á ~míñ~úté)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248532
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299838
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m~\xed\xf1\xfa~t\xe9s") that decodes to string value (%d m~íñú~tés)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248563
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299869
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1~\xf1 h\xf3~\xfar") that decodes to string value (á~ñ hó~úr)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248592
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299898
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d h~\xf3\xfars") that decodes to string value (%d h~óúrs)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248619
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299925
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1 ~d\xe1\xfd") that decodes to string value (á ~dáý)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248639
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299945
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d d~\xe1\xfds") that decodes to string value (%d d~áýs)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248660
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299966
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1 ~m\xf3\xf1~th") that decodes to string value (á ~móñ~th)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248679
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:299985
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m~\xf3\xf1t~hs") that decodes to string value (%d m~óñt~hs)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248703
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:300009
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe1 ~\xfd\xe9\xe1r") that decodes to string value (á ~ýéár)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248725
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:300031
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d \xfd~\xe9\xe1rs") that decodes to string value (%d ý~éárs)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:248750
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:300056
+
+js/obfuscated-require-declaration (severity: 8.0):
+	3 new occurence(s) of finding: "Require" is assigned to a variable (pretend ... quireV1), which could indicate obfuscation.
+		File(s):
+			package/src/lib/locale/locales.js
+				Location(s):
+					57:17
+			package/moment.js
+				Location(s):
+					1846:17
+			package/min/moment-with-locales.js
+				Location(s):
+					1840:17
+	3 new occurence(s) of finding: "Require" is assigned to a variable (pretend ... quireV2), which could indicate obfuscation.
+		File(s):
+			package/src/lib/locale/locales.js
+				Location(s):
+					64:21
+			package/moment.js
+				Location(s):
+					1853:21
+			package/min/moment-with-locales.js
+				Location(s):
+					1847:21
+
+
+Severity sum:
+=> All queries: 48.0
+=> Distinct queries: 8.0
+
+
+Comparing moment-2.19.0 to moment-2.19.1:
+---------------------------------------------------------
+
+js/obfuscated-require-declaration (severity: 8.0):
+	3 new occurence(s) of finding: "Require" is assigned to a variable (aliasedRequire), which could indicate obfuscation.
+		File(s):
+			package/src/lib/locale/locales.js
+				Location(s):
+					55:17
+			package/moment.js
+				Location(s):
+					1844:17
+			package/min/moment-with-locales.js
+				Location(s):
+					1838:17
+
+
+Severity sum:
+=> All queries: 24.0
+=> Distinct queries: 8.0
+
+
+Comparing moment-2.19.1 to moment-2.19.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.19.2 to moment-2.19.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.19.3 to moment-2.19.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.19.4 to moment-2.20.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters (" m\xe1sodperc") that decodes to string value ( másodperc)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6194
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26243
+	2 new occurence(s) of finding: Found string with hexadecimal characters (" m\xe1sodperce") that decodes to string value ( másodperce)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6210
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:26259
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("sek\xfandur") that decodes to string value (sekúndur)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6949
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:27002
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("sek\xfandum") that decodes to string value (sekúndum)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6963
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:27016
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("sek\xfanda") that decodes to string value (sekúnda)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:6980
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:27033
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("sek\xfand") that decodes to string value (sekúnd)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:11805
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:31901
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d\xba") that decodes to string value (%dº)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d gi\xe2y") that decodes to string value (%d giây)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:252540
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:304181
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.20.0 to moment-2.20.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.20.1 to moment-2.21.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("h\xe1 %s") that decodes to string value (há %s)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.21.0 to moment-2.22.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.22.0 to moment-2.22.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: node-qunit-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					64:23
+	1 new occurence(s) of finding: Found dependency: qunit-2.6.0
+		File(s):
+			package/package.json
+				Location(s):
+					66:18
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.22.1 to moment-2.22.2:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-3.5.2
+		File(s):
+			package/package.json
+				Location(s):
+					63:29
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.22.2 to moment-2.23.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-3.0.2
+		File(s):
+			package/package.json
+				Location(s):
+					41:22
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-watch-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					51:32
+	1 new occurence(s) of finding: Found dependency: nyc-11.9.0
+		File(s):
+			package/package.json
+				Location(s):
+					65:16
+	1 new occurence(s) of finding: Found dependency: qunit-2.7.1
+		File(s):
+			package/package.json
+				Location(s):
+					66:18
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.23.0 to moment-2.24.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d\xba") that decodes to string value (%dº)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("ein m\xe1na\xf0ur") that decodes to string value (ein mánaður)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:90024
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:143253
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Ean\xe1ir") that decodes to string value (Eanáir)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:94998
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148232
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe1rta") that decodes to string value (Márta)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95020
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148254
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Aibre\xe1n") that decodes to string value (Aibreán)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95031
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148265
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe9itheamh") that decodes to string value (Méitheamh)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95056
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148290
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("I\xfail") that decodes to string value (Iúil)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95071
+					1:95222
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148305
+					1:148456
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("L\xfanasa") that decodes to string value (Lúnasa)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95081
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148315
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Me\xe1n F\xf3mhair") that decodes to string value (Meán Fómhair)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95093
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148327
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Ean\xe1") that decodes to string value (Eaná)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95171
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148405
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe1rt") that decodes to string value (Márt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95188
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148422
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe9it") that decodes to string value (Méit)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95212
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148446
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("L\xfana") that decodes to string value (Lúna)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95232
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148466
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Me\xe1n") that decodes to string value (Meán)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95242
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148476
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 Domhnaigh") that decodes to string value (Dé Domhnaigh)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95304
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148538
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 Luain") that decodes to string value (Dé Luain)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95322
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148556
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 M\xe1irt") that decodes to string value (Dé Máirt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95336
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148570
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 C\xe9adaoin") that decodes to string value (Dé Céadaoin)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95353
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148587
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9ardaoin") that decodes to string value (Déardaoin)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95373
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148607
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 hAoine") that decodes to string value (Dé hAoine)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95388
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148622
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 Satharn") that decodes to string value (Dé Satharn)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95403
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148637
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe1i") that decodes to string value (Mái)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95447
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148681
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("C\xe9a") that decodes to string value (Céa)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95456
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148690
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9a") that decodes to string value (Déa)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95465
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148699
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe1") that decodes to string value (Má)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95510
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148744
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9") that decodes to string value (Dé)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95523
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148757
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Am\xe1rach ag\] LT") that decodes to string value (\[Amárach ag\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95714
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:148948
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Inn\xe9 aig\] LT") that decodes to string value (\[Inné aig\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95767
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149001
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xf3 shin") that decodes to string value (%s ó shin)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95869
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149103
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("c\xfapla soicind") that decodes to string value (cúpla soicind)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95886
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149120
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("n\xf3im\xe9ad") that decodes to string value (nóiméad)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95923
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149157
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d n\xf3im\xe9ad") that decodes to string value (%d nóiméad)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:95942
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149176
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("l\xe1") that decodes to string value (lá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96005
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149239
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d l\xe1") that decodes to string value (%d lá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96016
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149250
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("m\xed") that decodes to string value (mí)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96029
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149263
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xed") that decodes to string value (%d mí)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96040
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:149274
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: rollup-0.67.4
+		File(s):
+			package/package.json
+				Location(s):
+					67:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.24.0 to moment-2.25.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("d'aqu\xed %s") that decodes to string value (d'aquí %s)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe8") that decodes to string value (è)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("L\xfan") that decodes to string value (Lún)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96769
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155529
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9 Sathairn") that decodes to string value (Dé Sathairn)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96936
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155696
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("M\xe1irt") that decodes to string value (Máirt)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96983
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155743
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("C\xe9ad") that decodes to string value (Céad)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:96994
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155754
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("D\xe9ar") that decodes to string value (Déar)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:97004
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155764
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("C\xe9") that decodes to string value (Cé)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:97061
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:155821
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[Inn\xe9 ag\] LT") that decodes to string value (\[Inné ag\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:97312
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:156072
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d m\xedonna") that decodes to string value (%d míonna)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:97584
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:156344
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[u\xe8i a\] LT") that decodes to string value (\[uèi a\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:201085
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:259858
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[i\xe8r a\] LT") that decodes to string value (\[ièr a\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:201155
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:259928
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dom_seg_ter_qua_qui_sex_s\xe1b") that decodes to string value (dom_seg_ter_qua_qui_sex_sáb)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:208596
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:267369
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("do_2\xaa_3\xaa_4\xaa_5\xaa_6\xaa_s\xe1") that decodes to string value (do_2ª_3ª_4ª_5ª_6ª_sá)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:208652
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:267425
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: coveralls-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					49:22
+	1 new occurence(s) of finding: Found dependency: eslint-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					51:19
+	1 new occurence(s) of finding: Found dependency: grunt-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					52:18
+	1 new occurence(s) of finding: Found dependency: grunt-contrib-watch-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					59:32
+	1 new occurence(s) of finding: Found dependency: load-grunt-tasks-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					70:29
+	1 new occurence(s) of finding: Found dependency: node-qunit-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					71:23
+	1 new occurence(s) of finding: Found dependency: nyc-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					72:16
+	1 new occurence(s) of finding: Found dependency: prettier-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					73:21
+	1 new occurence(s) of finding: Found dependency: rollup-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					74:19
+	1 new occurence(s) of finding: Found dependency: typescript3-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					76:24
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.25.0 to moment-2.25.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.25.1 to moment-2.25.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.25.2 to moment-2.25.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.25.3 to moment-2.26.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xf6\xf6") that decodes to string value (öö)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:263985
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:322802
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xd6\xd6") that decodes to string value (ÖÖ)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:263996
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:322813
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xf6s") that decodes to string value (ös)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:264009
+					1:264095
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:322826
+					1:322912
+	4 new occurence(s) of finding: Found string with hexadecimal characters ("\xd6S") that decodes to string value (ÖS)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:264017
+					1:264108
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:322834
+					1:322925
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: cross-env-6.0.3
+		File(s):
+			package/package.json
+				Location(s):
+					49:22
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.26.0 to moment-2.27.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("bir g\xfcn") that decodes to string value (bir gün)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d g\xfcn") that decodes to string value (%d gün)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	6 new occurence(s) of finding: Found string with hexadecimal characters ("'\xfcnji") that decodes to string value ('ünji)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259185
+					1:259198
+					1:259213
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318005
+					1:318018
+					1:318033
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xddanwar_Fewral_Mart_Aprel_Ma\xfd_I\xfdun_I\xfdul_Awgust_Sent\xfdabr_Okt\xfdabr_No\xfdabr_Dekabr") that decodes to string value (Ýanwar_Fewral_Mart_Aprel_Maý_Iýun_Iýul_Awgust_Sentýabr_Oktýabr_Noýabr_Dekabr)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259316
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318136
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xddan_Few_Mar_Apr_Ma\xfd_I\xfdn_I\xfdl_Awg_Sen_Okt_No\xfd_Dek") that decodes to string value (Ýan_Few_Mar_Apr_Maý_Iýn_Iýl_Awg_Sen_Okt_Noý_Dek)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259439
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318259
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xddek\u015fenbe_Du\u015fenbe_Si\u015fenbe_\xc7ar\u015fenbe_Pen\u015fenbe_Anna_\u015eenbe") that decodes to string value (Ýekşenbe_Duşenbe_Sişenbe_Çarşenbe_Penşenbe_Anna_Şenbe)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259524
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318344
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xddek_Du\u015f_Si\u015f_\xc7ar_Pen_Ann_\u015een") that decodes to string value (Ýek_Duş_Siş_Çar_Pen_Ann_Şen)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259641
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318461
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xddk_D\u015f_S\u015f_\xc7r_Pn_An_\u015en") that decodes to string value (Ýk_Dş_Sş_Çr_Pn_An_Şn)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:259715
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318535
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[d\xfc\xfdn\] LT") that decodes to string value (\[düýn\] LT)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260011
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318831
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%s \xf6\u0148") that decodes to string value (%s öň)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260121
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:318941
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("bir a\xfd") that decodes to string value (bir aý)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260250
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:319070
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d a\xfd") that decodes to string value (%d aý)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260265
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:319085
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("bir \xfdyl") that decodes to string value (bir ýyl)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260278
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:319098
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d \xfdyl") that decodes to string value (%d ýyl)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:260294
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:319114
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: karma-sauce-launcher-4.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					69:33
+	1 new occurence(s) of finding: Found dependency: qunit-2.10.0
+		File(s):
+			package/package.json
+				Location(s):
+					74:18
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.27.0 to moment-2.28.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Fecha inv\xe1lida") that decodes to string value (Fecha inválida)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:84946
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:143778
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: lodash-4.17.19
+		File(s):
+			package/package.json
+				Location(s):
+					71:19
+	1 new occurence(s) of finding: Found dependency: prettier-2.0.5
+		File(s):
+			package/package.json
+				Location(s):
+					74:21
+	1 new occurence(s) of finding: Found dependency: rollup-2.17.1
+		File(s):
+			package/package.json
+				Location(s):
+					76:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.28.0 to moment-2.29.0:
+---------------------------------------------------------
+
+js/hex-encoded-string (severity: 0.0):
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("dom._lun._mar._mi\xe9._jue._vie._s\xe1b.") that decodes to string value (dom._lun._mar._mié._jue._vie._sáb.)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("do_lu_ma_mi_ju_vi_s\xe1") that decodes to string value (do_lu_ma_mi_ju_vi_sá)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\[ma\xf1ana a la") that decodes to string value (\[mañana a la)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("un d\xeda") that decodes to string value (un día)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d d\xedas") that decodes to string value (%d días)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("un a\xf1o") that decodes to string value (un año)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d a\xf1os") that decodes to string value (%d años)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("%d\xba") that decodes to string value (%dº)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Fecha inv\xe1lida") that decodes to string value (Fecha inválida)
+		File(s):
+			package/min/locales.min.js
+			package/min/moment-with-locales.min.js
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("\xe9\xe9n week") that decodes to string value (één week)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:208363
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:267222
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("s\u0103pt\u0103m\xe2ni") that decodes to string value (săptămâni)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:215452
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:274311
+	2 new occurence(s) of finding: Found string with hexadecimal characters ("Data inv\xe1lida") that decodes to string value (Data inválida)
+		File(s):
+			package/min/locales.min.js
+				Location(s):
+					1:219211
+			package/min/moment-with-locales.min.js
+				Location(s):
+					1:278070
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: prettier-unknown
+		File(s):
+			package/package.json
+				Location(s):
+					74:21
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing moment-2.29.0 to moment-2.29.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.29.1 to moment-2.29.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.29.2 to moment-2.29.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing moment-2.29.3 to moment-2.29.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+moment-1.0.1 with score: 12.0
+moment-1.3.0 with score: 10.0
+moment-1.7.0 with score: 10.0

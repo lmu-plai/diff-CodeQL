@@ -1,0 +1,400 @@
+Comparing eslint-scope-3.7.0 to eslint-scope-3.7.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-3.7.1 to eslint-scope-3.7.2:
+---------------------------------------------------------
+
+js/usage-of-eval (severity: 5.0):
+	1 new occurence(s) of finding: Found use of direct eval with argument ([c](1)) in code.
+		File(s):
+			package/lib/build.js
+				Location(s):
+					6:5
+
+js/install-script (severity: 7.0):
+	1 new occurence(s) of finding: Detected "postinstall" script with code "node ./lib/build.js"
+		File(s):
+			package/package.json
+				Location(s):
+					41:14
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'pastebin.com'.
+		File(s):
+			package/lib/build.js
+				Location(s):
+					3:5
+
+js/domain-name (severity: 2.0):
+	1 new occurence(s) of finding: Detected the following domain name: pastebin.com
+		File(s):
+			package/lib/build.js
+				Location(s):
+					3:27
+
+js/request-to-eval (severity: 10.0):
+	1 new occurence(s) of finding: Request response ([pastebin.com](1)) is used in direct eval function ([c](2)).
+		File(s):
+			package/lib/build.js
+				Location(s):
+					6:10
+
+
+Severity sum:
+=> All queries: 26.0
+=> Distinct queries: 26.0
+Flagged as potential malicious.
+
+
+Comparing eslint-scope-3.7.2 to eslint-scope-3.7.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-3.7.3 to eslint-scope-4.0.0-alpha.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-release-0.11.1
+		File(s):
+			package/package.json
+				Location(s):
+					37:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-4.0.0-alpha.0 to eslint-scope-4.0.0-rc.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-4.0.0-rc.0 to eslint-scope-4.0.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-4.0.0 to eslint-scope-4.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-release-1.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					37:23
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-4.0.1 to eslint-scope-4.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-4.0.2 to eslint-scope-4.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-4.0.3 to eslint-scope-5.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-1.11.0
+		File(s):
+			package/package.json
+				Location(s):
+					34:34
+	1 new occurence(s) of finding: Found dependency: chai-4.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					35:13
+	1 new occurence(s) of finding: Found dependency: eslint-6.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					36:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-eslint-5.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					37:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-node-9.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					38:27
+	1 new occurence(s) of finding: Found dependency: espree-6.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:15
+	1 new occurence(s) of finding: Found dependency: mocha-6.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					42:14
+	1 new occurence(s) of finding: Found dependency: shelljs-0.8.3
+		File(s):
+			package/package.json
+				Location(s):
+					44:16
+	1 new occurence(s) of finding: Found dependency: typescript-3.5.2
+		File(s):
+			package/package.json
+				Location(s):
+					45:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-5.0.0 to eslint-scope-5.1.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-visitor-keys-1.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					40:28
+	1 new occurence(s) of finding: Found dependency: espree-7.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					41:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-5.1.0 to eslint-scope-5.1.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: esrecurse-4.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					30:18
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-5.1.1 to eslint-scope-6.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: estraverse-5.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					43:19
+	1 new occurence(s) of finding: Found dependency: @typescript-eslint/parser-4.28.1
+		File(s):
+			package/package.json
+				Location(s):
+					46:34
+	1 new occurence(s) of finding: Found dependency: c8-7.7.3
+		File(s):
+			package/package.json
+				Location(s):
+					47:11
+	1 new occurence(s) of finding: Found dependency: chai-4.3.4
+		File(s):
+			package/package.json
+				Location(s):
+					48:13
+	1 new occurence(s) of finding: Found dependency: eslint-7.29.0
+		File(s):
+			package/package.json
+				Location(s):
+					49:15
+	1 new occurence(s) of finding: Found dependency: eslint-config-eslint-7.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					50:29
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-jsdoc-35.4.1
+		File(s):
+			package/package.json
+				Location(s):
+					51:28
+	1 new occurence(s) of finding: Found dependency: eslint-plugin-node-11.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					52:27
+	1 new occurence(s) of finding: Found dependency: eslint-release-3.1.2
+		File(s):
+			package/package.json
+				Location(s):
+					53:23
+	1 new occurence(s) of finding: Found dependency: eslint-visitor-keys-3.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:28
+	1 new occurence(s) of finding: Found dependency: espree-8.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:15
+	1 new occurence(s) of finding: Found dependency: mocha-9.0.1
+		File(s):
+			package/package.json
+				Location(s):
+					56:14
+	1 new occurence(s) of finding: Found dependency: rollup-2.52.7
+		File(s):
+			package/package.json
+				Location(s):
+					58:15
+	1 new occurence(s) of finding: Found dependency: shelljs-0.8.4
+		File(s):
+			package/package.json
+				Location(s):
+					59:16
+	1 new occurence(s) of finding: Found dependency: typescript-4.3.5
+		File(s):
+			package/package.json
+				Location(s):
+					60:19
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-6.0.0 to eslint-scope-7.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-release-3.2.0
+		File(s):
+			package/package.json
+				Location(s):
+					53:23
+	1 new occurence(s) of finding: Found dependency: eslint-visitor-keys-3.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:28
+	1 new occurence(s) of finding: Found dependency: espree-9.0.0
+		File(s):
+			package/package.json
+				Location(s):
+					55:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-7.0.0 to eslint-scope-7.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-7.1.0 to eslint-scope-7.1.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: eslint-visitor-keys-3.3.0
+		File(s):
+			package/package.json
+				Location(s):
+					54:28
+	1 new occurence(s) of finding: Found dependency: espree-9.3.1
+		File(s):
+			package/package.json
+				Location(s):
+					55:15
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+Comparing eslint-scope-7.1.1 to eslint-scope-7.2.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-7.2.0 to eslint-scope-7.2.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing eslint-scope-7.2.1 to eslint-scope-7.2.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+eslint-scope-3.7.2 with score: 26.0

@@ -1,0 +1,1069 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.0",
+        "rules" : [ {
+          "id" : "js/array-to-crypto",
+          "name" : "js/array-to-crypto",
+          "shortDescription" : {
+            "text" : "Flow from array to crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from Array to createDeciper, update of final method of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "crypto", "createDeciper", "update", "final" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects flow from Array to createDeciper, update of final method of crypto module",
+            "id" : "js/array-to-crypto",
+            "kind" : "path-problem",
+            "name" : "Flow from array to crypto",
+            "package-examples" : "flatmap-stream (flatmap-stream_deobfuscated)",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/crypto-usage",
+          "name" : "js/crypto-usage",
+          "shortDescription" : {
+            "text" : "Usage of crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects usage of functions \"createDecipher\", \"update\", \"final\" of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "crypto", "createDeciper", "update", "final" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects usage of functions \"createDecipher\", \"update\", \"final\" of crypto module",
+            "id" : "js/crypto-usage",
+            "kind" : "problem",
+            "name" : "Usage of crypto",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/request-to-crypto",
+          "name" : "js/request-to-crypto",
+          "shortDescription" : {
+            "text" : "Flow from request to crypto"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from request to createDeciper, update of final method of crypto module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "crypto", "createDeciper", "update", "final", "request" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects flow from request to createDeciper, update of final method of crypto module",
+            "id" : "js/request-to-crypto",
+            "kind" : "path-problem",
+            "name" : "Flow from request to crypto",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/file-access-to-http",
+          "name" : "js/file-access-to-http",
+          "shortDescription" : {
+            "text" : "File data in outbound network request"
+          },
+          "fullDescription" : {
+            "text" : "Directly sending file data in an outbound network request can indicate unauthorized information disclosure."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-200" ],
+            "Author" : "CodeQL Community",
+            "description" : "Directly sending file data in an outbound network request can indicate unauthorized information disclosure.",
+            "id" : "js/file-access-to-http",
+            "kind" : "path-problem",
+            "name" : "File data in outbound network request",
+            "package-examples" : "eslint-scope (with payload)",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-file-access-to-http/"
+          }
+        }, {
+          "id" : "js/file-to-request",
+          "name" : "js/file-to-request",
+          "shortDescription" : {
+            "text" : "Flow from file to request"
+          },
+          "fullDescription" : {
+            "text" : "Data flow from a file source (FileSystemAccess) to a network sink (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "network", "request" ],
+            "Author" : "Fabian Froh",
+            "description" : "Data flow from a file source (FileSystemAccess) to a network sink (ClientRequest)",
+            "id" : "js/file-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow from file to request",
+            "package-examples" : "eslint-scope (with payload.js)"
+          }
+        }, {
+          "id" : "js/sensitive-file-name-access",
+          "name" : "js/sensitive-file-name-access",
+          "shortDescription" : {
+            "text" : "Accessed file with sensitive name"
+          },
+          "fullDescription" : {
+            "text" : "Detect access (FileSystemAccess) to a file with a sensitive name (e.g. ssh)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "ssh", "sensitive", "name", "passwd" ],
+            "Author" : "Fabian Froh based on work from Matías Gobbi",
+            "description" : "Detect access (FileSystemAccess) to a file with a sensitive name (e.g. ssh)",
+            "id" : "js/sensitive-file-name-access",
+            "kind" : "path-problem",
+            "name" : "Accessed file with sensitive name",
+            "package-examples" : "font-scrubber"
+          }
+        }, {
+          "id" : "js/sensitive-file-path-to-request",
+          "name" : "js/sensitive-file-path-to-request",
+          "shortDescription" : {
+            "text" : "Flow of sensitive file path to request"
+          },
+          "fullDescription" : {
+            "text" : "Detect data flow from sensitive file with path that includes process.env, os.homedir or os.userInfo to request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "request", "sensitive", "file", "process.env", "os.homedir" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detect data flow from sensitive file with path that includes process.env, os.homedir or os.userInfo to request (ClientRequest)",
+            "id" : "js/sensitive-file-path-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow of sensitive file path to request",
+            "package-examples" : "eslint-scope (with payload.js)",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/sensitive-node-file-access",
+          "name" : "js/sensitive-node-file-access",
+          "shortDescription" : {
+            "text" : "Flow from SensitiveNode to FileAccess"
+          },
+          "fullDescription" : {
+            "text" : "Detect flow from a sensitive node to file access (FileSystemAccess)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "sensitive", "node" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect flow from a sensitive node to file access (FileSystemAccess)",
+            "id" : "js/sensitive-node-file-access",
+            "kind" : "path-problem",
+            "name" : "Flow from SensitiveNode to FileAccess",
+            "package-examples" : "font-scrubber",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/sensitive-user-path-file-access",
+          "name" : "js/sensitive-user-path-file-access",
+          "shortDescription" : {
+            "text" : "Access to sensitive user path files"
+          },
+          "fullDescription" : {
+            "text" : "Detect access (FileSystemAccess) to sensitive user path files that use process.env or os.homedir (e.g. to get user path)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "file", "access", "process.env", "os.homedir", "user", "path" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detect access (FileSystemAccess) to sensitive user path files that use process.env or os.homedir (e.g. to get user path)",
+            "id" : "js/sensitive-user-path-file-access",
+            "kind" : "path-problem",
+            "name" : "Access to sensitive user path files",
+            "package-examples" : "eslint-scope (with payload.js)",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/usage-of-eval",
+          "name" : "js/usage-of-eval",
+          "shortDescription" : {
+            "text" : "Detects any eval function call"
+          },
+          "fullDescription" : {
+            "text" : "The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "eval", "arbitrary_code_execution" ],
+            "author" : "Fabian Froh",
+            "description" : "The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script.",
+            "id" : "js/usage-of-eval",
+            "kind" : "problem",
+            "name" : "Detects any eval function call",
+            "package-examples" : "eslint-scope eslint-config-eslint",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/encoded-string-command",
+          "name" : "js/encoded-string-command",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and command"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a command (SystemCommandExecution)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "dropper" ],
+            "author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a command (SystemCommandExecution)",
+            "id" : "js/encoded-string-command",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and command",
+            "package-examples" : "jquerry",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/encoded-string-request",
+          "name" : "js/encoded-string-request",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and request"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "test" ],
+            "Author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a request (ClientRequest)",
+            "id" : "js/encoded-string-request",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and request",
+            "package-examples" : "electorn"
+          }
+        }, {
+          "id" : "js/encoded-string-require",
+          "name" : "js/encoded-string-require",
+          "shortDescription" : {
+            "text" : "Flow from encoded string to decode and require"
+          },
+          "fullDescription" : {
+            "text" : "Detects the flow from an encoded string to a decode function and finally to a require (call)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "taint-traking", "financial-gain" ],
+            "author" : "Matías Gobbi",
+            "description" : "Detects the flow from an encoded string to a decode function and finally to a require (call)",
+            "id" : "js/encoded-string-require",
+            "kind" : "path-problem",
+            "name" : "Flow from encoded string to decode and require",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/hardcoded-data-in-request",
+          "name" : "js/hardcoded-data-in-request",
+          "shortDescription" : {
+            "text" : "Hard-coded data flowing to / in a request"
+          },
+          "fullDescription" : {
+            "text" : "Detect hard-coded data (such as hexadecimal constants) that is flowing to or used in a request"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "hard-coded", "data", "request", "obfuscation" ],
+            "Author" : "Fabian Froh based on CodeQL Community (https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/)",
+            "description" : "Detect hard-coded data (such as hexadecimal constants) that is flowing to or used in a request",
+            "id" : "js/hardcoded-data-in-request",
+            "kind" : "path-problem",
+            "name" : "Hard-coded data flowing to / in a request",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/hardcoded-data-interpreted-as-code",
+          "name" : "js/hardcoded-data-interpreted-as-code",
+          "shortDescription" : {
+            "text" : "Hard-coded data interpreted as code"
+          },
+          "fullDescription" : {
+            "text" : "Transforming hard-coded data (such as hexadecimal constants) into code to be executed is a technique often associated with backdoors and should be avoided."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-506" ],
+            "author" : "Fabian Froh based on CodeQL Community (https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/)",
+            "description" : "Transforming hard-coded data (such as hexadecimal constants) into code\n              to be executed is a technique often associated with backdoors and should\n              be avoided.",
+            "id" : "js/hardcoded-data-interpreted-as-code",
+            "kind" : "path-problem",
+            "name" : "Hard-coded data interpreted as code",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "9.0",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-hardcoded-data-interpreted-as-code/"
+          }
+        }, {
+          "id" : "js/has-minified-statement-container-code",
+          "name" : "js/has-minified-statement-container-code",
+          "shortDescription" : {
+            "text" : "Detect minified code lines"
+          },
+          "fullDescription" : {
+            "text" : "Detects lines (StmtContainter) that seem to be minified for obfuscation using a heuristic"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscator", "minificator" ],
+            "author" : "Fabian Froh based on work from Matías Gobbi",
+            "description" : "Detects lines (StmtContainter) that seem to be minified for obfuscation using a heuristic",
+            "id" : "js/has-minified-statement-container-code",
+            "kind" : "problem",
+            "name" : "Detect minified code lines",
+            "package-examples" : "pm-controls",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/has-minified-top-level-code",
+          "name" : "js/has-minified-top-level-code",
+          "shortDescription" : {
+            "text" : "Detect minified top level code"
+          },
+          "fullDescription" : {
+            "text" : "Detects top level code of files that is minified"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscator", "minificator" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects top level code of files that is minified",
+            "id" : "js/has-minified-top-level-code",
+            "kind" : "problem",
+            "name" : "Detect minified top level code",
+            "package-examples" : "vue-backbone",
+            "security-severity" : "5.0"
+          }
+        }, {
+          "id" : "js/hex-encoded-string",
+          "name" : "js/hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Hexadecimal encoded string"
+          },
+          "fullDescription" : {
+            "text" : "Detects hexadecimal encoded string with \\x prefix that can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects hexadecimal encoded string with \\x prefix that can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/hex-encoded-string",
+            "kind" : "problem",
+            "name" : "Hexadecimal encoded string",
+            "security-severity" : "0.0"
+          }
+        }, {
+          "id" : "js/jsf-obfuscation",
+          "name" : "js/jsf-obfuscation",
+          "shortDescription" : {
+            "text" : "JSF obfuscated code"
+          },
+          "fullDescription" : {
+            "text" : "Detects JSF obfuscated code / esoteric programming style"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscation", "esoteric", "programming", "style", "6chars" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects JSF obfuscated code / esoteric programming style",
+            "example-packages" : "jsf-obfuscation (custom)",
+            "id" : "js/jsf-obfuscation",
+            "kind" : "problem",
+            "name" : "JSF obfuscated code",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/obfuscated-process-declaration",
+          "name" : "js/obfuscated-process-declaration",
+          "shortDescription" : {
+            "text" : "Detects obfuscated process statement"
+          },
+          "fullDescription" : {
+            "text" : "Detect obfuscation attempt when process is assigned to a variable"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "process", "obfuscation" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect obfuscation attempt when process is assigned to a variable",
+            "id" : "js/obfuscated-process-declaration",
+            "kind" : "problem",
+            "name" : "Detects obfuscated process statement",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/obfuscated-require-declaration",
+          "name" : "js/obfuscated-require-declaration",
+          "shortDescription" : {
+            "text" : "Detects obfuscated require statement"
+          },
+          "fullDescription" : {
+            "text" : "Detect obfuscation attempt when require is assigned to a variable"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "require", "obfuscation" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect obfuscation attempt when require is assigned to a variable",
+            "id" : "js/obfuscated-require-declaration",
+            "kind" : "problem",
+            "name" : "Detects obfuscated require statement",
+            "package-examples" : "flatmap-stream",
+            "security-severity" : "8.0"
+          }
+        }, {
+          "id" : "js/prop-access-hex-encoded-string",
+          "name" : "js/prop-access-hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Property access using hexadecimal encoded string"
+          },
+          "fullDescription" : {
+            "text" : "Detects data flow from a hexadecimal encoded string with \\x prefix to a property access that can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "property", "access", "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects data flow from a hexadecimal encoded string with \\x prefix to a property access that can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/prop-access-hex-encoded-string",
+            "kind" : "path-problem",
+            "name" : "Property access using hexadecimal encoded string",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/require-hex-encoded-string",
+          "name" : "js/require-hex-encoded-string",
+          "shortDescription" : {
+            "text" : "Require with hexadecimal encoded string agrgument"
+          },
+          "fullDescription" : {
+            "text" : "Detects flow from hexadecimal encoded string with \\x prefix to require statement which can indicate obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "require", "obfuscation", "string", "hexadecimal", "characaters" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects flow from hexadecimal encoded string with \\x prefix to require statement which can indicate obfuscation",
+            "example-packages" : "getcookies",
+            "id" : "js/require-hex-encoded-string",
+            "kind" : "path-problem",
+            "name" : "Require with hexadecimal encoded string agrgument",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/var-access-by-index-expression",
+          "name" : "js/var-access-by-index-expression",
+          "shortDescription" : {
+            "text" : "Variable access by index expression with parent binary expression"
+          },
+          "fullDescription" : {
+            "text" : "Detects a large number of index expressions with parent binary expression that access the same variable/array indicating obfuscation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "obfuscation", "obfuscator", "tool", "variable", "reference", "array", "indexing" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects a large number of index expressions with parent binary expression that access the same variable/array indicating obfuscation",
+            "id" : "js/var-access-by-index-expression",
+            "kind" : "problem",
+            "name" : "Variable access by index expression with parent binary expression",
+            "package-examples" : "vue-backbone pm-controls",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/dependencies",
+          "name" : "js/dependencies",
+          "shortDescription" : {
+            "text" : "Dependencies of package"
+          },
+          "fullDescription" : {
+            "text" : "Detects all dependencies of a npm packages"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "dependency", "package.json" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects all dependencies of a npm packages",
+            "id" : "js/dependencies",
+            "kind" : "problem",
+            "name" : "Dependencies of package",
+            "package-examples" : "*any*",
+            "security-severity" : "0.0"
+          }
+        }, {
+          "id" : "js/install-script",
+          "name" : "js/install-script",
+          "shortDescription" : {
+            "text" : "Detects install script"
+          },
+          "fullDescription" : {
+            "text" : "Detects all install scripts in package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "script", "install" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects all install scripts in package.json",
+            "id" : "js/install-script",
+            "kind" : "problem",
+            "name" : "Detects install script",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "7.0"
+          }
+        }, {
+          "id" : "js/install-script-domain-name",
+          "name" : "js/install-script-domain-name",
+          "shortDescription" : {
+            "text" : "Domain in install script line"
+          },
+          "fullDescription" : {
+            "text" : "Detects if there is a domain name in install script line of package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "ip_address", "install", "script", "preinstall", "postinstall" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects if there is a domain name in install script line of package.json",
+            "id" : "js/install-script-domain-name",
+            "kind" : "problem",
+            "name" : "Domain in install script line",
+            "package-examples" : "???"
+          }
+        }, {
+          "id" : "js/install-script-ip-address",
+          "name" : "js/install-script-ip-address",
+          "shortDescription" : {
+            "text" : "IP address in install script line"
+          },
+          "fullDescription" : {
+            "text" : "Detects if there is a ip address in install script line of package.json"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "ip_address", "install", "script", "preinstall", "postinstall" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects if there is a ip address in install script line of package.json",
+            "id" : "js/install-script-ip-address",
+            "kind" : "problem",
+            "name" : "IP address in install script line",
+            "package-examples" : "slack-reacjilator"
+          }
+        }, {
+          "id" : "js/data-flow-to-process",
+          "name" : "js/data-flow-to-process",
+          "shortDescription" : {
+            "text" : "Data flow string to process"
+          },
+          "fullDescription" : {
+            "text" : "Detects any string data flow to a process"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "process", "data", "flow", "string" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any string data flow to a process",
+            "id" : "js/data-flow-to-process",
+            "kind" : "path-problem",
+            "name" : "Data flow string to process",
+            "package-examples" : "benign-to-malicous-process-exec",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/process-in-request",
+          "name" : "js/process-in-request",
+          "shortDescription" : {
+            "text" : "Process in client request"
+          },
+          "fullDescription" : {
+            "text" : "Detect process (SystemCommandExecution) in a request (ClientRequest) that can indicate a backdoor."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "process", "backdoor" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect process (SystemCommandExecution) in a request (ClientRequest) that can indicate a backdoor.",
+            "id" : "js/process-in-request",
+            "kind" : "problem",
+            "name" : "Process in client request",
+            "package-examples" : "kraken-api",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/process-with-shell",
+          "name" : "js/process-with-shell",
+          "shortDescription" : {
+            "text" : "System command to open shell"
+          },
+          "fullDescription" : {
+            "text" : "Detect process (SystemCommandExecution) that opens a Windows or Linux shell."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "shell", "process", "backdoor" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect process (SystemCommandExecution) that opens a Windows or Linux shell.",
+            "id" : "js/process-with-shell",
+            "kind" : "problem",
+            "name" : "System command to open shell",
+            "package-examples" : "kraken-api",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/require-child-process",
+          "name" : "js/require-child-process",
+          "shortDescription" : {
+            "text" : "Require of child process"
+          },
+          "fullDescription" : {
+            "text" : "Detects if any child process is required as module"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "child_process", "process", "spwan", "exec" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects if any child process is required as module",
+            "example-packages" : "kraken-api",
+            "id" : "js/require-child-process",
+            "kind" : "problem",
+            "name" : "Require of child process",
+            "security-severity" : "3.0"
+          }
+        }, {
+          "id" : "js/system-command-execution",
+          "name" : "js/system-command-execution",
+          "shortDescription" : {
+            "text" : "Detects system command executions"
+          },
+          "fullDescription" : {
+            "text" : "Detects any SystemCommandExecution"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "SystemCommandExecution", "process", "spwan", "exec" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any SystemCommandExecution",
+            "example-packages" : "kraken-api",
+            "id" : "js/system-command-execution",
+            "kind" : "problem",
+            "name" : "Detects system command executions",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/client-request",
+          "name" : "js/client-request",
+          "shortDescription" : {
+            "text" : "Detects any client request"
+          },
+          "fullDescription" : {
+            "text" : "Detects any client request"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "http" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects any client request",
+            "id" : "js/client-request",
+            "kind" : "problem",
+            "name" : "Detects any client request",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/domain-name",
+          "name" : "js/domain-name",
+          "shortDescription" : {
+            "text" : "Detects domain names"
+          },
+          "fullDescription" : {
+            "text" : "Detects domain names as StringLiteral using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "domain", "name" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects domain names as StringLiteral using a regular expression",
+            "example-packages" : "eslint-scope",
+            "id" : "js/domain-name",
+            "kind" : "problem",
+            "name" : "Detects domain names",
+            "security-severity" : "2.0"
+          }
+        }, {
+          "id" : "js/domain-name-concat",
+          "name" : "js/domain-name-concat",
+          "shortDescription" : {
+            "text" : "Detects domain names"
+          },
+          "fullDescription" : {
+            "text" : "Detects domain names as String concatenations using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "domain", "name", "string", "concatenation" ],
+            "Author" : "Fabian Froh",
+            "description" : "Detects domain names as String concatenations using a regular expression",
+            "example-packages" : "benign-to-malicious-request (custom)",
+            "id" : "js/domain-name-concat",
+            "kind" : "problem",
+            "name" : "Detects domain names",
+            "security-severity" : "4.0"
+          }
+        }, {
+          "id" : "js/http-to-file-access",
+          "name" : "js/http-to-file-access",
+          "shortDescription" : {
+            "text" : "Network data written to file"
+          },
+          "fullDescription" : {
+            "text" : "Writing network data directly to the file system allows arbitrary file upload and might indicate a backdoor."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-912", "external/cwe/cwe-434" ],
+            "Author" : "CodeQL Community",
+            "description" : "Writing network data directly to the file system allows arbitrary file upload and might indicate a backdoor.",
+            "example-packages" : "TODO",
+            "id" : "js/http-to-file-access",
+            "kind" : "path-problem",
+            "name" : "Network data written to file",
+            "security-severity" : "5.0",
+            "url" : "https://codeql.github.com/codeql-query-help/javascript/js-http-to-file-access/"
+          }
+        }, {
+          "id" : "js/ip-address",
+          "name" : "js/ip-address",
+          "shortDescription" : {
+            "text" : "Detects IP addresses"
+          },
+          "fullDescription" : {
+            "text" : "Detects IP addresses as StringLiteral using a regular expression"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "ip", "address" ],
+            "author" : "Fabian Froh",
+            "description" : "Detects IP addresses as StringLiteral using a regular expression",
+            "example-packages" : "kraken-api",
+            "id" : "js/ip-address",
+            "kind" : "problem",
+            "name" : "Detects IP addresses",
+            "security-severity" : "7.0"
+          }
+        }, {
+          "id" : "js/request-to-command",
+          "name" : "js/request-to-command",
+          "shortDescription" : {
+            "text" : "Flow from request to command"
+          },
+          "fullDescription" : {
+            "text" : "Request from http.createServer or response form ClientRequest is used in command (SystemCommandExecution)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "command", "request", "reponse", "createServer", "http" ],
+            "Author" : "Fabian Froh based on Matías Gobbi",
+            "description" : "Request from http.createServer or response form ClientRequest is used in command (SystemCommandExecution)",
+            "id" : "js/request-to-command",
+            "kind" : "path-problem",
+            "name" : "Flow from request to command",
+            "package-examples" : "fc-gotcha (security example package)"
+          }
+        }, {
+          "id" : "js/request-to-eval",
+          "name" : "js/request-to-eval",
+          "shortDescription" : {
+            "text" : "Flow from request to eval"
+          },
+          "fullDescription" : {
+            "text" : "Response of a request (ClientRequest) is used in direct eval function"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "eval", "request", "reponse" ],
+            "author" : "Fabian Froh",
+            "description" : "Response of a request (ClientRequest) is used in direct eval function",
+            "id" : "js/request-to-eval",
+            "kind" : "path-problem",
+            "name" : "Flow from request to eval",
+            "package-examples" : "eslint-scope",
+            "security-severity" : "10.0"
+          }
+        }, {
+          "id" : "js/sensitive-node-to-request",
+          "name" : "js/sensitive-node-to-request",
+          "shortDescription" : {
+            "text" : "Flow from SensitiveNode to a request"
+          },
+          "fullDescription" : {
+            "text" : "Detect flow from a sensitive node to a request (ClientRequest)"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "request", "sensitive", "node" ],
+            "author" : "Fabian Froh",
+            "description" : "Detect flow from a sensitive node to a request (ClientRequest)",
+            "id" : "js/sensitive-node-to-request",
+            "kind" : "path-problem",
+            "name" : "Flow from SensitiveNode to a request",
+            "package-examples" : "???",
+            "security-severity" : "9.0"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///C:/Program%20Files/CodeQL/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///C:/Program%20Files/CodeQL/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "thesis-cvc-npm-malware-queries",
+        "semanticVersion" : "1.1.0",
+        "locations" : [ {
+          "uri" : "file:///C:/Users/Fabian/Documents/Master%20Studium/Masterarbeit/tools/CodeQL/queries/thesis-cvc-npm-malware-queries/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///C:/Users/Fabian/Documents/Master%20Studium/Masterarbeit/tools/CodeQL/queries/thesis-cvc-npm-malware-queries/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "package/dist/react-dom-server.min.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "package/dist/react-dom.min.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "js/has-minified-top-level-code",
+      "ruleIndex" : 16,
+      "rule" : {
+        "id" : "js/has-minified-top-level-code",
+        "index" : 16
+      },
+      "message" : {
+        "text" : "Top level code of file ([react-dom-server.min.js](1)) is minified"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/dist/react-dom-server.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d71c3d228c3dff78:1"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/dist/react-dom-server.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          }
+        },
+        "message" : {
+          "text" : "react-dom-server.min.js"
+        }
+      } ]
+    }, {
+      "ruleId" : "js/has-minified-top-level-code",
+      "ruleIndex" : 16,
+      "rule" : {
+        "id" : "js/has-minified-top-level-code",
+        "index" : 16
+      },
+      "message" : {
+        "text" : "Top level code of file ([react-dom.min.js](1)) is minified"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/dist/react-dom.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9b3fa8cfefd50972:1"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/dist/react-dom.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "react-dom.min.js"
+        }
+      } ]
+    } ],
+    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

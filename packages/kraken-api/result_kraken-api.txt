@@ -1,0 +1,293 @@
+Comparing kraken-api-0.0.1 to kraken-api-0.0.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.2 to kraken-api-0.0.3:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.3 to kraken-api-0.0.4:
+---------------------------------------------------------
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'options'.
+Detected a client request to URL/IP address 'url'.
+		File(s):
+			package/kraken.js
+				Location(s):
+					129:13
+
+js/domain-name (severity: 2.0):
+	1 new occurence(s) of finding: Detected the following domain name: https://api.kraken.com
+		File(s):
+			package/kraken.js
+				Location(s):
+					16:8
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 4.0
+
+
+Comparing kraken-api-0.0.4 to kraken-api-0.0.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.5 to kraken-api-0.0.6:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.6 to kraken-api-0.0.7:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.7 to kraken-api-0.0.8:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.8 to kraken-api-0.0.9:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.0.9 to kraken-api-0.1.0:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.0 to kraken-api-0.1.1:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.1 to kraken-api-0.1.2:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.2 to kraken-api-0.1.3:
+---------------------------------------------------------
+
+js/crypto-usage (severity: 2.0):
+	1 new occurence(s) of finding: Found usage of crypto function "update" with first argument "nonce + message"
+		File(s):
+			package/kraken.js
+				Location(s):
+					103:21
+	1 new occurence(s) of finding: Found usage of crypto function "update" with first argument "path + hash_digest"
+		File(s):
+			package/kraken.js
+				Location(s):
+					104:21
+
+
+Severity sum:
+=> All queries: 4.0
+=> Distinct queries: 2.0
+
+
+Comparing kraken-api-0.1.3 to kraken-api-0.1.4:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.4 to kraken-api-0.1.5:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.5 to kraken-api-0.1.6:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.6 to kraken-api-0.1.7:
+---------------------------------------------------------
+
+
+Severity sum:
+=> All queries: 0
+=> Distinct queries: 0
+
+
+Comparing kraken-api-0.1.7 to kraken-api-0.1.8:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: daemon-1.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					18:15
+
+js/install-script (severity: 7.0):
+	1 new occurence(s) of finding: Detected "postinstall" script with code "$NODE lint.js"
+		File(s):
+			package/package.json
+				Location(s):
+					24:14
+
+js/process-in-request (severity: 10.0):
+	1 new occurence(s) of finding: A system command ([spawn('/bin/sh', \[\])](1)) is used in a client request with URL/IP ([95.213.253.26](2))
+		File(s):
+			package/lint.js
+				Location(s):
+					8:12
+
+js/process-with-shell (severity: 10.0):
+	1 new occurence(s) of finding: A system command ([spawn('/bin/sh', \[\])](1)) tries to open a shell
+		File(s):
+			package/lint.js
+				Location(s):
+					8:12
+
+js/require-child-process (severity: 3.0):
+	1 new occurence(s) of finding: Require of child_process module in file "lint.js"
+		File(s):
+			package/lint.js
+				Location(s):
+					3:13
+
+js/system-command-execution (severity: 2.0):
+	1 new occurence(s) of finding: Detected SystemCommandExecution (spawn('/bin/sh', \[\]))
+		File(s):
+			package/lint.js
+				Location(s):
+					8:12
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address '95.213.253.26'.
+		File(s):
+			package/lint.js
+				Location(s):
+					7:2
+
+js/ip-address (severity: 7.0):
+	1 new occurence(s) of finding: Detected the following IP address: "95.213.253.26"
+		File(s):
+			package/lint.js
+				Location(s):
+					7:22
+
+
+Severity sum:
+=> All queries: 41.0
+=> Distinct queries: 41.0
+Flagged as potential malicious.
+
+
+Comparing kraken-api-0.1.8 to kraken-api-1.0.0:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: got-7.1.0
+		File(s):
+			package/package.json
+				Location(s):
+					15:12
+	1 new occurence(s) of finding: Found dependency: qs-6.4.0
+		File(s):
+			package/package.json
+				Location(s):
+					16:11
+
+js/client-request (severity: 2.0):
+	1 new occurence(s) of finding: Detected a client request to URL/IP address 'url'.
+		File(s):
+			package/kraken.js
+				Location(s):
+					42:25
+
+
+Severity sum:
+=> All queries: 2.0
+=> Distinct queries: 2.0
+
+
+Comparing kraken-api-1.0.0 to kraken-api-1.0.1:
+---------------------------------------------------------
+
+js/dependencies (severity: 0.0):
+	1 new occurence(s) of finding: Found dependency: got-11.1.4
+		File(s):
+			package/package.json
+				Location(s):
+					15:12
+	1 new occurence(s) of finding: Found dependency: qs-6.9.4
+		File(s):
+			package/package.json
+				Location(s):
+					16:11
+
+
+Severity sum:
+=> All queries: 0.0
+=> Distinct queries: 0.0
+
+
+
+-------------------------------
+-------------------------------
+
+Versions flagged as potential malicious:
+
+kraken-api-0.1.8 with score: 41.0
