@@ -1595,6 +1595,62 @@
         "index" : 17
       },
       "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 430,
+            "endColumn" : 446
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "806c63d3c9fe940:1",
+        "primaryLocationStartColumnFingerprint" : "429"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 430,
+            "endColumn" : 446
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4093e6d435e51509:1",
+        "primaryLocationStartColumnFingerprint" : "429"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
         "text" : "Found string with hexadecimal characters (\"\\x3c/script>\") that decodes to string value (</script>)"
       },
       "locations" : [ {
@@ -1651,62 +1707,6 @@
         "index" : 17
       },
       "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 22,
-            "startColumn" : 430,
-            "endColumn" : 446
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "4093e6d435e51509:1",
-        "primaryLocationStartColumnFingerprint" : "429"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 22,
-            "startColumn" : 430,
-            "endColumn" : 446
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "806c63d3c9fe940:1",
-        "primaryLocationStartColumnFingerprint" : "429"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
         "text" : "Found string with hexadecimal characters (\"\\x3c/script>\") that decodes to string value (</script>)"
       },
       "locations" : [ {
@@ -1754,6 +1754,118 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "bd3cb6a4c63d458a:1",
         "primaryLocationStartColumnFingerprint" : "401"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\\x3c!--$?--\\x3e<template id=\"') that decodes to string value (<!--$?--><template id=\")"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 34,
+            "startColumn" : 345,
+            "endColumn" : 376
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6499ad5b51928cc3:1",
+        "primaryLocationStartColumnFingerprint" : "344"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\\x3c!--$?--\\x3e<template id=\"') that decodes to string value (<!--$?--><template id=\")"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 255,
+            "endColumn" : 286
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8ada6ceb381792c4:1",
+        "primaryLocationStartColumnFingerprint" : "254"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 47,
+            "endColumn" : 63
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ab3be8f693f400b1:1",
+        "primaryLocationStartColumnFingerprint" : "46"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 72,
+            "endColumn" : 88
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ab3be8f693f400b1:1",
+        "primaryLocationStartColumnFingerprint" : "71"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -1866,202 +1978,6 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "5df1fc58bb43a60d:1",
         "primaryLocationStartColumnFingerprint" : "404"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\\x3c!--$?--\\x3e<template id=\"') that decodes to string value (<!--$?--><template id=\")"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 36,
-            "startColumn" : 255,
-            "endColumn" : 286
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "8ada6ceb381792c4:1",
-        "primaryLocationStartColumnFingerprint" : "254"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\\x3c!--$?--\\x3e<template id=\"') that decodes to string value (<!--$?--><template id=\")"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 34,
-            "startColumn" : 345,
-            "endColumn" : 376
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "6499ad5b51928cc3:1",
-        "primaryLocationStartColumnFingerprint" : "344"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 3
-          },
-          "region" : {
-            "startLine" : 42,
-            "startColumn" : 243,
-            "endColumn" : 259
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "15a071d5e86f0a9c:1",
-        "primaryLocationStartColumnFingerprint" : "242"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 3
-          },
-          "region" : {
-            "startLine" : 43,
-            "startColumn" : 32,
-            "endColumn" : 48
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "4f31f809637aeb76:1",
-        "primaryLocationStartColumnFingerprint" : "31"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 3
-          },
-          "region" : {
-            "startLine" : 43,
-            "startColumn" : 195,
-            "endColumn" : 211
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "4f31f809637aeb76:1",
-        "primaryLocationStartColumnFingerprint" : "194"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 7
-          },
-          "region" : {
-            "startLine" : 11,
-            "startColumn" : 47,
-            "endColumn" : 63
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "ab3be8f693f400b1:1",
-        "primaryLocationStartColumnFingerprint" : "46"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 7
-          },
-          "region" : {
-            "startLine" : 11,
-            "startColumn" : 72,
-            "endColumn" : 88
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "ab3be8f693f400b1:1",
-        "primaryLocationStartColumnFingerprint" : "71"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -2188,6 +2104,90 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 42,
+            "startColumn" : 243,
+            "endColumn" : 259
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "15a071d5e86f0a9c:1",
+        "primaryLocationStartColumnFingerprint" : "242"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 43,
+            "startColumn" : 32,
+            "endColumn" : 48
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4f31f809637aeb76:1",
+        "primaryLocationStartColumnFingerprint" : "31"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 43,
+            "startColumn" : 195,
+            "endColumn" : 211
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4f31f809637aeb76:1",
+        "primaryLocationStartColumnFingerprint" : "194"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
             "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 2
@@ -2300,62 +2300,6 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 84,
-            "startColumn" : 156,
-            "endColumn" : 173
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "634ee35ef22b4ed8:1",
-        "primaryLocationStartColumnFingerprint" : "155"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 84,
-            "startColumn" : 230,
-            "endColumn" : 247
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "634ee35ef22b4ed8:1",
-        "primaryLocationStartColumnFingerprint" : "229"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--$!--\\x3e\") that decodes to string value (<!--$!-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
             "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 0
@@ -2407,6 +2351,146 @@
         "index" : 17
       },
       "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--$!--\\x3e\") that decodes to string value (<!--$!-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 84,
+            "startColumn" : 156,
+            "endColumn" : 173
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "634ee35ef22b4ed8:1",
+        "primaryLocationStartColumnFingerprint" : "155"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 84,
+            "startColumn" : 230,
+            "endColumn" : 247
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "634ee35ef22b4ed8:1",
+        "primaryLocationStartColumnFingerprint" : "229"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 73,
+            "startColumn" : 501,
+            "endColumn" : 518
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "109f5b2037d43ced:1",
+        "primaryLocationStartColumnFingerprint" : "500"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 74,
+            "startColumn" : 136,
+            "endColumn" : 153
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1f0db49837b3a669:1",
+        "primaryLocationStartColumnFingerprint" : "135"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--$--\\x3e\") that decodes to string value (<!--$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 74,
+            "startColumn" : 197,
+            "endColumn" : 213
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1f0db49837b3a669:1",
+        "primaryLocationStartColumnFingerprint" : "196"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
         "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
       },
       "locations" : [ {
@@ -2426,6 +2510,34 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "634ee35ef22b4ed8:1",
         "primaryLocationStartColumnFingerprint" : "497"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 74,
+            "startColumn" : 332,
+            "endColumn" : 349
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1f0db49837b3a669:1",
+        "primaryLocationStartColumnFingerprint" : "331"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -2496,62 +2608,6 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 73,
-            "startColumn" : 501,
-            "endColumn" : 518
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "109f5b2037d43ced:1",
-        "primaryLocationStartColumnFingerprint" : "500"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 74,
-            "startColumn" : 136,
-            "endColumn" : 153
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "1f0db49837b3a669:1",
-        "primaryLocationStartColumnFingerprint" : "135"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
             "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 1
@@ -2566,90 +2622,6 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "3f2996cbdb2acd2a:1",
         "primaryLocationStartColumnFingerprint" : "371"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--$--\\x3e\") that decodes to string value (<!--$-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 74,
-            "startColumn" : 197,
-            "endColumn" : 213
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "1f0db49837b3a669:1",
-        "primaryLocationStartColumnFingerprint" : "196"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 0
-          },
-          "region" : {
-            "startLine" : 74,
-            "startColumn" : 332,
-            "endColumn" : 349
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "1f0db49837b3a669:1",
-        "primaryLocationStartColumnFingerprint" : "331"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 87,
-            "startColumn" : 169,
-            "endColumn" : 185
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "3418eb140c2c473c:1",
-        "primaryLocationStartColumnFingerprint" : "168"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -2697,15 +2669,43 @@
             "index" : 1
           },
           "region" : {
-            "startLine" : 89,
-            "startColumn" : 100,
-            "endColumn" : 116
+            "startLine" : 87,
+            "startColumn" : 169,
+            "endColumn" : 185
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "6b90caa07986ffcf:1",
-        "primaryLocationStartColumnFingerprint" : "99"
+        "primaryLocationLineHash" : "3418eb140c2c473c:1",
+        "primaryLocationStartColumnFingerprint" : "168"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 44,
+            "startColumn" : 176,
+            "endColumn" : 192
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "440161510c8cff1:1",
+        "primaryLocationStartColumnFingerprint" : "175"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -2754,34 +2754,6 @@
           },
           "region" : {
             "startLine" : 44,
-            "startColumn" : 176,
-            "endColumn" : 192
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "440161510c8cff1:1",
-        "primaryLocationStartColumnFingerprint" : "175"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom-server-legacy.browser.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 7
-          },
-          "region" : {
-            "startLine" : 44,
             "startColumn" : 320,
             "endColumn" : 336
           }
@@ -2809,15 +2781,15 @@
             "index" : 1
           },
           "region" : {
-            "startLine" : 91,
-            "startColumn" : 110,
-            "endColumn" : 126
+            "startLine" : 89,
+            "startColumn" : 100,
+            "endColumn" : 116
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "63ff5a470241df00:1",
-        "primaryLocationStartColumnFingerprint" : "109"
+        "primaryLocationLineHash" : "6b90caa07986ffcf:1",
+        "primaryLocationStartColumnFingerprint" : "99"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -2846,6 +2818,34 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "b36f1a922caf9ab7:1",
         "primaryLocationStartColumnFingerprint" : "37"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters ('\")\\x3c/script>') that decodes to string value (\")</script>)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server-legacy.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 91,
+            "startColumn" : 110,
+            "endColumn" : 126
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "63ff5a470241df00:1",
+        "primaryLocationStartColumnFingerprint" : "109"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",

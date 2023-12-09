@@ -1086,13 +1086,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom-server.browser.development.js",
+        "uri" : "package/cjs/react-dom-server.node.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 18
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom-server.node.development.js",
+        "uri" : "package/cjs/react-dom-server.browser.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 19
       }
@@ -1104,13 +1104,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.development.js",
+        "uri" : "package/cjs/react-dom.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 21
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom.development.js",
+        "uri" : "package/umd/react-dom.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 22
       }
@@ -2192,12 +2192,12 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.development.js",
+            "uri" : "package/cjs/react-dom-server.node.development.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 18
           },
           "region" : {
-            "startLine" : 123,
+            "startLine" : 124,
             "startColumn" : 36,
             "endColumn" : 53
           }
@@ -2220,12 +2220,12 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.development.js",
+            "uri" : "package/cjs/react-dom-server.browser.development.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 19
           },
           "region" : {
-            "startLine" : 124,
+            "startLine" : 123,
             "startColumn" : 36,
             "endColumn" : 53
           }
@@ -2276,9 +2276,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom.profiling.min.js",
+            "uri" : "package/cjs/react-dom.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 6
+            "index" : 5
           },
           "region" : {
             "startLine" : 25,
@@ -2288,7 +2288,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "88728b7a5c0ed57b:1",
+        "primaryLocationLineHash" : "69bde139e4955c37:1",
         "primaryLocationStartColumnFingerprint" : "360"
       }
     }, {
@@ -2304,9 +2304,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom.production.min.js",
+            "uri" : "package/cjs/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 6
           },
           "region" : {
             "startLine" : 25,
@@ -2316,7 +2316,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "69bde139e4955c37:1",
+        "primaryLocationLineHash" : "88728b7a5c0ed57b:1",
         "primaryLocationStartColumnFingerprint" : "360"
       }
     }, {
@@ -2346,34 +2346,6 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "e5d625d686d8429:1",
         "primaryLocationStartColumnFingerprint" : "300"
-      }
-    }, {
-      "ruleId" : "js/domain-name",
-      "ruleIndex" : 34,
-      "rule" : {
-        "id" : "js/domain-name",
-        "index" : 34
-      },
-      "message" : {
-        "text" : "Detected the following domain name: react.opaque.id"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom.development.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 21
-          },
-          "region" : {
-            "startLine" : 727,
-            "startColumn" : 38,
-            "endColumn" : 55
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "27c8525a318c0ddb:1",
-        "primaryLocationStartColumnFingerprint" : "33"
       }
     }, {
       "ruleId" : "js/domain-name",
@@ -2418,12 +2390,40 @@
           "artifactLocation" : {
             "uri" : "package/cjs/react-dom.development.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 21
           },
           "region" : {
             "startLine" : 730,
             "startColumn" : 36,
             "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "27c8525a318c0ddb:1",
+        "primaryLocationStartColumnFingerprint" : "33"
+      }
+    }, {
+      "ruleId" : "js/domain-name",
+      "ruleIndex" : 34,
+      "rule" : {
+        "id" : "js/domain-name",
+        "index" : 34
+      },
+      "message" : {
+        "text" : "Detected the following domain name: react.opaque.id"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.development.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 727,
+            "startColumn" : 38,
+            "endColumn" : 55
           }
         }
       } ],

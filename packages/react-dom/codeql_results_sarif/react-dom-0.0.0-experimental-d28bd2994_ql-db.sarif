@@ -1050,13 +1050,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.production.min.js",
+        "uri" : "package/umd/react-dom.profiling.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 12
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.profiling.min.js",
+        "uri" : "package/umd/react-dom.production.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 13
       }
@@ -1495,41 +1495,6 @@
         "index" : 16
       },
       "message" : {
-        "text" : "Top level code of file ([react-dom.production.min.js](1)) is minified"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 12
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "354aa071dd710c29:1"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 12
-          }
-        },
-        "message" : {
-          "text" : "react-dom.production.min.js"
-        }
-      } ]
-    }, {
-      "ruleId" : "js/has-minified-top-level-code",
-      "ruleIndex" : 16,
-      "rule" : {
-        "id" : "js/has-minified-top-level-code",
-        "index" : 16
-      },
-      "message" : {
         "text" : "Top level code of file ([react-dom.profiling.min.js](1)) is minified"
       },
       "locations" : [ {
@@ -1537,7 +1502,7 @@
           "artifactLocation" : {
             "uri" : "package/umd/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 12
           }
         }
       } ],
@@ -1550,11 +1515,46 @@
           "artifactLocation" : {
             "uri" : "package/umd/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 12
           }
         },
         "message" : {
           "text" : "react-dom.profiling.min.js"
+        }
+      } ]
+    }, {
+      "ruleId" : "js/has-minified-top-level-code",
+      "ruleIndex" : 16,
+      "rule" : {
+        "id" : "js/has-minified-top-level-code",
+        "index" : 16
+      },
+      "message" : {
+        "text" : "Top level code of file ([react-dom.production.min.js](1)) is minified"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "354aa071dd710c29:1"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          }
+        },
+        "message" : {
+          "text" : "react-dom.production.min.js"
         }
       } ]
     }, {
@@ -1612,34 +1612,6 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "65d39d69ce94d999:1",
         "primaryLocationStartColumnFingerprint" : "386"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 44,
-            "startColumn" : 450,
-            "endColumn" : 466
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "5bd7af9bcbd5cbf6:1",
-        "primaryLocationStartColumnFingerprint" : "449"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -1677,7 +1649,7 @@
         "index" : 17
       },
       "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+        "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
       },
       "locations" : [ {
         "physicalLocation" : {
@@ -1685,6 +1657,34 @@
             "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 1
+          },
+          "region" : {
+            "startLine" : 44,
+            "startColumn" : 450,
+            "endColumn" : 466
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5bd7af9bcbd5cbf6:1",
+        "primaryLocationStartColumnFingerprint" : "449"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--/$--\\x3e\") that decodes to string value (<!--/$-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
           },
           "region" : {
             "startLine" : 46,
@@ -1710,9 +1710,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 1
+            "index" : 0
           },
           "region" : {
             "startLine" : 46,
@@ -1738,9 +1738,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 1
+            "index" : 0
           },
           "region" : {
             "startLine" : 46,
@@ -1766,9 +1766,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 0
+            "index" : 1
           },
           "region" : {
             "startLine" : 46,
@@ -1794,9 +1794,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 0
+            "index" : 1
           },
           "region" : {
             "startLine" : 46,
@@ -1822,9 +1822,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 0
+            "index" : 1
           },
           "region" : {
             "startLine" : 46,

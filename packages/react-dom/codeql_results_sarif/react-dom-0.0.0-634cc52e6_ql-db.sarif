@@ -1056,13 +1056,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom-server.browser.development.js",
+        "uri" : "package/cjs/react-dom-server.node.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 13
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom-server.node.development.js",
+        "uri" : "package/umd/react-dom-server.browser.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 14
       }
@@ -1407,9 +1407,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 0
+            "index" : 1
           },
           "region" : {
             "startLine" : 40,
@@ -1435,9 +1435,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 0
+            "index" : 1
           },
           "region" : {
             "startLine" : 41,
@@ -1463,9 +1463,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 1
+            "index" : 0
           },
           "region" : {
             "startLine" : 40,
@@ -1491,9 +1491,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 1
+            "index" : 0
           },
           "region" : {
             "startLine" : 41,
@@ -1743,14 +1743,14 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/umd/react-dom-server.browser.development.js",
+            "uri" : "package/cjs/react-dom-server.node.development.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 13
           },
           "region" : {
-            "startLine" : 122,
-            "startColumn" : 38,
-            "endColumn" : 55
+            "startLine" : 124,
+            "startColumn" : 36,
+            "endColumn" : 53
           }
         }
       } ],
@@ -1771,14 +1771,14 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.development.js",
+            "uri" : "package/umd/react-dom-server.browser.development.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 14
           },
           "region" : {
-            "startLine" : 124,
-            "startColumn" : 36,
-            "endColumn" : 53
+            "startLine" : 122,
+            "startColumn" : 38,
+            "endColumn" : 55
           }
         }
       } ],
@@ -1911,34 +1911,6 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/umd/react-dom.profiling.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 8
-          },
-          "region" : {
-            "startLine" : 209,
-            "startColumn" : 295,
-            "endColumn" : 312
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "81e01b6d92257d57:1",
-        "primaryLocationStartColumnFingerprint" : "294"
-      }
-    }, {
-      "ruleId" : "js/domain-name",
-      "ruleIndex" : 34,
-      "rule" : {
-        "id" : "js/domain-name",
-        "index" : 34
-      },
-      "message" : {
-        "text" : "Detected the following domain name: react.opaque.id"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
             "uri" : "package/umd/react-dom.development.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 16
@@ -1953,6 +1925,34 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "27c8525a318c0ddb:1",
         "primaryLocationStartColumnFingerprint" : "33"
+      }
+    }, {
+      "ruleId" : "js/domain-name",
+      "ruleIndex" : 34,
+      "rule" : {
+        "id" : "js/domain-name",
+        "index" : 34
+      },
+      "message" : {
+        "text" : "Detected the following domain name: react.opaque.id"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.profiling.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 209,
+            "startColumn" : 295,
+            "endColumn" : 312
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "81e01b6d92257d57:1",
+        "primaryLocationStartColumnFingerprint" : "294"
       }
     } ],
     "newlineSequences" : [ "\r\n", "\n", " ", " " ],

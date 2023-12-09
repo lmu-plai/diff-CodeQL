@@ -1,0 +1,37 @@
+﻿Package Name;Npm URL;Versions;Malicious Version;Malware Category;Obfuscated;Location;Dataset/Source;Info Source / Link;How to detect
+eslint-scope;https://www.npmjs.com/package/eslint-scope;16;3.7.2;Data Exfiltration;No;package.json and /lib/build.js;Backstabbers;https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes;"posintall script added; request to certain domain; download of code; extraction of credentials from file"
+conventional-changelog;https://www.npmjs.com/package/conventional-changelog;97;1.2.0;Financial Gain;Yes;index.js;Backstabbers;https://github.com/conventional-changelog/conventional-changelog/issues/282;"require('child_process').spawn; Buffer.from; base64; shell:true & detached; maybe also long string with very high entropy (obfuscation)"
+flatmap-stream;removed;2;0.1.1;Financial Gain;Yes;index.min.js;Backstabbers;https://www.npmjs.com/advisories/737;"minified; obfuscated; request; require and process obfuscated"
+getcookies;https://www.npmjs.com/package/getcookies;2;1.12.3;Backdoor;Yes;harness.js;Backstabbers;https://blog.npmjs.org/post/173526807575/reported-malicious-module-getcookies;"obfuscated; minified; RegExp; document.cookie etc."
+kraken-api;https://www.npmjs.com/package/kraken-api;19;0.1.8;Backdoor;No;lint.js;Backstabbers;https://github.com/advisories/GHSA-fgfj-rj24-mj7q;"suspicious IP address; request (client.connect); child_process spawn; /bin/sh"
+pm-controls;https://www.npmjs.com/package/pm-controls;158;1.1.8;Data Exfiltration;Yes;dist/main.bundle.js;Backstabbers;https://www.npmjs.com/advisories/949;"obfuscated; minified; RegExp; document.cookie etc."
+vue-backbone;https://www.npmjs.com/package/vue-backbone;4;0.1.2;Data Exfiltration;Yes;dist/vue-backbone.min.js;Backstabbers;https://www.npmjs.com/advisories/945;"obfuscated; minified;"
+rpc-websocket;https://www.npmjs.com/package/rpc-websocket ;37;0.7.7 - 0.7.11;Backdoor;No;package.json and lint.js;Backstabbers;https://www.npmjs.com/advisories/1022 ;"suspicious IP address; request (client.connect); child_process spawn; /bin/sh; preinstall & postinstall script"
+ua-parser-js;https://www.npmjs.com/package/ua-parser-js;64;0.7.29;Data Exfiltration / CryptoMiner;No;package.json and preinstall.js;Maloss;https://security.snyk.io/vuln/SNYK-JS-UAPARSERJS-1766952;Install script, .sh and .bat file, exe and dll file, child process, cmd.exe, spawn
+coa;https://www.npmjs.com/package/coa;29;2.0.3 - 2.0.4;Resource Hijacking;Yes;package.json and preinstall.js;Maloss and Diff reporting site;https://github.com/advisories/GHSA-73qr-pfmq-6rp8;Similar to ua-parser-js but this time compile.js and compile.bat are obfuscated, malicious code split between two versions
+rc;https://www.npmjs.com/package/rc;48;1.3.9;Resource Hijacking;Yes;package.json and preinstall.js;Maloss and Diff reporting site;https://github.com/advisories/GHSA-g2q5-5433-rhrf;Similar to ua-parser-js but this time compile.js and compile.bat are obfuscated
+express;https://www.npmjs.com/package/express;270;;;;;;;
+async;https://www.npmjs.com/package/async;91;;;;;;;
+lodash;https://www.npmjs.com/package/lodash ;114;;;;;;;
+axios;https://www.npmjs.com/package/axios ;77;;;;;;;
+debug;https://www.npmjs.com/package/debug;71;;;;;;;
+moment;https://www.npmjs.com/package/moment ;74;;;;;;;
+tslib;https://www.npmjs.com/package/tslib;38;;;;;;;
+commander;https://www.npmjs.com/package/commander;109;;;;;;;
+chalk;https://www.npmjs.com/package/chalk;37;;;;;;;
+request;https://www.npmjs.com/package/request;126;;;;;;;
+fs-extra;https://www.npmjs.com/package/fs-extra;95;;;;;;;
+prop-types;https://www.npmjs.com/package/prop-types;24;;;;;;;
+bluebird;https://www.npmjs.com/package/bluebird;223;;;;;;;
+underscore;https://www.npmjs.com/package/underscore;53;;;;;;;
+mkdirp;https://www.npmjs.com/package/mkdirp;42;;;;;;;
+glob;https://www.npmjs.com/package/glob;135;;;;;;;
+yargs;https://www.npmjs.com/package/yargs;250;;;;;;;
+colors;https://www.npmjs.com/package/colors;26;;;;;;;
+inquirer;https://www.npmjs.com/package/inquirer;139;;;;;;;
+uuid;https://www.npmjs.com/package/uuid;36;;;;;;;
+classnames;https://www.npmjs.com/package/classnames;26;;;;;;;
+react;https://www.npmjs.com/package/react;1439;;;;;;;
+react-dom;https://www.npmjs.com/package/react-dom;1394;;;;;;;
+webpack;https://www.npmjs.com/package/webpack;825;;;;;;;
+vue;https://www.npmjs.com/package/vue;445;;;;;;;

@@ -1068,13 +1068,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.development.js",
+        "uri" : "package/cjs/react-dom.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 15
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom.development.js",
+        "uri" : "package/umd/react-dom.development.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 16
       }
@@ -1430,34 +1430,6 @@
         "index" : 17
       },
       "message" : {
-        "text" : "Found string with hexadecimal characters (\"\\x3c!--$!--\\x3e\") that decodes to string value (<!--$!-->)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 1
-          },
-          "region" : {
-            "startLine" : 40,
-            "startColumn" : 468,
-            "endColumn" : 485
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "89c449ef6c3dd32f:1",
-        "primaryLocationStartColumnFingerprint" : "467"
-      }
-    }, {
-      "ruleId" : "js/hex-encoded-string",
-      "ruleIndex" : 17,
-      "rule" : {
-        "id" : "js/hex-encoded-string",
-        "index" : 17
-      },
-      "message" : {
         "text" : "Found string with hexadecimal characters (\"\\x3c!-- --\\x3e\") that decodes to string value (<!-- -->)"
       },
       "locations" : [ {
@@ -1477,6 +1449,34 @@
       "partialFingerprints" : {
         "primaryLocationLineHash" : "727425cf0ca3eba1:1",
         "primaryLocationStartColumnFingerprint" : "481"
+      }
+    }, {
+      "ruleId" : "js/hex-encoded-string",
+      "ruleIndex" : 17,
+      "rule" : {
+        "id" : "js/hex-encoded-string",
+        "index" : 17
+      },
+      "message" : {
+        "text" : "Found string with hexadecimal characters (\"\\x3c!--$!--\\x3e\") that decodes to string value (<!--$!-->)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 40,
+            "startColumn" : 468,
+            "endColumn" : 485
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "89c449ef6c3dd32f:1",
+        "primaryLocationStartColumnFingerprint" : "467"
       }
     }, {
       "ruleId" : "js/hex-encoded-string",
@@ -1855,6 +1855,34 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
+            "uri" : "package/cjs/react-dom.development.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 727,
+            "startColumn" : 36,
+            "endColumn" : 53
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "27c8525a318c0ddb:1",
+        "primaryLocationStartColumnFingerprint" : "33"
+      }
+    }, {
+      "ruleId" : "js/domain-name",
+      "ruleIndex" : 34,
+      "rule" : {
+        "id" : "js/domain-name",
+        "index" : 34
+      },
+      "message" : {
+        "text" : "Detected the following domain name: react.opaque.id"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
             "uri" : "package/umd/react-dom.production.min.js",
             "uriBaseId" : "%SRCROOT%",
             "index" : 7
@@ -1883,37 +1911,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/umd/react-dom.profiling.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 8
-          },
-          "region" : {
-            "startLine" : 209,
-            "startColumn" : 295,
-            "endColumn" : 312
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "6065cfe6178651d3:1",
-        "primaryLocationStartColumnFingerprint" : "294"
-      }
-    }, {
-      "ruleId" : "js/domain-name",
-      "ruleIndex" : 34,
-      "rule" : {
-        "id" : "js/domain-name",
-        "index" : 34
-      },
-      "message" : {
-        "text" : "Detected the following domain name: react.opaque.id"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
             "uri" : "package/umd/react-dom.development.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 724,
@@ -1939,20 +1939,20 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom.development.js",
+            "uri" : "package/umd/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 16
+            "index" : 8
           },
           "region" : {
-            "startLine" : 727,
-            "startColumn" : 36,
-            "endColumn" : 53
+            "startLine" : 209,
+            "startColumn" : 295,
+            "endColumn" : 312
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "27c8525a318c0ddb:1",
-        "primaryLocationStartColumnFingerprint" : "33"
+        "primaryLocationLineHash" : "6065cfe6178651d3:1",
+        "primaryLocationStartColumnFingerprint" : "294"
       }
     } ],
     "newlineSequences" : [ "\r\n", "\n", " ", " " ],

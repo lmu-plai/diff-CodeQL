@@ -1002,13 +1002,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
+        "uri" : "package/cjs/react-dom-unstable-fire.profiling.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 4
       }
     }, {
       "location" : {
-        "uri" : "package/cjs/react-dom-unstable-fire.profiling.min.js",
+        "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 5
       }
@@ -1254,41 +1254,6 @@
         "index" : 16
       },
       "message" : {
-        "text" : "Top level code of file ([react-dom-unstable-fire.production.min.js](1)) is minified"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 4
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "78c3196991be4ca8:1"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 4
-          }
-        },
-        "message" : {
-          "text" : "react-dom-unstable-fire.production.min.js"
-        }
-      } ]
-    }, {
-      "ruleId" : "js/has-minified-top-level-code",
-      "ruleIndex" : 16,
-      "rule" : {
-        "id" : "js/has-minified-top-level-code",
-        "index" : 16
-      },
-      "message" : {
         "text" : "Top level code of file ([react-dom-unstable-fire.profiling.min.js](1)) is minified"
       },
       "locations" : [ {
@@ -1296,7 +1261,7 @@
           "artifactLocation" : {
             "uri" : "package/cjs/react-dom-unstable-fire.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 4
           }
         }
       } ],
@@ -1309,11 +1274,46 @@
           "artifactLocation" : {
             "uri" : "package/cjs/react-dom-unstable-fire.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 4
           }
         },
         "message" : {
           "text" : "react-dom-unstable-fire.profiling.min.js"
+        }
+      } ]
+    }, {
+      "ruleId" : "js/has-minified-top-level-code",
+      "ruleIndex" : 16,
+      "rule" : {
+        "id" : "js/has-minified-top-level-code",
+        "index" : 16
+      },
+      "message" : {
+        "text" : "Top level code of file ([react-dom-unstable-fire.production.min.js](1)) is minified"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "78c3196991be4ca8:1"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/cjs/react-dom-unstable-fire.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          }
+        },
+        "message" : {
+          "text" : "react-dom-unstable-fire.production.min.js"
         }
       } ]
     }, {
@@ -1784,9 +1784,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.node.production.min.js",
+            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 2
+            "index" : 1
           },
           "region" : {
             "startLine" : 41,
@@ -1812,9 +1812,9 @@
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "package/cjs/react-dom-server.browser.production.min.js",
+            "uri" : "package/cjs/react-dom-server.node.production.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 1
+            "index" : 2
           },
           "region" : {
             "startLine" : 41,

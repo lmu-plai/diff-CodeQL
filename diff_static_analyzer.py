@@ -11,12 +11,14 @@ import argparse
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import scipy.stats as stats
 import requests
 import subprocess
 import configparser
 
 from matplotlib import pyplot as plt
 from natsort import natsorted
+from scipy.stats import linregress
 from sklearn import metrics
 from bs4 import BeautifulSoup
 
@@ -329,6 +331,9 @@ class CheckNPMPackage:
 
                     creating_databases_stop_time = time.perf_counter()
 
+                    logging.info(f"Created database(s) for {num_created_databases} package(s) in "
+                                 f"{creating_databases_stop_time - creating_databases_start_time:0.4f} seconds")
+
                     self.write_package_stats_file("database_generation", num_created_databases,
                                                   creating_databases_stop_time - creating_databases_start_time)
                     return
@@ -402,6 +407,16 @@ class CheckNPMPackage:
 
                     # Check if we are allowed to skip this packages (version)
                     if file.replace("_ql-db", "") not in self.package_versions_to_skip:
+
+                        applying_queries_stop_time = time.perf_counter()
+
+                        logging.info(f"Applied queries for {num_applied_queries} package(s) in "
+                                     f"{applying_queries_stop_time - applying_queries_start_time:0.4f} seconds")
+
+                        self.write_package_stats_file('query_application', num_applied_queries,
+                                                      applying_queries_stop_time -
+                                                      applying_queries_start_time)
+
                         exit()
                     else:
                         logging.warning(f"The file: {file} will be skipped, because the queries could not be executed."
@@ -1247,7 +1262,7 @@ class CheckNPMPackage:
 
             print(f"Processing NPM package {package.name}.")
 
-            flagged_versions, _ = self.compare_sarif_result_files()
+            flagged_versions, benign_versions = self.compare_sarif_result_files()
 
             # Result files path
             dir_package_code_ql_results = os.path.join("packages", self.package.name, "codeql_results_sarif")
@@ -1258,6 +1273,7 @@ class CheckNPMPackage:
             # Get number of malicious packages as local files
             true_positives = 0
             num_mal_packages = 0
+            mal_score = ""
 
             for mal_pack_file in malicious_package_files:
 
@@ -1265,9 +1281,22 @@ class CheckNPMPackage:
                     num_mal_packages = num_mal_packages + 1
                     is_malicious = True
 
-                for version, _ in flagged_versions:
-                    if version in mal_pack_file:
-                        true_positives = true_positives + 1
+                    for version, score in flagged_versions:
+                        if version == mal_pack_file.replace('.tgz', ''):
+                            true_positives = true_positives + 1
+
+                            if mal_score != "":
+                                mal_score = f"{mal_score}/{score}"
+                            else:
+                                mal_score = score
+
+                    # Used to calculate the highest score for a malicious version
+                    for version, score in benign_versions:
+                        if version == mal_pack_file.replace('.tgz', ''):
+                            if mal_score != "":
+                                mal_score = f"{mal_score}/{score}"
+                            else:
+                                mal_score = score
 
             false_positives = len(flagged_versions) - true_positives
 
@@ -1279,7 +1308,8 @@ class CheckNPMPackage:
             if is_malicious:
                 malicious_packages.append([f"\\texttt{{{self.package.name}}}",
                                            f"{self.calculate_average_number_of_code_lines():,}",
-                                           scanned_versions, len(flagged_versions), fp_percentage, found_malicious])
+                                           scanned_versions, len(flagged_versions), fp_percentage, mal_score,
+                                           found_malicious])
             else:
                 benign_packages.append([f"\\texttt{{{self.package.name}}}",  f"{self.get_package_dependents():,}",
                                         f"{self.calculate_average_number_of_code_lines():,}",
@@ -1297,7 +1327,7 @@ class CheckNPMPackage:
             writer = csv.writer(f, delimiter=";")
 
             # Write the header
-            writer.writerow(['Package Name', 'Avg. LOC', 'Versions', 'Flagged', 'FP', 'Found'])
+            writer.writerow(['Package Name', 'Avg. LOC', 'Versions', 'Flagged', 'FP', 'Score', 'Found'])
 
             # Sort data
             malicious_packages.sort(key=lambda x: x[2], reverse=True)
@@ -1489,6 +1519,12 @@ class CheckNPMPackage:
 
         packages_stats = []
 
+        total_db_generation_time = 0
+        total_db_generation_versions = 0
+
+        total_query_application_time = 0
+        total_query_application_versions = 0
+
         for package in self.packages:
             self.package = package
             self.package.stats_file = os.path.join("packages", package.name, f"{package.name}_stats.json")
@@ -1507,21 +1543,32 @@ class CheckNPMPackage:
                     if 'database_generation' in package_stats:
                         build_db_avg = round(package_stats['database_generation']['time_taken_seconds'] /
                                              package_stats['database_generation']['versions'], 2)
+                        total_db_generation_time = total_db_generation_time + package_stats[
+                            'database_generation']['time_taken_seconds']
+                        total_db_generation_versions = total_db_generation_versions + package_stats[
+                            'database_generation']['versions']
                     else:
                         build_db_avg = '-'
 
                     if 'query_application' in package_stats:
                         apply_queries_avg = round(package_stats['query_application']['time_taken_seconds'] /
                                                   package_stats['query_application']['versions'], 2)
+                        total_query_application_time = total_query_application_time + package_stats[
+                            'query_application']['time_taken_seconds']
+                        total_query_application_versions = total_query_application_versions + package_stats[
+                            'query_application']['versions']
                     else:
                         apply_queries_avg = '-'
 
-                    packages_stats.append([self.package.name, f"{num_of_versions:,}",
+                    packages_stats.append((self.package.name, f"{num_of_versions:,}",
                                            f"{self.calculate_average_number_of_code_lines():,}", build_db_avg,
-                                           apply_queries_avg])
+                                           apply_queries_avg))
 
         # csv header
         header = ['Package Name', 'Versions', 'Avg. LOC', 'Avg. Build DB (s)', 'Avg. Apply Queries (s)']
+
+        # Sort by package name
+        packages_stats.sort()
 
         # Write stats file as csv
         with open('_evaluation/table_codeql_stats.csv', 'w', encoding='utf-8', newline='') as f:
@@ -1533,6 +1580,35 @@ class CheckNPMPackage:
 
             for stat in packages_stats:
                 writer.writerow(stat)
+
+        print(f"total_db_generation_time: {total_db_generation_time}")
+        print(f"total_db_generation_versions: {total_db_generation_versions}")
+
+        print(f"total_query_application_time: {total_query_application_time}")
+        print(f"total_query_application_versions: {total_query_application_versions}")
+
+        print(f"Average DB generation time: {round(total_db_generation_time / total_db_generation_versions, 2)}")
+        print(f"Average queries application time: "
+              f"{round(total_query_application_time / total_query_application_versions, 2)}")
+        print(f"Average single query application time: "
+              f"{round(total_query_application_time / (total_query_application_versions * 41), 2)}")
+
+        print()
+
+        # Calculate the Spearman correlation coefficient
+        rho_db, _ = stats.spearmanr([int(item[2].replace(',', '')) for item in packages_stats],
+                                    [item[3] for item in packages_stats])
+        rho_queries, _ = stats.spearmanr([int(item[2].replace(',', '')) for item in packages_stats],
+                                         [item[4] for item in packages_stats])
+        print(f"Spearman correlation coefficient for db: {rho_db}")
+        print(f"Spearman correlation coefficient for queries: {rho_queries}")
+
+        rho_db, _ = stats.pearsonr([int(item[2].replace(',', '')) for item in packages_stats],
+                                    [item[3] for item in packages_stats])
+        rho_queries, _ = stats.pearsonr([int(item[2].replace(',', '')) for item in packages_stats],
+                                         [item[4] for item in packages_stats])
+        print(f"Pearsonr correlation coefficient for db: {rho_db}")
+        print(f"Pearsonr correlation coefficient for queries: {rho_queries}")
 
         print("")
 
@@ -1596,8 +1672,8 @@ class CheckNPMPackage:
             sns.regplot(x='x', y='y', data=data, label='Package (avg. over all versions)')
 
             # Label the axes
-            plt.xlabel('Average lines of code')
-            plt.ylabel('Average time (s) to apply queries')
+            plt.xlabel('Lines of code')
+            plt.ylabel('Time to apply queries (s)')
 
             # Show the legend
             plt.legend(loc='upper left')
@@ -1607,6 +1683,34 @@ class CheckNPMPackage:
 
             # Clear the figure
             plt.clf()
+
+        # Funktion zur Berechnung der Regressionslinie
+        def calculate_regression_line(x, y):
+            slope, intercept, _, _, _ = linregress(x, y)
+            return slope * x + intercept
+
+        lines_of_code = np.array(lines_of_code)
+        times_db = np.array(times_db)
+        times_queries = np.array(times_queries)
+
+        # Regressionslinien berechnen
+        reg_line1 = calculate_regression_line(lines_of_code, times_db)
+        reg_line2 = calculate_regression_line(lines_of_code, times_queries)
+
+        # Diagramm erstellen
+        plt.scatter(lines_of_code, times_db, label='Datenpunkt 1')
+        plt.scatter(lines_of_code, times_queries, label='Datenpunkt 2')
+        plt.plot(lines_of_code, reg_line1, label='Regressionslinie 1', color='blue')
+        plt.plot(lines_of_code, reg_line2, label='Regressionslinie 2', color='orange')
+
+        # Legende hinzufügen
+        plt.legend()
+
+        # Diagramm anzeigen
+        plt.show()
+
+        # Clear the figure
+        plt.clf()
 
         print("")
 
@@ -1662,6 +1766,7 @@ class CheckNPMPackage:
 
         print("")
         print("Results of ROC curve:")
+        print(f"Data points: {len(y_true)}")
         print(f"Optimal threshold: {y_score[y_score.index(th_optimal)]}")
         print(f"th_optimal_x_value: {th_optimal_x_value}")
         print(f"th_optimal_y_value: {th_optimal_y_value}")
@@ -1675,7 +1780,7 @@ class CheckNPMPackage:
                             markeredgewidth=1)
         plt.plot(th_optimal_x_value, th_optimal_y_value, **marker_style)
 
-        plt.annotate("Optimal threshold (severity score)", (th_optimal_x_value, th_optimal_y_value),
+        plt.annotate(f"Optimal threshold ({th_optimal})", (th_optimal_x_value, th_optimal_y_value),
                      xytext=(th_optimal_x_value + 0.2, th_optimal_x_value + 0.4),
                      arrowprops=dict(arrowstyle='-', connectionstyle='arc3', facecolor='red', edgecolor='black'),
                      weight='bold')

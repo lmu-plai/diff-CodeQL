@@ -1080,13 +1080,13 @@
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.production.min.js",
+        "uri" : "package/umd/react-dom.profiling.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 17
       }
     }, {
       "location" : {
-        "uri" : "package/umd/react-dom.profiling.min.js",
+        "uri" : "package/umd/react-dom.production.min.js",
         "uriBaseId" : "%SRCROOT%",
         "index" : 18
       }
@@ -1709,41 +1709,6 @@
         "index" : 16
       },
       "message" : {
-        "text" : "Top level code of file ([react-dom.production.min.js](1)) is minified"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 17
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "986513c4eb699fd4:1"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "package/umd/react-dom.production.min.js",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 17
-          }
-        },
-        "message" : {
-          "text" : "react-dom.production.min.js"
-        }
-      } ]
-    }, {
-      "ruleId" : "js/has-minified-top-level-code",
-      "ruleIndex" : 16,
-      "rule" : {
-        "id" : "js/has-minified-top-level-code",
-        "index" : 16
-      },
-      "message" : {
         "text" : "Top level code of file ([react-dom.profiling.min.js](1)) is minified"
       },
       "locations" : [ {
@@ -1751,7 +1716,7 @@
           "artifactLocation" : {
             "uri" : "package/umd/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 18
+            "index" : 17
           }
         }
       } ],
@@ -1764,11 +1729,46 @@
           "artifactLocation" : {
             "uri" : "package/umd/react-dom.profiling.min.js",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 18
+            "index" : 17
           }
         },
         "message" : {
           "text" : "react-dom.profiling.min.js"
+        }
+      } ]
+    }, {
+      "ruleId" : "js/has-minified-top-level-code",
+      "ruleIndex" : 16,
+      "rule" : {
+        "id" : "js/has-minified-top-level-code",
+        "index" : 16
+      },
+      "message" : {
+        "text" : "Top level code of file ([react-dom.production.min.js](1)) is minified"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "986513c4eb699fd4:1"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "package/umd/react-dom.production.min.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          }
+        },
+        "message" : {
+          "text" : "react-dom.production.min.js"
         }
       } ]
     }, {

@@ -18,3 +18,52 @@
 2023-11-15 19:59:16,499 INFO: Applied queries for 118 package(s) in 5066.2766 seconds
 2023-11-15 19:59:16,500 INFO: Skipped 1395 package(s) because result file(s) already exist.
 2023-11-15 19:59:23,148 INFO: Saved result file of comparison of CodeQL sarif files to packages\react-dom\result_react-dom.txt
+2023-11-16 20:31:42,247 INFO: Downloaded 4 package(s) in 3.2056 seconds
+2023-11-16 20:31:42,247 INFO: Skipped 1513 package(s) because they already exist.
+2023-11-16 20:31:42,881 INFO: Unpacked 4 package(s) in 0.6309 seconds
+2023-11-16 20:31:42,882 INFO: Skipped 1513 package(s) because they already exist.
+2023-11-16 20:31:54,957 INFO: Could not create database for file "react-dom-0.0.0-experimental-2c338b16f-20231116": Command '['codeql', 'database', 'create', '--language=javascript', '--source-root', 'packages\\react-dom\\unpacked\\react-dom-0.0.0-experimental-2c338b16f-20231116', '--threads=0', 'packages\\react-dom\\databases\\react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db']' returned non-zero exit status 2.
+2023-11-16 20:31:55,573 INFO: Could not run CodeQL queries for "react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db": Command '['codeql', 'database', 'analyze', 'packages\\react-dom\\databases\\react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db', '--format=sarifv2.1.0', '--output=packages\\react-dom\\codeql_results_sarif\\react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db.sarif', '--threads=0', '--no-rerun', 'C:\\Users\\Fabian\\Documents\\Master Studium\\Masterarbeit\\tools\\CodeQL\\queries\\thesis-cvc-npm-malware-queries']' returned non-zero exit status 2.
+2023-11-16 22:28:21,320 INFO: Downloaded 0 package(s) in 0.1351 seconds
+2023-11-16 22:28:21,321 INFO: Skipped 1517 package(s) because they already exist.
+2023-11-16 22:28:21,405 INFO: Unpacked 0 package(s) in 0.0821 seconds
+2023-11-16 22:28:21,405 INFO: Skipped 1517 package(s) because they already exist.
+2023-11-16 22:29:16,693 INFO: Created database(s) for 3 package(s) in 55.2866 seconds
+2023-11-16 22:29:16,694 INFO: Skipped 1514 package(s) because database(s) already exist.
+2023-11-16 22:29:17,276 INFO: Could not run CodeQL queries for "react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db": Command '['codeql', 'database', 'analyze', 'packages\\react-dom\\databases\\react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db', '--format=sarifv2.1.0', '--output=packages\\react-dom\\codeql_results_sarif\\react-dom-0.0.0-experimental-2c338b16f-20231116_ql-db.sarif', '--threads=0', '--no-rerun', 'C:\\Users\\Fabian\\Documents\\Master Studium\\Masterarbeit\\tools\\CodeQL\\queries\\thesis-cvc-npm-malware-queries']' returned non-zero exit status 2.
+2023-11-16 22:32:21,736 INFO: Downloaded 0 package(s) in 0.1387 seconds
+2023-11-16 22:32:21,737 INFO: Skipped 1517 package(s) because they already exist.
+2023-11-16 22:32:21,821 INFO: Unpacked 0 package(s) in 0.0813 seconds
+2023-11-16 22:32:21,821 INFO: Skipped 1517 package(s) because they already exist.
+2023-11-16 22:32:41,617 INFO: Created database(s) for 1 package(s) in 19.7958 seconds
+2023-11-16 22:32:41,618 INFO: Skipped 1516 package(s) because database(s) already exist.
+2023-11-16 22:36:33,003 INFO: Applied queries for 4 package(s) in 231.3848 seconds
+2023-11-16 22:36:33,003 INFO: Skipped 1513 package(s) because result file(s) already exist.
+2023-11-16 22:36:39,734 INFO: Saved result file of comparison of CodeQL sarif files to packages\react-dom\result_react-dom.txt
+2023-11-25 21:18:36,953 INFO: Downloaded 5 package(s) in 5.9668 seconds
+2023-11-25 21:18:36,954 INFO: Skipped 1518 package(s) because they already exist.
+2023-11-25 21:18:37,564 ERROR: Unpacking for file "react-dom-18.3.0-canary-bbb9cb116-20231117.tgz" failed: Command '['7z', 'e', 'packages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117.tgz', '-y', '-opackages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117']' returned non-zero exit status 2.
+2023-11-25 21:18:37,689 INFO: Unpacked 5 package(s) in 0.7308 seconds
+2023-11-25 21:18:37,690 INFO: Skipped 1517 package(s) because they already exist.
+2023-11-25 21:20:13,240 INFO: Created database(s) for 5 package(s) in 95.5496 seconds
+2023-11-25 21:20:13,241 INFO: Skipped 1517 package(s) because database(s) already exist.
+2023-11-25 21:21:16,423 INFO: Downloaded 0 package(s) in 0.1494 seconds
+2023-11-25 21:21:16,583 INFO: Skipped 1523 package(s) because they already exist.
+2023-11-25 21:21:16,657 ERROR: Unpacking for file "react-dom-18.3.0-canary-bbb9cb116-20231117.tgz" failed: Command '['7z', 'e', 'packages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117.tgz', '-y', '-opackages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117']' returned non-zero exit status 2.
+2023-11-25 21:21:16,666 INFO: Unpacked 0 package(s) in 0.0766 seconds
+2023-11-25 21:21:16,666 INFO: Skipped 1522 package(s) because they already exist.
+2023-11-25 21:21:16,815 INFO: Created database(s) for 0 package(s) in 0.1492 seconds
+2023-11-25 21:21:16,815 INFO: Skipped 1522 package(s) because database(s) already exist.
+2023-11-26 02:20:01,217 INFO: Downloaded 0 package(s) in 0.1395 seconds
+2023-11-26 02:20:01,217 INFO: Skipped 1523 package(s) because they already exist.
+2023-11-26 02:20:01,313 ERROR: Unpacking for file "react-dom-18.3.0-canary-bbb9cb116-20231117.tgz" failed: Command '['7z', 'e', 'packages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117.tgz', '-y', '-opackages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117']' returned non-zero exit status 2.
+2023-11-26 02:20:01,325 INFO: Unpacked 0 package(s) in 0.1023 seconds
+2023-11-26 02:20:01,325 INFO: Skipped 1522 package(s) because they already exist.
+2023-11-26 14:53:18,430 INFO: Downloaded 0 package(s) in 0.1450 seconds
+2023-11-26 14:53:18,430 INFO: Skipped 1523 package(s) because they already exist.
+2023-11-26 14:53:18,505 ERROR: Unpacking for file "react-dom-18.3.0-canary-bbb9cb116-20231117.tgz" failed: Command '['7z', 'e', 'packages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117.tgz', '-y', '-opackages\\react-dom\\tgz\\react-dom-18.3.0-canary-bbb9cb116-20231117']' returned non-zero exit status 2.
+2023-11-26 14:53:18,514 INFO: Unpacked 0 package(s) in 0.0788 seconds
+2023-11-26 14:53:18,514 INFO: Skipped 1522 package(s) because they already exist.
+2023-11-26 19:53:40,937 INFO: Created database(s) for 1522 package(s) in 18022.4216 seconds
+2023-11-27 14:06:56,569 INFO: Applied queries for 1522 package(s) in 65597.7758 seconds
+2023-11-27 14:07:03,950 INFO: Saved result file of comparison of CodeQL sarif files to packages\react-dom\result_react-dom.txt
